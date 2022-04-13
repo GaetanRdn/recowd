@@ -19,13 +19,14 @@ jobs:
           fetch-depth: 0
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v1 
-        with: 
+      - uses: actions/setup-node@v1
+        with:
           node-version: '16'
       - run: npm install
-      - run: npx nx-cloud start-ci-run    
+      - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
+      - run: npx nx affected --target=lint --parallel --max-parallel=2
       - run: npx nx-cloud stop-all-agents
   pr:
     runs-on: ubuntu-latest
@@ -38,12 +39,13 @@ jobs:
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: '16'
       - run: npm install
       - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
+      - run: npx nx affected --target=lint --parallel --max-parallel=2
       - run: npx nx-cloud stop-all-agents
   agents:
     runs-on: ubuntu-latest
@@ -55,8 +57,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: '16'
       - run: npm install
       - name: Start Nx Agent ${{ matrix.agent }}
-        run: npx nx-cloud start-agent  
+        run: npx nx-cloud start-agent
