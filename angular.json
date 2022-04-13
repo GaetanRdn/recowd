@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "design-system": "apps/design-system",
-    "design-system-e2e": "apps/design-system-e2e"
+    "design-system": "apps/design-system"
   }
 }
