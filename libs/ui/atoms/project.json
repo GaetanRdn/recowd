@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/ui/atoms",
+  "sourceRoot": "libs/ui/atoms/src",
+  "prefix": "rc",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/ui/atoms"],
+      "options": {
+        "project": "libs/ui/atoms/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/atoms/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui/atoms/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui/atoms"],
+      "options": {
+        "jestConfig": "libs/ui/atoms/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/atoms/src/**/*.ts",
+          "libs/ui/atoms/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui"]
+}
