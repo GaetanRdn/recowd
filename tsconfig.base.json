@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@recowd/ui-atoms": ["libs/ui/atoms/src/index.ts"]
+      "@recowd/test/utils": ["libs/test/utils/src/index.ts"],
+      "@recowd/ui-atoms": ["libs/ui/atoms/src/index.ts"],
+      "@recowd/utility-types": ["libs/utility-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
