@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/utility-types",
+  "sourceRoot": "libs/utility-types/src",
+  "prefix": "rc",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/utility-types"],
+      "options": {
+        "project": "libs/utility-types/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/utility-types/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/utility-types/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utility-types"],
+      "options": {
+        "jestConfig": "libs/utility-types/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/utility-types/src/**/*.ts",
+          "libs/utility-types/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["utils"]
+}
