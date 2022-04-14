@@ -16,9 +16,17 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/design-system/src/favicon.ico",
-          "apps/design-system/src/assets"
+          "apps/design-system/src/assets",
+          {
+            "input": "libs/ui/atoms/src/lib",
+            "glob": "**/*.scss",
+            "output": "assets/atoms"
+          }
         ],
         "styles": ["apps/design-system/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/atoms/src/lib"]
+        },
         "scripts": []
       },
       "configurations": {
@@ -87,6 +95,39 @@
       "options": {
         "jestConfig": "apps/design-system/jest.config.js",
         "passWithNoTests": true
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "port": 4400,
+        "config": {
+          "configFolder": "apps/design-system/.storybook"
+        },
+        "projectBuildConfig": "design-system"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "outputPath": "dist/storybook/design-system",
+        "config": {
+          "configFolder": "apps/design-system/.storybook"
+        },
+        "projectBuildConfig": "design-system"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
       }
     }
   },
