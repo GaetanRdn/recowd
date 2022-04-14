@@ -1,1 +1,1 @@
-export * from './lib/ui-atoms.module';
+export * from './lib/forms/input/input.directive';

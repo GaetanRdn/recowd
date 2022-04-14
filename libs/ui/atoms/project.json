@@ -38,5 +38,6 @@
       }
     }
   },
-  "tags": ["ui"]
+  "tags": ["ui"],
+  "implicitDependencies": ["test-utils"]
 }

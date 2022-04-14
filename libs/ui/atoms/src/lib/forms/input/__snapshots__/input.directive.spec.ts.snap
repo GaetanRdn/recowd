@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputDirective should create default 1`] = `
+<input
+  class="rc-input"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create disabled 1`] = `
+<input
+  class="rc-input"
+  disabled=""
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create outlined 1`] = `
+<input
+  class="rc-input rc-outlined"
+  outlined=""
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should emit valueChange on input 1`] = `
+<input
+  class="rc-input"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should set value 1`] = `
+<input
+  class="rc-input"
+  rcinput=""
+/>
+`;
