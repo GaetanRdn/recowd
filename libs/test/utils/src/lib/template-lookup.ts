@@ -2,10 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DebugElement, Type } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
-export class TemplateLookup<ComponentType> {
-  public readonly fixture: ComponentFixture<ComponentType>;
+export class TemplateLookup<HostType> {
+  public readonly fixture: ComponentFixture<HostType>;
 
-  constructor(componentType: Type<ComponentType>) {
+  constructor(componentType: Type<HostType>) {
     this.fixture = TestBed.createComponent(componentType);
   }
 
@@ -13,7 +13,7 @@ export class TemplateLookup<ComponentType> {
     return this.fixture.debugElement.children[0].nativeElement;
   }
 
-  get hostComponent(): ComponentType {
+  get hostComponent(): HostType {
     return this.fixture.componentInstance;
   }
 
@@ -21,8 +21,13 @@ export class TemplateLookup<ComponentType> {
     this.fixture.detectChanges();
   }
 
-  public get(selector: string): DebugElement {
-    return this.fixture.debugElement.query(By.css(selector));
+  public get<ComponentType>(
+    selector: string | Type<ComponentType>
+  ): DebugElement {
+    if (typeof selector === 'string') {
+      return this.fixture.debugElement.query(By.css(selector));
+    }
+    return this.fixture.debugElement.query(By.directive(selector));
   }
 
   public query<Type extends HTMLElement = HTMLElement>(selector: string): Type {
@@ -40,5 +45,11 @@ export class TemplateLookup<ComponentType> {
     directive: Type<DirectiveType>
   ): DirectiveType {
     return this.get(selector).injector.get(directive);
+  }
+
+  public getComponent<ComponentType>(
+    selector: string | Type<ComponentType>
+  ): ComponentType {
+    return this.get(selector).componentInstance;
   }
 }
