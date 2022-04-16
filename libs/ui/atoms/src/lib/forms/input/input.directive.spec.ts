@@ -1,4 +1,4 @@
-import { Component, DebugElement } from '@angular/core';
+import { Component } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { InputDirective } from './input.directive';
 import { TemplateLookup } from '@recowd/test/utils';
@@ -25,28 +25,13 @@ describe('InputDirective', () => {
     expect(templateLookup.firstChildElement).toMatchSnapshot();
   });
 
-  it('should set value', () => {
-    // WHEN
-    templateLookup = new TemplateLookup(DefaultHostComponent);
-    templateLookup.hostComponent.value = 'test';
-    templateLookup.detectChanges();
-
-    // THEN
-    expect(templateLookup.firstChildElement).toMatchSnapshot();
-    expect(templateLookup.query<HTMLInputElement>('input').value).toEqual(
-      'test'
-    );
-  });
-
   it('should emit valueChange on input', () => {
     // GIVEN
     templateLookup = new TemplateLookup(DefaultHostComponent);
     templateLookup.detectChanges();
 
     // WHEN
-    const input: DebugElement = templateLookup.get('input');
-    input.nativeElement.value = 'test';
-    input.triggerEventHandler('input', { target: input.nativeElement });
+    templateLookup.triggerInput('input', 'test');
     templateLookup.detectChanges();
 
     // THEN

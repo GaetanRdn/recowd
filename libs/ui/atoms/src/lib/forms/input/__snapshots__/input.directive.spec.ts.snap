@@ -29,10 +29,3 @@ exports[`InputDirective should emit valueChange on input 1`] = `
   rcinput=""
 />
 `;
-
-exports[`InputDirective should set value 1`] = `
-<input
-  class="rc-input"
-  rcinput=""
-/>
-`;
