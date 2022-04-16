@@ -1,6 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "design-system": "apps/design-system"
+    "design-system": "apps/design-system",
+    "test-utils": "libs/test/utils",
+    "ui-atoms": "libs/ui/atoms",
+    "utility-types": "libs/utility-types"
   }
 }

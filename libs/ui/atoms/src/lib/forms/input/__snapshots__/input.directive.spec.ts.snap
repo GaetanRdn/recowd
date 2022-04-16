@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputDirective should be disabled when control is disabled 1`] = `
+<input
+  class="rc-input ng-untouched ng-pristine"
+  disabled=""
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create default 1`] = `
+<input
+  class="rc-input"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create disabled 1`] = `
+<input
+  class="rc-input"
+  disabled=""
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create outlined 1`] = `
+<input
+  class="rc-input rc-outlined"
+  outlined=""
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should create with form control 1`] = `
+<input
+  class="rc-input ng-untouched ng-pristine ng-valid"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should emit valueChange on input 1`] = `
+<input
+  class="rc-input"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should set value with form control value 1`] = `
+<input
+  class="rc-input ng-untouched ng-pristine ng-valid"
+  rcinput=""
+/>
+`;
+
+exports[`InputDirective should update control on input 1`] = `
+<input
+  class="rc-input ng-valid ng-touched ng-dirty"
+  rcinput=""
+/>
+`;
