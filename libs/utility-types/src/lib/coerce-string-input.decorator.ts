@@ -1,4 +1,4 @@
-export function CoerceString() {
+export function CoerceString(defaultValue = '') {
   return function (
     target: any,
     key: string,
@@ -9,15 +9,19 @@ export function CoerceString() {
 
       propertyDescriptor.set = function (next) {
         original.apply(this, [
-          next !== null && next !== undefined ? String(next) : '',
+          next !== null && next !== undefined ? String(next) : defaultValue,
         ]);
       };
     } else {
-      coerceWithoutAccessors(target, key);
+      coerceWithoutAccessors(target, key, defaultValue);
     }
   };
 
-  function coerceWithoutAccessors(target: any, key: string): void {
+  function coerceWithoutAccessors(
+    target: any,
+    key: string,
+    defaultValue: string
+  ): void {
     const getter = function () {
       // using Typescript reflection
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -30,7 +34,7 @@ export function CoerceString() {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       this['__' + key] =
-        next !== null && next !== undefined ? String(next) : '';
+        next !== null && next !== undefined ? String(next) : defaultValue;
     };
 
     Object.defineProperty(target, key, {
