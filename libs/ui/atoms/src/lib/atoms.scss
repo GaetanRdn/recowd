@@ -1,1 +1,7 @@
-@import 'forms/input/input';
+@use 'forms/input/input';
+@use 'material-icon/material-icon.component';
+
+@mixin rc-atoms-theme($config) {
+  @include input.rc-input($config);
+  @include material-icon.rc-material-icon($config);
+}
