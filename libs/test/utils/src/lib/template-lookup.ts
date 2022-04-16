@@ -34,4 +34,11 @@ export class TemplateLookup<ComponentType> {
     input.nativeElement.value = value;
     input.triggerEventHandler('input', { target: input.nativeElement });
   }
+
+  public getDirectiveOn<DirectiveType>(
+    selector: string,
+    directive: Type<DirectiveType>
+  ): DirectiveType {
+    return this.get(selector).injector.get(directive);
+  }
 }
