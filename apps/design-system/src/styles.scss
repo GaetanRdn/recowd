@@ -24,4 +24,4 @@ $config: (
   ),
 );
 
-@include atoms.rc-input($config);
+@include atoms.rc-atoms-theme($config);

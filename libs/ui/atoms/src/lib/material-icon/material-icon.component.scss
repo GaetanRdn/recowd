@@ -1,0 +1,12 @@
+@mixin rc-material-icon($config) {
+  $colors: map-get($config, colors);
+  $primary: map-get($colors, primary);
+
+  .material-icons,
+  .material-icons-outlined,
+  .material-icons-round,
+  .material-icons-sharp,
+  .material-icons-two-tone {
+    color: map-get($primary, color);
+  }
+}
