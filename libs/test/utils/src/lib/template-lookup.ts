@@ -28,4 +28,10 @@ export class TemplateLookup<ComponentType> {
   public query<Type extends HTMLElement = HTMLElement>(selector: string): Type {
     return this.get(selector).nativeElement;
   }
+
+  public triggerInput(selector: string, value: string): void {
+    const input: DebugElement = this.get(selector);
+    input.nativeElement.value = value;
+    input.triggerEventHandler('input', { target: input.nativeElement });
+  }
 }
