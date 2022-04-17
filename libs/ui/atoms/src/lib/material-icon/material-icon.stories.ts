@@ -11,10 +11,16 @@ import {
 import { CommonModule } from '@angular/common';
 import materialIcons from './material-icon.json';
 import { HttpClientModule } from '@angular/common/http';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'atoms/material-icon',
   component: MaterialIconComponent,
+  parameters: {
+    badges: [BADGE.STABLE],
+    jest: 'material-icon.component',
+    a11y: { disable: true },
+  },
   decorators: [
     moduleMetadata({
       imports: [MaterialIconModule, CommonModule, HttpClientModule],
