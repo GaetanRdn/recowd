@@ -7,7 +7,10 @@ import { BADGE } from '@geometricpanda/storybook-addon-badges';
 export default {
   title: 'atoms/forms/input',
   component: InputDirective,
-  parameters: { badges: [BADGE.STABLE] },
+  parameters: {
+    badges: [BADGE.STABLE],
+    jest: 'input.directive',
+  },
   decorators: [
     moduleMetadata({
       imports: [InputModule, ReactiveFormsModule, FormsModule],

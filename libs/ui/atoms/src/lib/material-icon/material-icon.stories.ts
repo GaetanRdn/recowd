@@ -16,7 +16,10 @@ import { BADGE } from '@geometricpanda/storybook-addon-badges';
 export default {
   title: 'atoms/material-icon',
   component: MaterialIconComponent,
-  parameters: { badges: [BADGE.STABLE] },
+  parameters: {
+    badges: [BADGE.STABLE],
+    jest: 'material-icon.component',
+  },
   decorators: [
     moduleMetadata({
       imports: [MaterialIconModule, CommonModule, HttpClientModule],

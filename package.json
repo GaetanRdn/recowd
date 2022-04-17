@@ -8,7 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "build:storybook": "nx run storybook:build-storybook"
+    "build:storybook": "nx run storybook:build-storybook",
+    "test:generate-output": "nx run-many --target=test --all --json --outputFile=.jest-test-results.json"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@nrwl/storybook": "13.10.2",
     "@nrwl/workspace": "13.10.2",
     "@storybook/addon-essentials": "~6.4.12",
+    "@storybook/addon-jest": "^6.4.22",
     "@storybook/angular": "~6.4.12",
     "@storybook/builder-webpack5": "~6.4.12",
     "@storybook/core-server": "~6.4.12",
