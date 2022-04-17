@@ -10,6 +10,7 @@ import {
 } from '@angular/core';
 import {
   CoerceBoolean,
+  CoerceString,
   Nullable,
   OnChangeFn,
   OnTouchedFn,
@@ -29,7 +30,10 @@ export class InputDirective
 {
   @Input() @CoerceBoolean() public outlined?: boolean;
 
-  @Input() @HostBinding('value') public value?: Nullable<string>;
+  @HostBinding('value')
+  @CoerceString()
+  @Input()
+  public value = '';
 
   @Output()
   public readonly valueChange: EventEmitter<string> = new EventEmitter<string>();
@@ -54,7 +58,7 @@ export class InputDirective
   }
 
   public writeValue(value: Nullable<string>): void {
-    this.value = value;
+    this.value = value ?? '';
   }
 
   public registerOnChange(fn: OnChangeFn<Nullable<string>>): void {
