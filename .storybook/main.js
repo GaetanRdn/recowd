@@ -4,6 +4,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@geometricpanda/storybook-addon-badges',
     '@storybook/addon-jest',
+    '@storybook/addon-a11y',
   ],
   // uncomment the property below if you want to apply some webpack config globally
   // webpackFinal: async (config, { configType }) => {

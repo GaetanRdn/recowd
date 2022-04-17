@@ -19,6 +19,7 @@ export default {
   parameters: {
     badges: [BADGE.STABLE],
     jest: 'material-icon.component',
+    a11y: { disable: true },
   },
   decorators: [
     moduleMetadata({
