@@ -40,7 +40,7 @@ const template: Story<MaterialIconComponent> = (
   },
   template: `
     <div *ngFor="let icon of materialIcons" style="display: flex; flex-flow: column; align-items: center; justify-content: space-between">
-    <rc-material-icon [type]="type" [name]="icon.name"></rc-material-icon>
+    <rc-material-icon [type]="type">{{icon.name}}</rc-material-icon>
     <span style="font-size: 1.2rem; color: white; line-height: 1.6rem; font-family: 'Source Code Pro',serif">{{ icon.name }}</span>
 </div>
 `,
