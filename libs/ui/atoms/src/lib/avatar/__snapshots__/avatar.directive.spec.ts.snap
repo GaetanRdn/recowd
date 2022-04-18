@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvatarDirective should create with custom img 1`] = `
+<img
+  alt="avatar"
+  rcavatar=""
+  src="assets/icons/test.svg"
+/>
+`;
+
+exports[`AvatarDirective should create with material icon 1`] = `
+<rc-material-icon
+  class="rc-avatar"
+  rcavatar=""
+>
+  person_pin
+</rc-material-icon>
+`;
