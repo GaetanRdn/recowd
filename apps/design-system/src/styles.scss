@@ -17,9 +17,14 @@ $config: (
   ),
   colors: (
     primary: (
-      color: #ffffff,
-      background-color: #000000,
-      border-color: #ffffff,
+      color: #ffffffff,
+      background-color: #00000000,
+      border-color: #ffffffff,
+    ),
+    disabled: (
+      color: #808080ff,
+      background-color: lighten(#00000000, 12%),
+      border-color: none,
     ),
   ),
 );

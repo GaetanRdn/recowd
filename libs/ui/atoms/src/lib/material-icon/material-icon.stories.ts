@@ -10,7 +10,6 @@ import {
 } from './material-icon.component';
 import { CommonModule } from '@angular/common';
 import materialIcons from './material-icon.json';
-import { HttpClientModule } from '@angular/common/http';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -23,7 +22,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [MaterialIconModule, CommonModule, HttpClientModule],
+      imports: [MaterialIconModule, CommonModule],
     }),
     componentWrapperDecorator(
       (story: string) =>
