@@ -1,7 +1,42 @@
+:host {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: flex-start;
+  height: 6rem;
+  padding: 0 1.6rem;
+}
+
 body,
 html {
   box-sizing: border-box;
   font-size: 10px;
+}
+
+button {
+  -webkit-appearance: none;
+          appearance: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rc-button-icon {
+  color: #ffffffff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.4rem;
+  background-color: transparent;
+}
+
+.rc-button-icon:is(.rc-disabled) > * {
+  color: #808080ff;
 }
 
 .rc-input {
@@ -18,12 +53,12 @@ html {
   font-family: "Source Sans Pro";
   font-weight: 400;
   line-height: 1.6rem;
-  color: #ffffff;
-  background-color: #000000;
+  color: #ffffffff;
+  background-color: #000000ff;
 }
 
 .rc-input:not(.rc-outlined) {
-  border-bottom: 0.1rem solid #ffffff;
+  border-bottom: 0.1rem solid #ffffffff;
 }
 
 .rc-input:not(.rc-outlined):focus {
@@ -37,7 +72,7 @@ html {
 .rc-input:not(:disabled).rc-outlined {
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
-  outline: 0.1rem solid #ffffff;
+  outline: 0.1rem solid #ffffffff;
 }
 
 .rc-input:not(:disabled).rc-outlined:focus {
@@ -56,5 +91,14 @@ html {
 .material-icons-round,
 .material-icons-sharp,
 .material-icons-two-tone {
-  color: #ffffff;
+  color: #ffffffff;
+}
+
+rc-toolbar {
+  font-size: 2.2rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #ffffffff;
+  background-color: #000000ff;
 }
