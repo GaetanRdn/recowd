@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarComponent should create with button 1`] = `
+<rc-toolbar>
+  <button>
+    Action1
+  </button>
+</rc-toolbar>
+`;
+
+exports[`ToolbarComponent should create with only text 1`] = `
+<rc-toolbar>
+  Design System
+</rc-toolbar>
+`;
