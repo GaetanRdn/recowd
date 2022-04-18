@@ -3,6 +3,7 @@
 exports[`AvatarDirective should create with custom img 1`] = `
 <img
   alt="avatar"
+  class="rc-avatar"
   rcavatar=""
   src="assets/icons/test.svg"
 />
