@@ -105,6 +105,7 @@
         "config": {
           "configFolder": "apps/design-system/.storybook"
         },
+        "staticDir": ["apps/design-system/src/assets"],
         "projectBuildConfig": "design-system"
       },
       "configurations": {
