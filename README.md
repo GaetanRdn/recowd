@@ -1,105 +1,86 @@
+<h1>Recowd</h1>
 
+<div style="display: flex; justify-content: normal; align-items: center">
+  This project was generated using <a href="https://nx.dev">Nx</a>.
 
-# Recowd
+  <p style="text-align: center; margin-left: 2rem">
+    <img alt="nx-logo" src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="50">
+  </p>
+</div>
 
-This project was generated using [Nx](https://nx.dev).
+<a href="https://gaetanrdn.github.io/recowd">Design system Storybook</a>
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+<h2>Description</h2>
 
-🔎 **Smart, Fast and Extensible Build System**
+This mono repo contains all my new projects.
 
-## Quick Start & Documentation
+Actually I work on a design-system.
 
-[Nx Documentation](https://nx.dev/angular)
+<h2>Architecture</h2>
 
-[10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
+<ul>
+  <li>apps</li>
+  <ul>
+    <li>design-system (launches a storybook for all the design system)</li>
+  </ul>
+  <li>libs</li>
+  <ul>
+    <li>test/utils (contains utility classes for testing)</li>
+    <li>ui/atoms (contains all the atoms of the design system)</li>
+    <li>utility-types (contains types, decorators...)</li>
+  </ul>
+</ul>
 
-[Interactive Tutorial](https://nx.dev/tutorial/01-create-application)
+<h2>Testing</h2>
 
-## Adding capabilities to your workspace
+<a href="https://jestjs.io/">Jest</a>
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+<h2>Storybook</h2>
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Used addons:
 
-Below are our core plugins:
+<ul>
+  <li>@storybook/addon-essentials</li>
+  <li>@geometricpanda/storybook-addon-badges</li>
+  <li>@storybook/addon-jest</li>
+  <li>@storybook/addon-a11y</li>
+</ul>
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+<h2>Styles</h2>
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+SASS is used to style the components, and to build our own theme.
 
-## Generate an application
+<h3>Theming</h3>
+A config object is passed to all components, that allow centralizing all theming features.
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
+Example
 
-> You can use any of the plugins above to generate applications as well.
+```scss
+$config: (
+  typography: (
+    input: (
+      font-family: 'Source Sans Pro',
+      font-size: 1.6rem,
+      font-weight: 400,
+      line-height: 1.6rem,
+    ),
+    // ...
+  ),
+  colors: (
+    primary: (
+      color: #ffffff,
+      background-color: #000000,
+      border-color: #ffffff,
+    ),
+    // ...
+  ),
+);
+```
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+First level: separate the typographies and the colors.
 
-## Generate a library
+Second level: map for each element/color
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
+<h3>Specificities</h3>
 
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@recowd/mylib`.
-
-## Development server
-
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-
-
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+The default font-size is set to 10px. That allows to simplify the conversion from px to rem.
