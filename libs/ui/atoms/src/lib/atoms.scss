@@ -1,9 +1,11 @@
+@use 'button/button';
 @use 'forms/input/input';
 @use 'material-icon/material-icon.component';
-@use 'button/button';
+@use 'toolbar/toolbar.component';
 
 @mixin rc-atoms-theme($config) {
   @include button.rc-button($config);
   @include input.rc-input($config);
   @include material-icon.rc-material-icon($config);
+  @include toolbar.rc-toolbar($config);
 }

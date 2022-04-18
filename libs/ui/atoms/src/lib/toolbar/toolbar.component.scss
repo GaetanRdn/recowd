@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: flex-start;
+  height: 6rem;
+  padding: 0 1.6rem;
+}
+
+@mixin rc-toolbar($config) {
+  $typography: map-get(map-get($config, typography), toolbar);
+  $colors: map-get($config, colors);
+  $primary: map-get($colors, primary);
+
+  rc-toolbar {
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get($typography, $key);
+    }
+
+    @each $key in color, background-color {
+      #{$key}: map-get($primary, $key);
+    }
+  }
+}
