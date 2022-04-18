@@ -1,0 +1,28 @@
+@mixin rc-button($config) {
+  $colors: map-get($config, colors);
+  $primary: map-get($colors, primary);
+
+  button {
+    appearance: none;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .rc-button-icon {
+    color: map-get($primary, color);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: transparent;
+  }
+
+  .rc-button-icon:is(.rc-disabled) > * {
+    color: map-get(map-get($colors, disabled), color);
+  }
+}
