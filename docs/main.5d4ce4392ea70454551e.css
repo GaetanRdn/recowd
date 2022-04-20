@@ -14,6 +14,14 @@ html {
   font-size: 10px;
 }
 
+.rc-avatar {
+  font-size: 4.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 2px solid #ffffffff;
+}
+
 button {
   -webkit-appearance: none;
           appearance: none;
@@ -37,6 +45,73 @@ a {
 
 .rc-button-icon:is(.rc-disabled) > * {
   color: #808080ff;
+}
+
+rc-card {
+  display: inline-flex;
+  flex-flow: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px 5px, rgba(0, 0, 0, 0.24) 0 3px 5px;
+  color: #ffffffff;
+  background-color: #000000ff;
+}
+
+.rc-card-header {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.rc-card-header:not(:empty) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 1rem;
+  column-gap: 1rem;
+  grid-row-gap: 0.4rem;
+  row-gap: 0.4rem;
+  align-items: center;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.rc-card-header:not(:empty) .rc-avatar {
+  grid-row: 1/span 2;
+}
+
+.rc-card-header:not(:empty) .rc-card-title {
+  grid-row: 1/span 1;
+}
+
+.rc-card-header:not(:empty) .rc-card-subtitle {
+  grid-row: 2/span 1;
+}
+
+.rc-card-content {
+  display: block;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.rc-card-title {
+  font-size: 2.4rem;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  line-height: 3rem;
+  display: block;
+}
+
+.rc-card-subtitle {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.6rem;
+  display: block;
+  color: #b3b3b3;
 }
 
 .rc-input {
