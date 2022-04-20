@@ -1,0 +1,76 @@
+@mixin rc-card($config) {
+  $typography: map-get($config, typography);
+  $colors: map-get($config, colors);
+  $primary: map-get($colors, primary);
+
+  rc-card {
+    display: inline-flex;
+    flex-flow: column;
+    height: fit-content;
+    min-width: fit-content;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 12%) 0 3px 5px, rgba(0, 0, 0, 24%) 0 3px 5px;
+
+    @each $key in color, background-color {
+      #{$key}: map-get($primary, $key);
+    }
+  }
+
+  .rc-card-header {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+
+  .rc-card-header:not(:empty) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    row-gap: 0.4rem;
+    align-items: center;
+    padding: 1.6rem 1.6rem 0 1.6rem;
+
+    .rc-avatar {
+      grid-row: 1 / span 2;
+    }
+
+    .rc-card-title {
+      grid-row: 1 / span 1;
+    }
+
+    .rc-card-subtitle {
+      grid-row: 2 / span 1;
+    }
+  }
+
+  .rc-card-content {
+    display: block;
+    padding: 1.6rem;
+
+    $bodyRegular: map-get($typography, body-regular);
+
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get($bodyRegular, $key);
+    }
+  }
+
+  .rc-card-title {
+    $heading: map-get($typography, heading);
+
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get($heading, $key);
+    }
+
+    display: block;
+  }
+
+  .rc-card-subtitle {
+    $subheading: map-get($typography, body-regular);
+
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get($subheading, $key);
+    }
+
+    display: block;
+    color: darken(map-get($primary, color), 30%);
+  }
+}

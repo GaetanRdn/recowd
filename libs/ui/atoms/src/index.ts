@@ -1,3 +1,4 @@
+export * from './lib/avatar/avatar.directive';
 export * from './lib/button/button.directive';
 export * from './lib/forms/input/input.directive';
 export * from './lib/material-icon/material-icon.component';

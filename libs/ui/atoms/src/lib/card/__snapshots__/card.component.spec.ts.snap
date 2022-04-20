@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent should create a card with an avatar 1`] = `
+<rc-card>
+  <div
+    class="rc-card-header"
+  >
+    <rc-material-icon
+      rcavatar=""
+    >
+      home
+    </rc-material-icon>
+    <rc-card-title
+      class="rc-card-title"
+    >
+      Card title
+    </rc-card-title>
+    <rc-card-subtitle
+      class="rc-card-subtitle"
+    >
+      Card subtitle
+    </rc-card-subtitle>
+  </div>
+  <rc-card-content
+    class="rc-card-content"
+  >
+    Simple card
+  </rc-card-content>
+</rc-card>
+`;
+
+exports[`CardComponent should create a card with subtitle 1`] = `
+<rc-card>
+  <div
+    class="rc-card-header"
+  >
+    <rc-card-title
+      class="rc-card-title"
+    >
+      Card title
+    </rc-card-title>
+    <rc-card-subtitle
+      class="rc-card-subtitle"
+    >
+      Card subtitle
+    </rc-card-subtitle>
+  </div>
+  <rc-card-content
+    class="rc-card-content"
+  >
+    Simple card
+  </rc-card-content>
+</rc-card>
+`;
+
+exports[`CardComponent should create a card with title 1`] = `
+<rc-card>
+  <div
+    class="rc-card-header"
+  >
+    <rc-card-title
+      class="rc-card-title"
+    >
+      Card title
+    </rc-card-title>
+  </div>
+  <rc-card-content
+    class="rc-card-content"
+  >
+    Simple card
+  </rc-card-content>
+</rc-card>
+`;
+
+exports[`CardComponent should create simple card 1`] = `
+<rc-card>
+  <div
+    class="rc-card-header"
+  />
+  <rc-card-content
+    class="rc-card-content"
+  >
+    Simple card
+  </rc-card-content>
+</rc-card>
+`;
