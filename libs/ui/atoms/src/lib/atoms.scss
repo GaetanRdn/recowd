@@ -3,6 +3,7 @@
 @use 'card/card.component';
 @use 'forms/input/input';
 @use 'material-icon/material-icon.component';
+@use 'nav-menu/nav-menu.component';
 @use 'toolbar/toolbar.component';
 
 @mixin rc-atoms-theme($config) {
@@ -11,5 +12,6 @@
   @include card.rc-card($config);
   @include input.rc-input($config);
   @include material-icon.rc-material-icon($config);
+  @include nav-menu.rc-nav-menu($config);
   @include toolbar.rc-toolbar($config);
 }

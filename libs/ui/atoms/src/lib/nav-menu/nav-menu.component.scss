@@ -1,0 +1,32 @@
+@mixin rc-nav-menu($config) {
+  $typography: map-get($config, typography);
+  $colors: map-get($config, colors);
+
+  rc-nav-menu {
+    display: flex;
+    flex-flow: column;
+    min-width: min-content;
+    width: 25rem;
+    height: 100%;
+    position: absolute;
+    background-color: map-get(map-get($colors, primary), background-color);
+    overflow: hidden;
+    left: 0;
+  }
+
+  .rc-nav-menu-item {
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get(map-get($typography, nav), $key);
+    }
+
+    padding: 1.2rem 2rem;
+    color: map-get(map-get($colors, primary), color);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &.rc-selected {
+      font-weight: bold;
+      border-left: 2px solid map-get(map-get($colors, primary), border-color);
+    }
+  }
+}

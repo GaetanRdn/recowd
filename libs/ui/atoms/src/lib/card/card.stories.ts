@@ -1,13 +1,23 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { CardComponent } from './card.component';
 import { CardModule } from './card.module';
-import { AvatarModule } from '../avatar/avatar.directive';
+import { AvatarDirective, AvatarModule } from '../avatar/avatar.directive';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
+import { CardContentDirective } from './card-content.directive';
+import { CardTitleDirective } from './card-title.directive';
+import { CardSubtitleDirective } from './card-subtitle.directive';
 
 export default {
   title: 'atoms/card',
   component: CardComponent,
+  subcomponents: {
+    CardContentDirective,
+    CardTitleDirective,
+    CardSubtitleDirective,
+    AvatarDirective,
+  },
   parameters: {
-    // badges: [BADGE.STABLE],
+    badges: [BADGE.STABLE],
     jest: 'card.component',
   },
   decorators: [

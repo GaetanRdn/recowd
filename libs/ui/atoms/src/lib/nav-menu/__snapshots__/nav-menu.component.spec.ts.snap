@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavMenuComponent should create 1`] = `
+<rc-nav-menu>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item"
+  >
+    Item 1
+  </rc-nav-menu-item>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item"
+  >
+    Item 2
+  </rc-nav-menu-item>
+</rc-nav-menu>
+`;
+
+exports[`NavMenuComponent should emit event on click 1`] = `
+<rc-nav-menu>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item rc-selected"
+  >
+    Item 1
+  </rc-nav-menu-item>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item"
+  >
+    Item 2
+  </rc-nav-menu-item>
+</rc-nav-menu>
+`;
+
+exports[`NavMenuComponent should set selected the last clicked item 1`] = `
+<rc-nav-menu>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item"
+  >
+    Item 1
+  </rc-nav-menu-item>
+  <rc-nav-menu-item
+    class="rc-nav-menu-item rc-selected"
+  >
+    Item 2
+  </rc-nav-menu-item>
+</rc-nav-menu>
+`;
