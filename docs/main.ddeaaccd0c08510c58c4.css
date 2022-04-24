@@ -169,6 +169,34 @@ rc-card {
   color: #ffffffff;
 }
 
+rc-nav-menu {
+  display: flex;
+  flex-flow: column;
+  min-width: min-content;
+  width: 25rem;
+  height: 100%;
+  position: absolute;
+  background-color: #000000ff;
+  overflow: hidden;
+  left: 0;
+}
+
+.rc-nav-menu-item {
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding: 1.2rem 2rem;
+  color: #ffffffff;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.rc-nav-menu-item.rc-selected {
+  font-weight: bold;
+  border-left: 2px solid #ffffffff;
+}
+
 rc-toolbar {
   font-size: 2.2rem;
   font-family: "Lato";
