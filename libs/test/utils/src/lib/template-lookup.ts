@@ -30,8 +30,25 @@ export class TemplateLookup<HostType> {
     return this.fixture.debugElement.query(By.directive(selector));
   }
 
+  public getAll<ComponentType>(
+    selector: string | Type<ComponentType>
+  ): DebugElement[] {
+    if (typeof selector === 'string') {
+      return this.fixture.debugElement.queryAll(By.css(selector));
+    }
+    return this.fixture.debugElement.queryAll(By.directive(selector));
+  }
+
   public query<Type extends HTMLElement = HTMLElement>(selector: string): Type {
     return this.get(selector).nativeElement;
+  }
+
+  public queryAll<Type extends HTMLElement = HTMLElement>(
+    selector: string
+  ): Type[] {
+    return this.getAll(selector).map(
+      (debugElement: DebugElement) => debugElement.nativeElement
+    );
   }
 
   public triggerInput(selector: string, value: string): void {
