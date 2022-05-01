@@ -1,0 +1,16 @@
+@mixin rc-label($config) {
+  $typography: map-get(map-get($config, typography), label);
+
+  rc-label {
+    @each $key in font-size, font-family, font-weight, line-height {
+      #{$key}: map-get($typography, $key);
+    }
+
+    color: inherit;
+    padding: 1rem 1.6rem 0 1.6rem;
+  }
+
+  :is(.rc-required) rc-label::after {
+    content: ' *';
+  }
+}

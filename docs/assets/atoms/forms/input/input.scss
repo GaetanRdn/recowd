@@ -21,26 +21,8 @@
       #{$key}: map-get($primary, $key);
     }
 
-    &:not(.rc-outlined) {
-      border-bottom: 0.1rem solid map-get($primary, border-color);
-    }
-
-    &:not(.rc-outlined):focus {
-      border-bottom-width: 0.2rem;
-    }
-
     &:not(:disabled):hover {
       background-color: lighten(map-get($primary, background-color), 12%);
-    }
-
-    &:not(:disabled).rc-outlined {
-      border-bottom-left-radius: 0.4rem;
-      border-bottom-right-radius: 0.4rem;
-      outline: 0.1rem solid map-get($primary, border-color);
-
-      &:focus {
-        outline-width: 0.2rem;
-      }
     }
 
     &:disabled {
