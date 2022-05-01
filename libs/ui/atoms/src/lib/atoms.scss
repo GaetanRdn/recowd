@@ -1,7 +1,9 @@
 @use 'avatar/avatar';
 @use 'button/button';
 @use 'card/card.component';
+@use 'forms/form-field/form-field.component';
 @use 'forms/input/input';
+@use 'forms/label/label.component';
 @use 'material-icon/material-icon.component';
 @use 'nav-menu/nav-menu.component';
 @use 'toolbar/toolbar.component';
@@ -10,7 +12,9 @@
   @include avatar.rc-avatar($config);
   @include button.rc-button($config);
   @include card.rc-card($config);
+  @include form-field.rc-form-field($config);
   @include input.rc-input($config);
+  @include label.rc-label($config);
   @include material-icon.rc-material-icon($config);
   @include nav-menu.rc-nav-menu($config);
   @include toolbar.rc-toolbar($config);
