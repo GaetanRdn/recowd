@@ -1,0 +1,53 @@
+@mixin rc-form-field($config) {
+  $colors: map-get($config, colors);
+  $primary: map-get($colors, primary);
+  $error: map-get($colors, error);
+
+  rc-form-field {
+    display: inline-flex;
+    flex-direction: column;
+    color: map-get($primary, color);
+    background-color: map-get($primary, background-color);
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+
+    border-bottom: 0.1rem solid map-get($primary, border-color);
+
+    &:not(.rc-disabled) {
+      cursor: text;
+
+      &:hover {
+        * {
+          background-color: lighten(map-get($primary, background-color), 12%);
+        }
+      }
+
+      &.rc-outlined {
+        border-bottom-left-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        border-bottom-width: 0;
+        outline: 0.1rem solid map-get($primary, border-color);
+
+        &.rc-focused {
+          outline-width: 0.2rem;
+        }
+      }
+
+      &.rc-error {
+        color: map-get($error, color);
+        border-color: map-get($error, border-color);
+      }
+    }
+
+    &.rc-disabled {
+      border-bottom-left-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+      color: darken(map-get($primary, color), 50%);
+      border-bottom-width: 0;
+    }
+
+    &.rc-focused {
+      border-bottom-width: 0.2rem;
+    }
+  }
+}
