@@ -93,7 +93,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/design-system"],
       "options": {
-        "jestConfig": "apps/design-system/jest.config.js",
+        "jestConfig": "apps/design-system/jest.config.ts",
         "passWithNoTests": true
       }
     },
