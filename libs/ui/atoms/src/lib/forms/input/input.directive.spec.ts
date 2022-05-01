@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { InputDirective } from './input.directive';
 import { TemplateLookup } from '@recowd/test/utils';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 describe('InputDirective', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [
         DefaultHostComponent,
-        OutlinedHostComponent,
         DisabledHostComponent,
         ReactiveFormHostComponent,
         InputDirective,
@@ -40,16 +39,6 @@ describe('InputDirective', () => {
     // THEN
     expect(templateLookup.firstChildElement).toMatchSnapshot();
     expect(templateLookup.hostComponent.value).toEqual('test');
-  });
-
-  it('should create outlined', () => {
-    // WHEN
-    const templateLookup: TemplateLookup<OutlinedHostComponent> =
-      new TemplateLookup(OutlinedHostComponent);
-    templateLookup.detectChanges();
-
-    // THEN
-    expect(templateLookup.firstChildElement).toMatchSnapshot();
   });
 
   it('should create disabled', () => {
@@ -111,6 +100,22 @@ describe('InputDirective', () => {
     // THEN
     expect(templateLookup.firstChildElement).toMatchSnapshot();
   });
+
+  it('should be in error', () => {
+    const templateLookup: TemplateLookup<ReactiveFormHostComponent> =
+      new TemplateLookup(ReactiveFormHostComponent);
+    templateLookup.hostComponent.fc.setValidators(Validators.required);
+    templateLookup.detectChanges();
+
+    templateLookup.triggerInput('input', '');
+    templateLookup.hostComponent.fc.markAsTouched();
+    templateLookup.detectChanges();
+
+    expect(templateLookup.firstChildElement).toMatchSnapshot();
+    expect(
+      templateLookup.getDirectiveOn('input', InputDirective).hasError
+    ).toEqual(true);
+  });
 });
 
 @Component({
@@ -119,11 +124,6 @@ describe('InputDirective', () => {
 class DefaultHostComponent {
   public value?: string;
 }
-
-@Component({
-  template: `<input rcInput outlined />`,
-})
-class OutlinedHostComponent {}
 
 @Component({
   template: `<input rcInput disabled />`,
