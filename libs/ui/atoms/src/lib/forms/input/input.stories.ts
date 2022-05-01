@@ -17,19 +17,17 @@ export default {
     }),
   ],
   argTypes: {
-    outlined: { control: false },
     valueChange: { action: 'valueChanged' },
   },
 } as Meta<InputDirective>;
 
 const template: Story = (args: Args) => ({
   props: {
-    outlined: args['outlined'] ?? false,
     disabled: args['disabled'] ?? false,
     valueChange: action('log'),
   },
   template: `
-  <input rcInput placeholder="Type something" [outlined]="outlined"
+  <input rcInput placeholder="Type something"
          [disabled]="disabled" (valueChange)="valueChange($event)"/>`,
 });
 
@@ -38,28 +36,20 @@ Default.args = {
   disabled: false,
 };
 
-export const Outlined = template.bind({});
-Outlined.args = {
-  ...Default.args,
-  outlined: true,
-};
-
 const templateForTemplateDriven: Story = (args: Args) => ({
   props: {
     valueChange: action('log'),
     inputValue: '',
-    outlined: args['outlined'],
     disabled: args['disabled'],
   },
   template: `
   <p style="color: white; font-size: 16px;">inputValue: {{ inputValue }}</p>
   <input rcInput placeholder="Type something" [(ngModel)]="inputValue" (valueChange)="valueChange($event)"
-  [disabled]="disabled" [outlined]="outlined"/>`,
+  [disabled]="disabled" />`,
 });
 
 export const TemplateDriven = templateForTemplateDriven.bind({});
 TemplateDriven.args = {
-  outlined: false,
   disabled: false,
 };
 
@@ -70,17 +60,14 @@ const templateForReactiveForms: Story = (args: Args) => ({
       value: args['initialValue'],
       disabled: args['disabledControl'],
     }),
-    outlined: args['outlined'],
   },
   template: `
   <p style="color: white; font-size: 16px;">inputValue: {{ fc.value }}</p>
-  <input rcInput placeholder="Type something" [formControl]="fc" (valueChange)="valueChange($event)"
-  [outlined]="outlined"/>`,
+  <input rcInput placeholder="Type something" [formControl]="fc" (valueChange)="valueChange($event)"/>`,
 });
 
 export const ReactiveForms = templateForReactiveForms.bind({});
 ReactiveForms.args = {
   disabledControl: false,
   initialValue: '',
-  outlined: false,
 };

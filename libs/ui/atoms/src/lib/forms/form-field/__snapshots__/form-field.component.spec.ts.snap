@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormFieldComponent should be in error 1`] = `
+<rc-form-field
+  class="rc-error"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should be outlined 1`] = `
+<rc-form-field
+  class="rc-outlined"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should be required 1`] = `
+<rc-form-field
+  class="rc-required"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+    required=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should create With disabled input 1`] = `
+<rc-form-field
+  class="rc-disabled"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    disabled=""
+    rcinput=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should create With input 1`] = `
+<rc-form-field>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should known when input is focused 1`] = `
+<rc-form-field
+  class="rc-focused"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+  />
+</rc-form-field>
+`;
+
+exports[`FormFieldComponent should set the focus on input when click 1`] = `
+<rc-form-field
+  class="rc-focused"
+>
+  <rc-label>
+    Field label
+  </rc-label>
+  <input
+    class="rc-input"
+    rcinput=""
+  />
+</rc-form-field>
+`;
