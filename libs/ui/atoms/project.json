@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/ui/atoms"],
       "options": {
-        "jestConfig": "libs/ui/atoms/jest.config.js",
+        "jestConfig": "libs/ui/atoms/jest.config.ts",
         "passWithNoTests": true
       }
     },
