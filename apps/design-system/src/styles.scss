@@ -14,6 +14,12 @@ $config: (
       font-weight: 400,
       line-height: 1.6rem,
     ),
+    label: (
+      font-family: 'Open Sans',
+      font-size: 1.2rem,
+      font-weight: 400,
+      line-height: 1.6rem,
+    ),
     toolbar: (
       font-family: 'Lato',
       font-size: 2.2rem,
@@ -41,14 +47,19 @@ $config: (
   ),
   colors: (
     primary: (
-      color: #ffffffff,
-      background-color: #000000ff,
+      color: #ffffff,
+      background-color: #000000,
       border-color: #ffffffff,
     ),
     disabled: (
-      color: #808080ff,
-      background-color: lighten(#00000000, 12%),
+      color: #808080,
+      background-color: lighten(#000000, 12%),
       border-color: none,
+    ),
+    error: (
+      color: #dd4545,
+      background-color: lighten(#000000, 12%),
+      border-color: #dd4545,
     ),
   ),
 );
