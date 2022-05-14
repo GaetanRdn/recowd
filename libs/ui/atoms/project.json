@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/ui/atoms",
   "sourceRoot": "libs/ui/atoms/src",
   "prefix": "rc",
   "targets": {

@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/utility-types",
   "sourceRoot": "libs/utility-types/src",
   "prefix": "rc",
   "targets": {
