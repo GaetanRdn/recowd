@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/design-system",
   "sourceRoot": "apps/design-system/src",
   "prefix": "recowd",
   "targets": {

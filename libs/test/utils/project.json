@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/test/utils",
   "sourceRoot": "libs/test/utils/src",
   "prefix": "rc",
   "targets": {
