@@ -100,7 +100,6 @@
       "executor": "@storybook/angular:start-storybook",
       "options": {
         "port": 4400,
-        "staticDir": ["apps/design-system/src/assets"],
         "configDir": "apps/design-system/.storybook",
         "browserTarget": "design-system:build",
         "compodoc": false
