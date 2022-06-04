@@ -114,6 +114,42 @@ rc-card {
   color: #b3b3b3;
 }
 
+rc-checkbox {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  line-height: 1.6rem;
+  position: relative;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 1.6rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+rc-checkbox:is(.rc-disabled) {
+  cursor: default;
+}
+
+rc-checkbox:is(.rc-disabled) > * {
+  color: #808080;
+}
+
+rc-checkbox.rc-label-before {
+  flex-direction: row-reverse;
+}
+
+rc-checkbox label {
+  color: #ffffff;
+  cursor: inherit;
+}
+
+rc-checkbox input {
+  position: absolute;
+  left: -9999px;
+}
+
 rc-form-field {
   display: inline-flex;
   flex-direction: column;

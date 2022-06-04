@@ -1,0 +1,9 @@
+@function map-get-deep($map, $level, $subLevel) {
+  @return map-get($map, $level, $subLevel);
+}
+
+@mixin use-typography($typography) {
+  @each $key in font-size, font-family, font-weight, line-height {
+    #{$key}: map-get($typography, $key);
+  }
+}
