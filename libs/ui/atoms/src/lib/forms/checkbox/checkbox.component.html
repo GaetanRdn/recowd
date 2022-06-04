@@ -1,13 +1,13 @@
-<input
-  type="checkbox"
-  [value]="value"
-  [checked]="checked"
-  [disabled]="disabled"
-/>
-
 <rc-material-icon *ngIf="!checked">check_box_outline_blank</rc-material-icon>
 <rc-material-icon *ngIf="checked">check_box</rc-material-icon>
 
 <label>
+  <input
+    #input
+    [checked]="checked"
+    [disabled]="disabled"
+    [value]="value"
+    type="checkbox"
+  />
   <ng-content></ng-content>
 </label>

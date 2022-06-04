@@ -21,7 +21,6 @@ import { CoerceBoolean } from '@recowd/utility-types';
     '[class.rc-error]': 'hasError',
   },
   templateUrl: 'form-field.component.html',
-  styleUrls: ['form-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormFieldComponent {

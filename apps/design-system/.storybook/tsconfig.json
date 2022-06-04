@@ -3,6 +3,13 @@
   "compilerOptions": {
     "emitDecoratorMetadata": true
   },
-  "exclude": ["../**/*.spec.ts", "jest.config.ts"],
+  "exclude": [
+    "../../../libs/**/test-setup.ts",
+    "../../../libs/**/*.spec.ts",
+    "../../../libs/**/*.models.ts",
+    "../../../libs/**/jest.config.ts",
+    "../../../libs/**/index.ts",
+    "../../../libs/test/*"
+  ],
   "include": ["../src/**/*", "../../../libs/**/*", "*.js"]
 }

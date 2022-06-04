@@ -20,6 +20,7 @@ import {
 } from '@recowd/utility-types';
 import { MaterialIconModule } from '../../material-icon/material-icon.component';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { FormFieldElementDirective } from '../form-field/form-field-element.directive';
 
 @Component({
   selector: 'rc-checkbox',
@@ -34,20 +35,34 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
       useExisting: forwardRef(() => CheckboxComponent),
       multi: true,
     },
+    {
+      provide: FormFieldElementDirective,
+      useExisting: forwardRef(() => CheckboxComponent),
+    },
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CheckboxComponent<ValueType>
-  implements TypedControlValueAccessor<Nullable<ValueType>>
+  implements
+    TypedControlValueAccessor<Nullable<ValueType>>,
+    FormFieldElementDirective
 {
   static ngAcceptInputType_labelBefore: BooleanInput;
   static ngAcceptInputType_checked: BooleanInput;
   static ngAcceptInputType_disabled: BooleanInput;
+  static ngAcceptInputType_required: BooleanInput;
+  static ngAcceptInputType_hasError: BooleanInput;
 
   @Input() @CoerceBoolean() public labelBefore = false;
 
   @Input() @CoerceBoolean() public checked = false;
+
+  @Input() @CoerceBoolean() public required = false;
+
+  @Input() @CoerceBoolean() public hasError = false;
+
   @Input() public value!: ValueType;
+
   @Output() public readonly checkedChange: EventEmitter<
     CheckboxComponent<ValueType>
   > = new EventEmitter<CheckboxComponent<ValueType>>();
@@ -64,9 +79,16 @@ export class CheckboxComponent<ValueType>
     this._disabled = disabled;
   }
 
-  @HostListener('click')
-  public toggle(): void {
+  get focused(): boolean {
+    return false;
+  }
+
+  @HostListener('click', ['$event'])
+  public toggle(event?: Event): void {
     if (!this.disabled) {
+      event?.stopPropagation();
+      event?.stopImmediatePropagation();
+
       this.checked = !this.checked;
       this.onChange(this.checked ? this.value : null);
       this.onTouched();
@@ -89,6 +111,10 @@ export class CheckboxComponent<ValueType>
   public setDisabledState(isDisabled: boolean): void {
     this._disabled = isDisabled;
     this._cdr.markForCheck();
+  }
+
+  public onFormFieldClick(): void {
+    this.toggle();
   }
 
   private onChange: OnChangeFn<Nullable<ValueType>> = () => {

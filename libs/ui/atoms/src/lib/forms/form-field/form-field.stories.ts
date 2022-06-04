@@ -1,8 +1,9 @@
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { Args, Meta, moduleMetadata, Story } from '@storybook/angular';
 import { FormFieldComponent, FormFieldModule } from './form-field.component';
 import { InputModule } from '../input/input.directive';
-import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CheckboxModule } from '../checkbox/checkbox.component';
 
 export default {
   title: 'atoms/forms/form-field',
@@ -13,86 +14,52 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [FormFieldModule, InputModule, ReactiveFormsModule],
+      imports: [
+        FormFieldModule,
+        InputModule,
+        CheckboxModule,
+        ReactiveFormsModule,
+      ],
     }),
   ],
-  argTypes: {
-    outlined: { control: false },
-  },
 } as Meta<FormFieldComponent>;
 
-const templateWithInput: Story<FormFieldComponent> = (
-  args: FormFieldComponent
-) => ({
+const templateWithInput: Story = (args: Args) => ({
   props: {
     outlined: args['outlined'],
+    disabled: args['disabled'],
+    required: args['required'],
   },
   template: `
     <rc-form-field [outlined]="outlined">
       <rc-label>Field label</rc-label>
-      <input rcInput placeholder="Type something"/>
+      <input rcInput placeholder="Type something" [disabled]="disabled" [required]="required"/>
     </rc-form-field>`,
 });
 
 export const WithInput = templateWithInput.bind({});
 WithInput.args = {
   outlined: false,
+  disabled: false,
+  required: false,
 };
 
-export const OutlinedWithInput = templateWithInput.bind({});
-OutlinedWithInput.args = {
-  outlined: true,
-};
-
-const templateWithInputDisabled: Story<FormFieldComponent> = (
-  args: FormFieldComponent
-) => ({
+const templateWithCheckbox: Story = (args: Args) => ({
   props: {
     outlined: args['outlined'],
+    disabled: args['disabled'],
+    required: args['required'],
   },
   template: `
     <rc-form-field [outlined]="outlined">
       <rc-label>Field label</rc-label>
-      <input rcInput placeholder="Type something" disabled/>
+      <rc-checkbox [disabled]="disabled" [required]="required">Used</rc-checkbox>
     </rc-form-field>`,
 });
 
-export const WithInputDisabled = templateWithInputDisabled.bind({});
-WithInputDisabled.args = {
+export const WithCheckbox = templateWithCheckbox.bind({});
+WithCheckbox.args = {
   outlined: false,
+  disabled: false,
+  required: false,
 };
-
-const templateWithInputRequired: Story<FormFieldComponent> = (
-  args: FormFieldComponent
-) => ({
-  props: {
-    outlined: args['outlined'],
-  },
-  template: `
-    <rc-form-field [outlined]="outlined">
-      <rc-label>Field label</rc-label>
-      <input rcInput placeholder="Type something" required/>
-    </rc-form-field>`,
-});
-
-export const WithInputRequired = templateWithInputRequired.bind({});
-WithInputRequired.args = {
-  outlined: false,
-  required: true,
-};
-
-const templateWithReactiveInput: Story<FormFieldComponent> = (
-  args: FormFieldComponent
-) => ({
-  props: {
-    outlined: args['outlined'],
-    control: new FormControl(null, Validators.required),
-  },
-  template: `
-    <rc-form-field [outlined]="outlined">
-      <rc-label>Field label</rc-label>
-      <input rcInput placeholder="Type something" [formControl]="control" />
-    </rc-form-field>`,
-});
-
-export const WithReactiveInput = templateWithReactiveInput.bind({});
