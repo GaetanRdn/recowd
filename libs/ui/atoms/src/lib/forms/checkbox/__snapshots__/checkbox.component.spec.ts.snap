@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxComponent Basic should create 1`] = `
+<rc-checkbox>
+  <input
+    type="checkbox"
+    value="val"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should create checked 1`] = `
+<rc-checkbox>
+  <input
+    type="checkbox"
+    value="val"
+  />
+  
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box
+  </rc-material-icon>
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should create disabled 1`] = `
+<rc-checkbox
+  class="rc-disabled"
+>
+  <input
+    disabled=""
+    type="checkbox"
+    value="val"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should create with label before 1`] = `
+<rc-checkbox
+  class="rc-label-before"
+>
+  <input
+    type="checkbox"
+    value="val"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should not change when disabled 1`] = `
+<rc-checkbox
+  class="rc-disabled"
+>
+  <input
+    disabled=""
+    type="checkbox"
+    value="val"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should toggle checked on click (was checked false) 1`] = `
+<rc-checkbox>
+  <input
+    type="checkbox"
+    value="val"
+  />
+  
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box
+  </rc-material-icon>
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Basic should toggle checked on click (was checked true) 1`] = `
+<rc-checkbox>
+  <input
+    type="checkbox"
+    value="val"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Reactive form should create 1`] = `
+<rc-checkbox
+  class="ng-untouched ng-pristine ng-valid"
+>
+  <input
+    type="checkbox"
+    value="toto"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Reactive form should create checked 1`] = `
+<rc-checkbox
+  class="ng-untouched ng-pristine ng-valid"
+>
+  <input
+    type="checkbox"
+    value="toto"
+  />
+  
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box
+  </rc-material-icon>
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Reactive form should create disabled 1`] = `
+<rc-checkbox
+  class="rc-disabled ng-untouched ng-pristine"
+>
+  <input
+    disabled=""
+    type="checkbox"
+    value="toto"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Reactive form should set control value to null on click 1`] = `
+<rc-checkbox
+  class="ng-valid ng-touched ng-dirty"
+>
+  <input
+    type="checkbox"
+    value="toto"
+  />
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box_outline_blank
+  </rc-material-icon>
+  
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
+
+exports[`CheckboxComponent Reactive form should update control on click 1`] = `
+<rc-checkbox
+  class="ng-valid ng-touched ng-dirty"
+>
+  <input
+    type="checkbox"
+    value="toto"
+  />
+  
+  <rc-material-icon
+    class="material-icons"
+  >
+    check_box
+  </rc-material-icon>
+  
+  <label>
+    Label 
+  </label>
+</rc-checkbox>
+`;
