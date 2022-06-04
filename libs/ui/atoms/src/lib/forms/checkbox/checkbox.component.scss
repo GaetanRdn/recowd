@@ -1,0 +1,40 @@
+@use '../../assets/utils';
+
+@mixin rc-checkbox($config) {
+  $typography: utils.map-get-deep($config, typography, input);
+  $colors: map-get($config, colors);
+  $primary: utils.map-get-deep($config, colors, primary);
+
+  rc-checkbox {
+    @include utils.use-typography($typography);
+    position: relative;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    gap: 1.6rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+
+    &:is(.rc-disabled) {
+      cursor: default;
+
+      > * {
+        color: map-get(map-get($colors, disabled), color);
+      }
+    }
+
+    &.rc-label-before {
+      flex-direction: row-reverse;
+    }
+
+    label {
+      color: map-get($primary, color);
+      cursor: inherit;
+    }
+
+    input {
+      position: absolute;
+      left: -9999px;
+    }
+  }
+}

@@ -24,7 +24,7 @@
         ],
         "styles": ["apps/design-system/src/styles.scss"],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/ui/atoms/src/lib"]
+          "includePaths": ["libs/ui/atoms/src/lib/assets"]
         },
         "scripts": []
       },
@@ -97,15 +97,12 @@
       }
     },
     "storybook": {
-      "executor": "@nrwl/storybook:storybook",
+      "executor": "@storybook/angular:start-storybook",
       "options": {
-        "uiFramework": "@storybook/angular",
         "port": 4400,
-        "config": {
-          "configFolder": "apps/design-system/.storybook"
-        },
-        "staticDir": ["apps/design-system/src/assets"],
-        "projectBuildConfig": "design-system"
+        "configDir": "apps/design-system/.storybook",
+        "browserTarget": "design-system:build",
+        "compodoc": false
       },
       "configurations": {
         "ci": {
@@ -114,15 +111,13 @@
       }
     },
     "build-storybook": {
-      "executor": "@nrwl/storybook:build",
+      "executor": "@storybook/angular:build-storybook",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "uiFramework": "@storybook/angular",
-        "outputPath": "dist/storybook/design-system",
-        "config": {
-          "configFolder": "apps/design-system/.storybook"
-        },
-        "projectBuildConfig": "design-system"
+        "outputDir": "dist/storybook/design-system",
+        "configDir": "apps/design-system/.storybook",
+        "browserTarget": "design-system:build",
+        "compodoc": false
       },
       "configurations": {
         "ci": {

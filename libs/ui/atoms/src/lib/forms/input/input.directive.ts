@@ -11,6 +11,7 @@ import {
   Output,
 } from '@angular/core';
 import {
+  BooleanInput,
   CoerceBoolean,
   CoerceString,
   Nullable,
@@ -37,6 +38,9 @@ export class InputDirective
   extends FormFieldElementDirective
   implements TypedControlValueAccessor<Nullable<string>>
 {
+  static ngAcceptInputType_disabled: BooleanInput;
+  static ngAcceptInputType_required: BooleanInput;
+
   @HostBinding('value')
   @CoerceString()
   @Input()
