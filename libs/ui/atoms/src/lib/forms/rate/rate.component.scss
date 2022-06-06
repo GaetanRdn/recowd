@@ -1,0 +1,17 @@
+@use '../../assets/utils';
+
+@mixin rc-rate($config) {
+  $colors: map-get($config, colors);
+
+  rc-rate {
+    &:not(.rc-disabled) {
+      cursor: pointer;
+    }
+
+    &.rc-disabled {
+      rc-material-icon {
+        color: utils.map-get-deep($colors, disabled, color);
+      }
+    }
+  }
+}

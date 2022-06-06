@@ -1,0 +1,8 @@
+<rc-material-icon
+  *ngFor="let nb of range"
+  (click)="setValue(nb)"
+  [class.rc-selected]="value >= nb"
+  [@zoom]="value >= nb ? 'zoomed' : 'default'"
+>
+  {{ nb <= value ? 'star_rate' : 'star_border' }}
+</rc-material-icon>
