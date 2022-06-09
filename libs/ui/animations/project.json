@@ -1,13 +1,12 @@
 {
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/ui/animations/src",
   "prefix": "rc",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": [
-        "dist/libs/ui/animations"
-      ],
+      "outputs": ["dist/libs/ui/animations"],
       "options": {
         "project": "libs/ui/animations/ng-package.json"
       },
@@ -31,7 +30,5 @@
       }
     }
   },
-  "tags": [
-    "ui"
-  ]
+  "tags": ["ui"]
 }

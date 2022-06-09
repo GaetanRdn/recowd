@@ -1,7 +1,11 @@
 import { Args, Meta, moduleMetadata, Story } from '@storybook/angular';
 import { InputDirective, InputModule } from './input.directive';
 import { action } from '@storybook/addon-actions';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormsModule,
+  ReactiveFormsModule,
+  UntypedFormControl,
+} from '@angular/forms';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -56,7 +60,7 @@ TemplateDriven.args = {
 const templateForReactiveForms: Story = (args: Args) => ({
   props: {
     valueChange: action('log'),
-    fc: new FormControl({
+    fc: new UntypedFormControl({
       value: args['initialValue'],
       disabled: args['disabledControl'],
     }),
