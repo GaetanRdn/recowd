@@ -3,7 +3,7 @@
 exports[`RateComponent should create 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -18,7 +18,7 @@ exports[`RateComponent should create disabled 1`] = `
   class="rc-disabled"
 >
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -31,35 +31,35 @@ exports[`RateComponent should create disabled 1`] = `
 exports[`RateComponent should create with 3 filled stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -72,21 +72,21 @@ exports[`RateComponent should create with 3 filled stars 1`] = `
 exports[`RateComponent should create with 3 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -99,35 +99,35 @@ exports[`RateComponent should create with 3 stars 1`] = `
 exports[`RateComponent should create with 5 filled stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="rc-selected ng-trigger ng-trigger-zoom"
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_rate
@@ -140,35 +140,35 @@ exports[`RateComponent should create with 5 filled stars 1`] = `
 exports[`RateComponent should create with 5 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -181,35 +181,35 @@ exports[`RateComponent should create with 5 stars 1`] = `
 exports[`RateComponent should deselect 1 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -222,35 +222,35 @@ exports[`RateComponent should deselect 1 stars 1`] = `
 exports[`RateComponent should deselect 4 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -265,7 +265,7 @@ exports[`RateComponent should not select when disabled 1`] = `
   class="rc-disabled"
 >
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -278,35 +278,35 @@ exports[`RateComponent should not select when disabled 1`] = `
 exports[`RateComponent should select 1 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom rc-selected ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border
@@ -319,35 +319,35 @@ exports[`RateComponent should select 1 stars 1`] = `
 exports[`RateComponent should select 4 stars 1`] = `
 <rc-rate>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom rc-selected ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom rc-selected ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom rc-selected ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom rc-selected ng-animating"
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
     style=""
   >
      star_rate
 
   </rc-material-icon>
   <rc-material-icon
-    class="ng-trigger ng-trigger-zoom"
+    class="ng-trigger ng-trigger-zoom material-icons"
     style=""
   >
      star_border

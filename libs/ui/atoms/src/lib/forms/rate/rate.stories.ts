@@ -1,18 +1,18 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { RateComponent, RateModule } from './rate.component';
+import { RateComponent } from './rate.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'atoms/forms/rate',
-  component: RateComponent,
   parameters: {
     badges: [BADGE.STABLE],
-    jest: 'rate.component',
+    jest: 'rate',
   },
   decorators: [
     moduleMetadata({
-      imports: [RateModule, BrowserAnimationsModule],
+      imports: [RateComponent, BrowserAnimationsModule],
     }),
   ],
 } as Meta<RateComponent>;
@@ -22,7 +22,9 @@ const template: Story<RateComponent> = (args: RateComponent) => ({
     nbStars: args['nbStars'],
     value: args['value'],
     disabled: args['disabled'],
+    valueChange: action('valueChange'),
   },
+  template: `<rc-rate [nbStars]="nbStars" [value]="value" [disabled]="disabled" (valueChange)="valueChange($event)"></rc-rate>`,
 });
 
 export const Default = template.bind({});

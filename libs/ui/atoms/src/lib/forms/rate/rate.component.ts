@@ -3,7 +3,6 @@ import {
   Component,
   EventEmitter,
   Input,
-  NgModule,
   OnChanges,
   Output,
 } from '@angular/core';
@@ -14,6 +13,8 @@ import { zoomAnimation } from '@recowd/ui-animations';
 
 @Component({
   selector: 'rc-rate',
+  standalone: true,
+  imports: [MaterialIconModule, CommonModule],
   host: {
     '[class.rc-disabled]': 'disabled',
   },
@@ -62,10 +63,3 @@ export class RateComponent implements OnChanges {
     }
   }
 }
-
-@NgModule({
-  declarations: [RateComponent],
-  exports: [RateComponent],
-  imports: [MaterialIconModule, CommonModule],
-})
-export class RateModule {}

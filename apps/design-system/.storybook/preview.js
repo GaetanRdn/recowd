@@ -5,7 +5,7 @@ import results from '../../../.jest-test-results.json';
 export const decorators = [
   withTests({
     results,
-    filesExt: '(\\.specs?)?(\\.ts)?$',
+    filesExt: '((\\.directive?)|(\\.component?)?)?(\\.specs?)?(\\.ts)?$',
   }),
 ];
 

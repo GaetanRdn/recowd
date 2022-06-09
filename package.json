@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "build:storybook": "nx run storybook:build-storybook",
-    "test:generate-output": "nx run-many --target=test --all --json --outputFile=.jest-test-results.json"
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
   },
   "private": true,
   "dependencies": {

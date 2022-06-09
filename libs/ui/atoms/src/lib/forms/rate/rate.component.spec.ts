@@ -10,8 +10,8 @@ describe('RateComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [HostComponent, RateComponent],
-      imports: [NoopAnimationsModule],
+      declarations: [HostComponent],
+      imports: [NoopAnimationsModule, RateComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
