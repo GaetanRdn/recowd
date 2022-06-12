@@ -2,14 +2,23 @@ import {
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
+  forwardRef,
   Input,
   OnChanges,
   Output,
 } from '@angular/core';
 import { MaterialIconModule } from '../../material-icon/material-icon.component';
 import { CommonModule } from '@angular/common';
-import { BooleanInput, CoerceBoolean, NgChanges } from '@recowd/utility-types';
+import {
+  BooleanInput,
+  CoerceBoolean,
+  NgChanges,
+  OnChangeFn,
+  OnTouchedFn,
+  TypedControlValueAccessor,
+} from '@recowd/utility-types';
 import { zoomAnimation } from '@recowd/ui-animations';
+import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'rc-rate',
@@ -20,10 +29,19 @@ import { zoomAnimation } from '@recowd/ui-animations';
   },
   templateUrl: './rate.component.html',
   styleUrls: ['./rate.component.scss'],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => RateComponent),
+      multi: true,
+    },
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [zoomAnimation],
 })
-export class RateComponent implements OnChanges {
+export class RateComponent
+  implements OnChanges, TypedControlValueAccessor<number>
+{
   static ngAcceptInputType_disabled: BooleanInput;
 
   @Input() public nbStars = 1;
@@ -60,6 +78,30 @@ export class RateComponent implements OnChanges {
         this.value = 0;
       }
       this.valueChange.emit(this.value);
+      this.onChange(this.value);
+      this.onTouched();
     }
   }
+
+  public registerOnChange(fn: OnChangeFn<number>): void {
+    this.onChange = fn;
+  }
+
+  public registerOnTouched(fn: OnTouchedFn): void {
+    this.onTouched = fn;
+  }
+
+  public setDisabledState(isDisabled: boolean): void {
+    this.disabled = isDisabled;
+  }
+
+  public writeValue(value: number): void {
+    this.value = value;
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  private onChange: OnChangeFn<number> = () => {};
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  private onTouched: OnTouchedFn = () => {};
 }
