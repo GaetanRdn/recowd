@@ -1,7 +1,7 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { MaterialIconComponent } from '../material-icon/material-icon.component';
 import { ToolbarComponent } from './toolbar.component';
-import { ButtonModule } from '../button/button.directive';
+import { ButtonDirective } from '../button/button.directive';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -13,7 +13,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [ToolbarComponent, MaterialIconComponent, ButtonModule],
+      imports: [ToolbarComponent, MaterialIconComponent, ButtonDirective],
     }),
   ],
 } as Meta<ToolbarComponent>;
