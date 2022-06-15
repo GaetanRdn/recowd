@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, NgModule } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'rc-toolbar',
@@ -8,9 +8,3 @@ import { ChangeDetectionStrategy, Component, NgModule } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ToolbarComponent {}
-
-@NgModule({
-  declarations: [ToolbarComponent],
-  exports: [ToolbarComponent],
-})
-export class ToolbarModule {}
