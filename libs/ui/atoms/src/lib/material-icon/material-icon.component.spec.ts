@@ -9,7 +9,8 @@ describe('MaterialIconComponent', () => {
 
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
-      declarations: [HostComponent, MaterialIconComponent],
+      declarations: [HostComponent],
+      imports: [MaterialIconComponent],
     }).compileComponents()));
 
   beforeEach(() => (templateLookup = new TemplateLookup(HostComponent)));
