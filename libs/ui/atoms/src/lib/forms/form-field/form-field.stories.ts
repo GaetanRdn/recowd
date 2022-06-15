@@ -3,7 +3,7 @@ import { Args, Meta, moduleMetadata, Story } from '@storybook/angular';
 import { FormFieldComponent, FormFieldModule } from './form-field.component';
 import { InputDirective } from '../input/input.directive';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CheckboxModule } from '../checkbox/checkbox.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 export default {
   title: 'atoms/forms/form-field',
@@ -17,7 +17,7 @@ export default {
       imports: [
         FormFieldModule,
         InputDirective,
-        CheckboxModule,
+        CheckboxComponent,
         ReactiveFormsModule,
       ],
     }),

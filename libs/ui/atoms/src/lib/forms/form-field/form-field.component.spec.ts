@@ -4,13 +4,13 @@ import { FormFieldComponent, FormFieldModule } from './form-field.component';
 import { InputDirective } from '../input/input.directive';
 import { TemplateLookup } from '@recowd/test/utils';
 import { FormFieldElementDirective } from './form-field-element.directive';
-import { CheckboxModule } from '../checkbox/checkbox.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 describe('FormFieldComponent', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [HostWithInputComponent, HostWithCheckboxComponent],
-      imports: [FormFieldModule, InputDirective, CheckboxModule],
+      imports: [FormFieldModule, InputDirective, CheckboxComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents()));
 

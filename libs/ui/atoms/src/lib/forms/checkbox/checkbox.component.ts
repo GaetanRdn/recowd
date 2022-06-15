@@ -6,7 +6,6 @@ import {
   forwardRef,
   HostListener,
   Input,
-  NgModule,
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -24,6 +23,8 @@ import { FormFieldElementDirective } from '../form-field/form-field-element.dire
 
 @Component({
   selector: 'rc-checkbox',
+  standalone: true,
+  imports: [CommonModule, MaterialIconComponent],
   host: {
     '[class.rc-label-before]': 'labelBefore',
     '[class.rc-disabled]': 'disabled',
@@ -125,10 +126,3 @@ export class CheckboxComponent<ValueType>
     // default method
   };
 }
-
-@NgModule({
-  declarations: [CheckboxComponent],
-  exports: [CheckboxComponent],
-  imports: [CommonModule, MaterialIconComponent],
-})
-export class CheckboxModule {}
