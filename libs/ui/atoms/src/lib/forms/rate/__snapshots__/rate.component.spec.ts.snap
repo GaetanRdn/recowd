@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RateComponent Basic should create 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should create disabled 1`] = `
+<rc-rate
+  class="rc-disabled"
+>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should create with 3 filled stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should create with 3 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should create with 5 filled stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should create with 5 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should deselect 1 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should deselect 4 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should not select when disabled 1`] = `
+<rc-rate
+  class="rc-disabled"
+>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should select 1 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Basic should select 4 stars 1`] = `
+<rc-rate>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons rc-selected ng-animating"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Reactive form should create 1`] = `
+<rc-rate
+  class="ng-untouched ng-pristine ng-valid"
+>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Reactive form should create disabled 1`] = `
+<rc-rate
+  class="rc-disabled ng-untouched ng-pristine"
+>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Reactive form should create with value 3 1`] = `
+<rc-rate
+  class="ng-untouched ng-pristine ng-valid"
+>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;
+
+exports[`RateComponent Reactive form should update control 1`] = `
+<rc-rate
+  class="ng-valid ng-touched ng-dirty"
+>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="rc-selected ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_rate
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons ng-animating"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  <rc-material-icon
+    class="ng-trigger ng-trigger-zoom material-icons"
+    style=""
+  >
+     star_border
+
+  </rc-material-icon>
+  
+</rc-rate>
+`;

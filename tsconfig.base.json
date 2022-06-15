@@ -18,7 +18,9 @@
     "baseUrl": ".",
     "paths": {
       "@recowd/test/utils": ["libs/test/utils/src/index.ts"],
+      "@recowd/ui-animations": ["libs/ui/animations/src/index.ts"],
       "@recowd/ui-atoms": ["libs/ui/atoms/src/index.ts"],
+      "@recowd/ui/animations": ["libs/ui/animations/src/index.ts"],
       "@recowd/utility-types": ["libs/utility-types/src/index.ts"]
     }
   },

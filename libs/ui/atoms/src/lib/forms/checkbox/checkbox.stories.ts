@@ -2,7 +2,7 @@ import { BADGE } from '@geometricpanda/storybook-addon-badges';
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { CheckboxComponent, CheckboxModule } from './checkbox.component';
 import { action } from '@storybook/addon-actions';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, UntypedFormControl } from '@angular/forms';
 
 export default {
   title: 'atoms/forms/checkbox',
@@ -42,7 +42,7 @@ const reactiveTemplate: Story<CheckboxComponent<number>> = (
 ) => ({
   props: {
     labelBefore: args.labelBefore,
-    control: new FormControl({
+    control: new UntypedFormControl({
       value: args.checked ? 1 : null,
       disabled: args.disabled,
     }),

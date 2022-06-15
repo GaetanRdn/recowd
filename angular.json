@@ -3,6 +3,7 @@
   "projects": {
     "design-system": "apps/design-system",
     "test-utils": "libs/test/utils",
+    "ui-animations": "libs/ui/animations",
     "ui-atoms": "libs/ui/atoms",
     "utility-types": "libs/utility-types"
   }
