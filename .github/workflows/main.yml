@@ -7,6 +7,7 @@ on:
 
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
+  NX_BASE: origin/main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
