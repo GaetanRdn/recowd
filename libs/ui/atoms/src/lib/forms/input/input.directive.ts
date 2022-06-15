@@ -23,7 +23,7 @@ import { FormFieldElementDirective } from '../form-field/form-field-element.dire
 
 @Directive({
   selector: 'input[rcInput]',
-  standaloe: true,
+  standalone: true,
   host: {
     class: 'rc-input',
   },
