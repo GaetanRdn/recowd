@@ -5,6 +5,7 @@
 @use '../forms/form-field/form-field.component';
 @use '../forms/input/input';
 @use '../forms/label/label.component';
+@use '../forms/rate/rate.component';
 @use '../material-icon/material-icon.component';
 @use '../nav-menu/nav-menu.component';
 @use '../toolbar/toolbar.component';
@@ -19,5 +20,6 @@
   @include label.rc-label($config);
   @include material-icon.rc-material-icon($config);
   @include nav-menu.rc-nav-menu($config);
+  @include rate.rc-rate($config);
   @include toolbar.rc-toolbar($config);
 }

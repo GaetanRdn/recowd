@@ -19,7 +19,7 @@ html {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  border: 2px solid #ffffffff;
+  border: 2px solid white;
 }
 
 button {
@@ -68,9 +68,7 @@ rc-card {
 .rc-card-header:not(:empty) {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-column-gap: 1rem;
   column-gap: 1rem;
-  grid-row-gap: 0.4rem;
   row-gap: 0.4rem;
   align-items: center;
   padding: 1.6rem 1.6rem 0 1.6rem;
@@ -157,7 +155,7 @@ rc-form-field {
   background-color: #000000;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
-  border-bottom: 0.1rem solid #ffffffff;
+  border-bottom: 0.1rem solid white;
 }
 
 rc-form-field:not(.rc-disabled) {
@@ -172,7 +170,7 @@ rc-form-field:not(.rc-disabled).rc-outlined {
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
   border-bottom-width: 0;
-  outline: 0.1rem solid #ffffffff;
+  outline: 0.1rem solid white;
 }
 
 rc-form-field:not(.rc-disabled).rc-outlined.rc-focused {
@@ -270,7 +268,15 @@ rc-nav-menu {
 
 .rc-nav-menu-item.rc-selected {
   font-weight: bold;
-  border-left: 2px solid #ffffffff;
+  border-left: 2px solid white;
+}
+
+rc-rate:not(.rc-disabled) {
+  cursor: pointer;
+}
+
+rc-rate.rc-disabled rc-material-icon {
+  color: #808080;
 }
 
 rc-toolbar {
