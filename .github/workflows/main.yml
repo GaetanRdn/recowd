@@ -8,6 +8,10 @@ on:
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   main:
     name: Nx Cloud - Main Job
@@ -20,7 +24,7 @@ jobs:
         npx nx affected --target=lint --parallel=3
         npx nx affected --target=test --parallel=3 --ci --code-coverage
         npx nx affected --target=build --parallel=3
-      install-commands: 'npm ci --prefer-offline'
+      install-commands: 'npm ci --prefer-offline --legacy-peer-deps'
 
   agents:
     name: Nx Cloud - Agents
