@@ -1,5 +1,5 @@
 import { Args, Meta, moduleMetadata, Story } from '@storybook/angular';
-import { InputDirective } from './input.directive';
+import { InputDirective, InputModule } from './input.directive';
 import { action } from '@storybook/addon-actions';
 import {
   FormsModule,
@@ -17,7 +17,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [InputDirective, ReactiveFormsModule, FormsModule],
+      imports: [InputModule, ReactiveFormsModule, FormsModule],
     }),
   ],
   argTypes: {

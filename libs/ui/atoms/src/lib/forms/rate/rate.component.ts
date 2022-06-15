@@ -4,10 +4,11 @@ import {
   EventEmitter,
   forwardRef,
   Input,
+  NgModule,
   OnChanges,
   Output,
 } from '@angular/core';
-import { MaterialIconComponent } from '../../material-icon/material-icon.component';
+import { MaterialIconModule } from '../../material-icon/material-icon.component';
 import { CommonModule } from '@angular/common';
 import {
   BooleanInput,
@@ -22,8 +23,6 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'rc-rate',
-  standalone: true,
-  imports: [MaterialIconComponent, CommonModule],
   host: {
     '[class.rc-disabled]': 'disabled',
   },
@@ -105,3 +104,10 @@ export class RateComponent
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   private onTouched: OnTouchedFn = () => {};
 }
+
+@NgModule({
+  declarations: [RateComponent],
+  exports: [RateComponent],
+  imports: [CommonModule, MaterialIconModule],
+})
+export class RateModule {}

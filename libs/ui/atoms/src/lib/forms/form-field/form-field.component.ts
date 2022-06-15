@@ -7,7 +7,7 @@ import {
   Input,
   NgModule,
 } from '@angular/core';
-import { LabelComponent } from '../label/label.component';
+import { LabelModule } from '../label/label.component';
 import { FormFieldElementDirective } from './form-field-element.directive';
 import { CoerceBoolean } from '@recowd/utility-types';
 
@@ -56,7 +56,6 @@ export class FormFieldComponent {
 
 @NgModule({
   declarations: [FormFieldComponent],
-  imports: [LabelComponent],
-  exports: [FormFieldComponent, LabelComponent],
+  exports: [FormFieldComponent, LabelModule],
 })
 export class FormFieldModule {}

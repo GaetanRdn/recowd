@@ -1,7 +1,7 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
-import { MaterialIconComponent } from '../material-icon/material-icon.component';
+import { MaterialIconModule } from '../material-icon/material-icon.component';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { AvatarDirective } from './avatar.directive';
+import { AvatarDirective, AvatarModule } from './avatar.directive';
 
 export default {
   title: 'atoms/avatar',
@@ -12,7 +12,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [AvatarDirective, MaterialIconComponent],
+      imports: [AvatarModule, MaterialIconModule],
     }),
   ],
 } as Meta<AvatarDirective>;

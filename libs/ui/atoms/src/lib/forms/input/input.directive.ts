@@ -6,6 +6,7 @@ import {
   HostBinding,
   HostListener,
   Input,
+  NgModule,
   Optional,
   Output,
 } from '@angular/core';
@@ -23,7 +24,6 @@ import { FormFieldElementDirective } from '../form-field/form-field-element.dire
 
 @Directive({
   selector: 'input[rcInput]',
-  standalone: true,
   host: {
     class: 'rc-input',
   },
@@ -138,3 +138,9 @@ export class InputDirective
     this._elementRef.nativeElement.focus();
   }
 }
+
+@NgModule({
+  declarations: [InputDirective],
+  exports: [InputDirective],
+})
+export class InputModule {}

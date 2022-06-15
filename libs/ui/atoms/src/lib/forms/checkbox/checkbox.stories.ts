@@ -1,6 +1,6 @@
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
-import { CheckboxComponent } from './checkbox.component';
+import { CheckboxComponent, CheckboxModule } from './checkbox.component';
 import { action } from '@storybook/addon-actions';
 import { ReactiveFormsModule, UntypedFormControl } from '@angular/forms';
 
@@ -13,7 +13,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [CheckboxComponent, ReactiveFormsModule],
+      imports: [CheckboxModule, ReactiveFormsModule],
     }),
   ],
 } as Meta<CheckboxComponent<number>>;

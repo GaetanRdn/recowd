@@ -11,8 +11,9 @@ describe('InputDirective', () => {
         DefaultHostComponent,
         DisabledHostComponent,
         ReactiveFormHostComponent,
+        InputDirective,
       ],
-      imports: [ReactiveFormsModule, InputDirective],
+      imports: [ReactiveFormsModule],
     }).compileComponents()));
 
   it('should create default', () => {
