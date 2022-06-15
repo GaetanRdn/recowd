@@ -1,10 +1,15 @@
-import { Directive } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 
 @Directive({
   selector: 'rc-material-icon[rcAvatar], img[rcAvatar]',
-  standalone: true,
   host: {
     class: 'rc-avatar',
   },
 })
 export class AvatarDirective {}
+
+@NgModule({
+  declarations: [AvatarDirective],
+  exports: [AvatarDirective],
+})
+export class AvatarModule {}

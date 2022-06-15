@@ -1,9 +1,9 @@
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 import { Args, Meta, moduleMetadata, Story } from '@storybook/angular';
 import { FormFieldComponent, FormFieldModule } from './form-field.component';
-import { InputDirective } from '../input/input.directive';
+import { InputModule } from '../input/input.directive';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CheckboxComponent } from '../checkbox/checkbox.component';
+import { CheckboxModule } from '../checkbox/checkbox.component';
 
 export default {
   title: 'atoms/forms/form-field',
@@ -16,8 +16,8 @@ export default {
     moduleMetadata({
       imports: [
         FormFieldModule,
-        InputDirective,
-        CheckboxComponent,
+        InputModule,
+        CheckboxModule,
         ReactiveFormsModule,
       ],
     }),

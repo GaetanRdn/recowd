@@ -1,7 +1,7 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { TemplateLookup } from '@recowd/test/utils';
-import { LabelComponent } from './label.component';
+import { LabelModule } from './label.component';
 
 describe('LabelComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -9,7 +9,7 @@ describe('LabelComponent', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [LabelComponent],
+      imports: [LabelModule],
     }).compileComponents()));
 
   beforeEach(() => (templateLookup = new TemplateLookup(HostComponent)));
