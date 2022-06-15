@@ -18,7 +18,7 @@ import {
   OnTouchedFn,
   TypedControlValueAccessor,
 } from '@recowd/utility-types';
-import { MaterialIconModule } from '../../material-icon/material-icon.component';
+import { MaterialIconComponent } from '../../material-icon/material-icon.component';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { FormFieldElementDirective } from '../form-field/form-field-element.directive';
 
@@ -129,6 +129,6 @@ export class CheckboxComponent<ValueType>
 @NgModule({
   declarations: [CheckboxComponent],
   exports: [CheckboxComponent],
-  imports: [CommonModule, MaterialIconModule],
+  imports: [CommonModule, MaterialIconComponent],
 })
 export class CheckboxModule {}

@@ -1,5 +1,5 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
-import { MaterialIconModule } from '../material-icon/material-icon.component';
+import { MaterialIconComponent } from '../material-icon/material-icon.component';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 import { AvatarDirective } from './avatar.directive';
 
@@ -12,7 +12,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [AvatarDirective, MaterialIconModule],
+      imports: [AvatarDirective, MaterialIconComponent],
     }),
   ],
 } as Meta<AvatarDirective>;
