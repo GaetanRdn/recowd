@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MaterialIconComponent should be filled when type is null 1`] = `
+exports[`MaterialIconDirective should be filled when type is null 1`] = `
 <rc-material-icon
   class="material-icons"
 >
@@ -8,7 +8,7 @@ exports[`MaterialIconComponent should be filled when type is null 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should be filled when type is undefined 1`] = `
+exports[`MaterialIconDirective should be filled when type is undefined 1`] = `
 <rc-material-icon
   class="material-icons"
 >
@@ -16,7 +16,7 @@ exports[`MaterialIconComponent should be filled when type is undefined 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should be of type filled 1`] = `
+exports[`MaterialIconDirective should be of type filled 1`] = `
 <rc-material-icon
   class="material-icons"
 >
@@ -24,7 +24,7 @@ exports[`MaterialIconComponent should be of type filled 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should be of type outlined 1`] = `
+exports[`MaterialIconDirective should be of type outlined 1`] = `
 <rc-material-icon
   class="material-icons-outlined"
 >
@@ -32,7 +32,7 @@ exports[`MaterialIconComponent should be of type outlined 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should be of type sharp 1`] = `
+exports[`MaterialIconDirective should be of type sharp 1`] = `
 <rc-material-icon
   class="material-icons-sharp"
 >
@@ -40,7 +40,7 @@ exports[`MaterialIconComponent should be of type sharp 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should be of type two-tone 1`] = `
+exports[`MaterialIconDirective should be of type two-tone 1`] = `
 <rc-material-icon
   class="material-icons-two-tone"
 >
@@ -48,7 +48,7 @@ exports[`MaterialIconComponent should be of type two-tone 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should create icon home 1`] = `
+exports[`MaterialIconDirective should create icon home 1`] = `
 <rc-material-icon
   class="material-icons"
 >
@@ -56,7 +56,7 @@ exports[`MaterialIconComponent should create icon home 1`] = `
 </rc-material-icon>
 `;
 
-exports[`MaterialIconComponent should create icon pin_push 1`] = `
+exports[`MaterialIconDirective should create icon pin_push 1`] = `
 <rc-material-icon
   class="material-icons"
 >

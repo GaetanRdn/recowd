@@ -3,6 +3,7 @@ import { CoerceBoolean } from '@recowd/utility-types';
 
 @Directive({
   selector: 'button[rcButtonIcon], a[rcButtonIcon]',
+  standalone: true,
   host: {
     '[class.rc-button-icon]': 'true',
   },

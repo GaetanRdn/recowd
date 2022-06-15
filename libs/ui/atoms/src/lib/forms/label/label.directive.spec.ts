@@ -1,15 +1,15 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { TemplateLookup } from '@recowd/test/utils';
-import { LabelModule } from './label.component';
+import { LabelDirective } from './label.directive';
 
-describe('LabelComponent', () => {
+describe('LabelDirective', () => {
   let templateLookup: TemplateLookup<HostComponent>;
 
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [LabelModule],
+      imports: [LabelDirective],
     }).compileComponents()));
 
   beforeEach(() => (templateLookup = new TemplateLookup(HostComponent)));

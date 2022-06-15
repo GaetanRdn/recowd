@@ -1,18 +1,17 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
-import { ButtonDirective, ButtonModule } from './button.directive';
-import { MaterialIconModule } from '../material-icon/material-icon.component';
+import { ButtonDirective } from './button.directive';
+import { MaterialIconDirective } from '../material-icon/material-icon.directive';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'atoms/buttons',
-  component: ButtonDirective,
   parameters: {
     badges: [BADGE.STABLE],
     jest: 'button.directive',
   },
   decorators: [
     moduleMetadata({
-      imports: [ButtonModule, MaterialIconModule],
+      imports: [ButtonDirective, MaterialIconDirective],
     }),
   ],
 } as Meta<ButtonDirective>;

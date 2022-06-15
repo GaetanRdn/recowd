@@ -1,14 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  NgModule,
-} from '@angular/core';
+import { Directive, Input } from '@angular/core';
 import { CoerceString } from '@recowd/utility-types';
 
-@Component({
-  selector: 'rc-material-icon',
-  // standalone: true,
+@Directive({
+  selector: 'rc-material-icon, [rcMaterialIcon]',
+  standalone: true,
   host: {
     '[class.material-icons]': 'type === "filled"',
     '[class.material-icons-outlined]': 'type === "outlined"',
@@ -16,11 +11,8 @@ import { CoerceString } from '@recowd/utility-types';
     '[class.material-icons-sharp]': 'type === "sharp"',
     '[class.material-icons-round]': 'type === "rounded"',
   },
-  template: ` <ng-content></ng-content>`,
-  styleUrls: ['./material-icon.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MaterialIconComponent {
+export class MaterialIconDirective {
   @Input() @CoerceString('filled') public type:
     | 'filled'
     | 'outlined'
@@ -28,9 +20,3 @@ export class MaterialIconComponent {
     | 'sharp'
     | 'rounded' = 'filled';
 }
-
-@NgModule({
-  declarations: [MaterialIconComponent],
-  exports: [MaterialIconComponent],
-})
-export class MaterialIconModule {}

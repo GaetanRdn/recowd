@@ -1,22 +1,21 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { LabelComponent, LabelModule } from './label.component';
+import { LabelDirective } from './label.directive';
 
 export default {
   title: 'atoms/forms/label',
-  component: LabelComponent,
   parameters: {
     badges: [BADGE.STABLE],
     jest: 'label.component',
   },
   decorators: [
     moduleMetadata({
-      imports: [LabelModule],
+      imports: [LabelDirective],
     }),
   ],
-} as Meta<LabelComponent>;
+} as Meta<LabelDirective>;
 
-const template: Story<LabelComponent> = () => ({
+const template: Story<LabelDirective> = () => ({
   template: `<rc-label>A label</rc-label>`,
 });
 

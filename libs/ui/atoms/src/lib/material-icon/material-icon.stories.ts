@@ -4,17 +4,13 @@ import {
   moduleMetadata,
   Story,
 } from '@storybook/angular';
-import {
-  MaterialIconComponent,
-  MaterialIconModule,
-} from './material-icon.component';
+import { MaterialIconDirective } from './material-icon.directive';
 import { CommonModule } from '@angular/common';
 import materialIcons from './material-icon.json';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'atoms/material-icon',
-  component: MaterialIconComponent,
   parameters: {
     badges: [BADGE.STABLE],
     jest: 'material-icon.component',
@@ -22,7 +18,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [MaterialIconModule, CommonModule],
+      imports: [MaterialIconDirective, CommonModule],
     }),
     componentWrapperDecorator(
       (story: string) =>
@@ -32,10 +28,10 @@ export default {
   argTypes: {
     type: { control: false },
   },
-} as Meta<MaterialIconComponent>;
+} as Meta<MaterialIconDirective>;
 
-const template: Story<MaterialIconComponent> = (
-  args: MaterialIconComponent
+const template: Story<MaterialIconDirective> = (
+  args: MaterialIconDirective
 ) => ({
   props: {
     type: args.type,
