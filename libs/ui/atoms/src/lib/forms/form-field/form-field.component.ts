@@ -56,6 +56,7 @@ export class FormFieldComponent {
 
 @NgModule({
   declarations: [FormFieldComponent],
+  imports: [LabelComponent],
   exports: [FormFieldComponent, LabelComponent],
 })
 export class FormFieldModule {}
