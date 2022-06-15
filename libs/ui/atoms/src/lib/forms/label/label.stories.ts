@@ -1,6 +1,6 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { LabelComponent, LabelModule } from './label.component';
+import { LabelComponent } from './label.component';
 
 export default {
   title: 'atoms/forms/label',
@@ -11,7 +11,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [LabelModule],
+      imports: [LabelComponent],
     }),
   ],
 } as Meta<LabelComponent>;
