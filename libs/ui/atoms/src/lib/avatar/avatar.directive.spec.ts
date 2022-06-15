@@ -6,11 +6,8 @@ import { TemplateLookup } from '@recowd/test/utils';
 describe('AvatarDirective', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
-      declarations: [
-        MaterialIconHostComponent,
-        CustomImgHostComponent,
-        AvatarDirective,
-      ],
+      declarations: [MaterialIconHostComponent, CustomImgHostComponent],
+      imports: [AvatarDirective],
     }).compileComponents()));
 
   it('should create with material icon', () => {

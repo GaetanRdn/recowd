@@ -4,10 +4,7 @@ import {
   moduleMetadata,
   Story,
 } from '@storybook/angular';
-import {
-  MaterialIconComponent,
-  MaterialIconModule,
-} from './material-icon.component';
+import { MaterialIconComponent } from './material-icon.component';
 import { CommonModule } from '@angular/common';
 import materialIcons from './material-icon.json';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
@@ -22,7 +19,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [MaterialIconModule, CommonModule],
+      imports: [MaterialIconComponent, CommonModule],
     }),
     componentWrapperDecorator(
       (story: string) =>

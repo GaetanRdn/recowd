@@ -1,8 +1,9 @@
-import { Directive, HostBinding, Input, NgModule } from '@angular/core';
+import { Directive, HostBinding, Input } from '@angular/core';
 import { CoerceBoolean } from '@recowd/utility-types';
 
 @Directive({
   selector: 'button[rcButtonIcon], a[rcButtonIcon]',
+  standalone: true,
   host: {
     '[class.rc-button-icon]': 'true',
   },
@@ -10,9 +11,3 @@ import { CoerceBoolean } from '@recowd/utility-types';
 export class ButtonDirective {
   @Input() @CoerceBoolean() @HostBinding('class.rc-disabled') disabled = false;
 }
-
-@NgModule({
-  declarations: [ButtonDirective],
-  exports: [ButtonDirective],
-})
-export class ButtonModule {}

@@ -1,7 +1,7 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { CardComponent } from './card.component';
 import { CardModule } from './card.module';
-import { AvatarDirective, AvatarModule } from '../avatar/avatar.directive';
+import { AvatarDirective } from '../avatar/avatar.directive';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 import { CardContentDirective } from './card-content.directive';
 import { CardTitleDirective } from './card-title.directive';
@@ -22,7 +22,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [CardModule, AvatarModule],
+      imports: [CardModule, AvatarDirective],
     }),
   ],
 } as Meta<CardComponent>;

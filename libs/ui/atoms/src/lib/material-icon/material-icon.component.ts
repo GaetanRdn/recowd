@@ -1,14 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  NgModule,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CoerceString } from '@recowd/utility-types';
 
 @Component({
   selector: 'rc-material-icon',
-  // standalone: true,
+  standalone: true,
   host: {
     '[class.material-icons]': 'type === "filled"',
     '[class.material-icons-outlined]': 'type === "outlined"',
@@ -28,9 +23,3 @@ export class MaterialIconComponent {
     | 'sharp'
     | 'rounded' = 'filled';
 }
-
-@NgModule({
-  declarations: [MaterialIconComponent],
-  exports: [MaterialIconComponent],
-})
-export class MaterialIconModule {}

@@ -7,7 +7,7 @@ import {
   OnChanges,
   Output,
 } from '@angular/core';
-import { MaterialIconModule } from '../../material-icon/material-icon.component';
+import { MaterialIconComponent } from '../../material-icon/material-icon.component';
 import { CommonModule } from '@angular/common';
 import {
   BooleanInput,
@@ -23,7 +23,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 @Component({
   selector: 'rc-rate',
   standalone: true,
-  imports: [MaterialIconModule, CommonModule],
+  imports: [MaterialIconComponent, CommonModule],
   host: {
     '[class.rc-disabled]': 'disabled',
   },
