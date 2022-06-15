@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'rc-toolbar',
+  standalone: true,
   template: ` <ng-content></ng-content>`,
   styleUrls: ['./toolbar.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
