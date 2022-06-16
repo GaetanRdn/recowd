@@ -6,11 +6,8 @@ import { TemplateLookup } from '@recowd/test/utils';
 describe('ButtonDirective', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
-      declarations: [
-        ButtonDirective,
-        ButtonIconHostComponent,
-        LinkIconHostComponent,
-      ],
+      declarations: [ButtonIconHostComponent, LinkIconHostComponent],
+      imports: [ButtonDirective],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents()));
 

@@ -1,6 +1,6 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 
-import { RateComponent, RateModule } from './rate.component';
+import { RateComponent } from './rate.component';
 import { TemplateLookup } from '@recowd/test/utils';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,7 +10,7 @@ describe('RateComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [HostComponent, ReactiveHostComponent],
-      imports: [NoopAnimationsModule, RateModule, ReactiveFormsModule],
+      imports: [NoopAnimationsModule, RateComponent, ReactiveFormsModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));

@@ -1,16 +1,16 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormFieldComponent, FormFieldModule } from './form-field.component';
-import { InputDirective, InputModule } from '../input/input.directive';
+import { InputDirective } from '../input/input.directive';
 import { TemplateLookup } from '@recowd/test/utils';
 import { FormFieldElementDirective } from './form-field-element.directive';
-import { CheckboxModule } from '../checkbox/checkbox.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 describe('FormFieldComponent', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [HostWithInputComponent, HostWithCheckboxComponent],
-      imports: [FormFieldModule, InputModule, CheckboxModule],
+      imports: [FormFieldModule, InputDirective, CheckboxComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents()));
 

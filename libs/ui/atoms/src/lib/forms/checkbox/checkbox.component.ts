@@ -6,7 +6,6 @@ import {
   forwardRef,
   HostListener,
   Input,
-  NgModule,
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,12 +17,14 @@ import {
   OnTouchedFn,
   TypedControlValueAccessor,
 } from '@recowd/utility-types';
-import { MaterialIconModule } from '../../material-icon/material-icon.component';
+import { MaterialIconDirective } from '../../material-icon/material-icon.directive';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { FormFieldElementDirective } from '../form-field/form-field-element.directive';
 
 @Component({
   selector: 'rc-checkbox',
+  standalone: true,
+  imports: [CommonModule, MaterialIconDirective],
   host: {
     '[class.rc-label-before]': 'labelBefore',
     '[class.rc-disabled]': 'disabled',
@@ -125,10 +126,3 @@ export class CheckboxComponent<ValueType>
     // default method
   };
 }
-
-@NgModule({
-  declarations: [CheckboxComponent],
-  exports: [CheckboxComponent],
-  imports: [CommonModule, MaterialIconModule],
-})
-export class CheckboxModule {}

@@ -1,14 +1,14 @@
 import { TemplateLookup } from '@recowd/test/utils';
 import { Component, DebugElement } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
-import { CheckboxComponent, CheckboxModule } from './checkbox.component';
+import { CheckboxComponent } from './checkbox.component';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 describe('CheckboxComponent', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
       declarations: [HostComponent, ReactiveHostComponent],
-      imports: [CheckboxModule, ReactiveFormsModule],
+      imports: [CheckboxComponent, ReactiveFormsModule],
     }).compileComponents()));
 
   describe('Basic', () => {

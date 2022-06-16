@@ -1,6 +1,6 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
-import { RateComponent, RateModule } from './rate.component';
+import { RateComponent } from './rate.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { action } from '@storybook/addon-actions';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
@@ -13,7 +13,7 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      imports: [RateModule, BrowserAnimationsModule, ReactiveFormsModule],
+      imports: [RateComponent, BrowserAnimationsModule, ReactiveFormsModule],
     }),
   ],
 } as Meta<RateComponent>;

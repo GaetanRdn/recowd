@@ -6,11 +6,8 @@ import { TemplateLookup } from '@recowd/test/utils';
 describe('ToolbarComponent', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
-      declarations: [
-        ToolbarComponent,
-        OnlyTextHostComponent,
-        WithButtonHostComponent,
-      ],
+      declarations: [OnlyTextHostComponent, WithButtonHostComponent],
+      imports: [ToolbarComponent],
     }).compileComponents()));
 
   it('should create with only text', () => {
