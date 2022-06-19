@@ -14,6 +14,46 @@ html {
   font-size: 10px;
 }
 
+rc-accordion {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px 5px, rgba(0, 0, 0, 0.24) 0 3px 5px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+rc-accordion .rc-accordion-bloc {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+rc-accordion .rc-accordion-bloc-header {
+  font-size: 2.4rem;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  line-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+rc-accordion rc-accordion-bloc-content {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.6rem;
+  display: flex;
+  overflow: hidden;
+}
+
+rc-accordion .rc-accordion-bloc-content-wrapper {
+  padding: 0.8rem 1.2rem;
+}
+
 .rc-avatar {
   font-size: 4.8rem;
   width: 4.8rem;
