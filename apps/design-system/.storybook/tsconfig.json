@@ -9,7 +9,8 @@
     "../../../libs/**/*.models.ts",
     "../../../libs/**/jest.config.ts",
     "../../../libs/**/index.ts",
-    "../../../libs/test/*"
+    "../../../libs/test/*",
+    "../../../libs/**/*.snap"
   ],
   "include": ["../src/**/*", "../../../libs/**/*", "*.js"]
 }

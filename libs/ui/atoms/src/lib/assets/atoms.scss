@@ -1,3 +1,4 @@
+@use '../accordion/accordion.component';
 @use '../avatar/avatar';
 @use '../button/button';
 @use '../card/card.component';
@@ -11,6 +12,7 @@
 @use '../toolbar/toolbar.component';
 
 @mixin rc-atoms-theme($config) {
+  @include accordion.rc-accordion($config);
   @include avatar.rc-avatar($config);
   @include button.rc-button($config);
   @include card.rc-card($config);

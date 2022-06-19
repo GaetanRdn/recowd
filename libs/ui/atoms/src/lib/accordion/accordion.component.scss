@@ -1,0 +1,41 @@
+@use '../assets/utils';
+
+@mixin rc-accordion($config) {
+  $header-typo: utils.map-get-deep($config, typography, heading);
+  $content-typo: utils.map-get-deep($config, typography, body-regular);
+  $primary: utils.map-get-deep($config, colors, primary);
+
+  rc-accordion {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: map-get($primary, background-color);
+    color: map-get($primary, color);
+    box-shadow: rgb(0 0 0 / 12%) 0 3px 5px, rgb(0 0 0 / 24%) 0 3px 5px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+    .rc-accordion-bloc {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .rc-accordion-bloc-header {
+      @include utils.use-typography($header-typo);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+    }
+
+    rc-accordion-bloc-content {
+      @include utils.use-typography($content-typo);
+      display: flex;
+      overflow: hidden;
+    }
+
+    .rc-accordion-bloc-content-wrapper {
+      padding: 0.8rem 1.2rem;
+    }
+  }
+}

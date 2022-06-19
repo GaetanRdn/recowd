@@ -27,3 +27,16 @@ export const rotation360Animation = trigger('rotate', [
     }),
   ]),
 ]);
+
+export const rotation180Animation = trigger('rotate', [
+  transition('default => rotated', [
+    useAnimation(rotate, {
+      params: { angle: '-90deg', time: '0.3s cubic-bezier(0.35, 0, 0.25, 1)' },
+    }),
+  ]),
+  transition('rotated => default', [
+    useAnimation(rotate, {
+      params: { angle: '90deg', time: '0.3s cubic-bezier(0.35, 0, 0.25, 1)' },
+    }),
+  ]),
+]);
