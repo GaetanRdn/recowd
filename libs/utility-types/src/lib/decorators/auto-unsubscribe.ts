@@ -1,4 +1,4 @@
-import {Subscription} from 'rxjs';
+import { Subscription } from 'rxjs';
 
 /**
  * Allows to auto unsubscribe from Observables.
