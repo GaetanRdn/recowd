@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionComponent should be opened 1`] = `
+<rc-accordion>
+  <rc-accordion-bloc
+    class="rc-accordion-bloc"
+  >
+    <rc-accordion-bloc-header
+      class="rc-accordion-bloc-header"
+    >
+      Title
+      <rc-material-icon
+        class="ng-trigger ng-trigger-rotate material-icons"
+        style="transform:rotate(0);0:transform;"
+      >
+         expand_more 
+      </rc-material-icon>
+    </rc-accordion-bloc-header>
+    <rc-accordion-bloc-content
+      class="ng-trigger ng-trigger-collapsable"
+      style="opacity:1;0:opacity;"
+    >
+      <span
+        class="rc-accordion-bloc-content-wrapper"
+      >
+        Content
+      </span>
+    </rc-accordion-bloc-content>
+  </rc-accordion-bloc>
+</rc-accordion>
+`;
+
+exports[`AccordionComponent should be opened on collapsed change 1`] = `
+<rc-accordion>
+  <rc-accordion-bloc
+    class="rc-accordion-bloc"
+  >
+    <rc-accordion-bloc-header
+      class="rc-accordion-bloc-header"
+    >
+      Title
+      <rc-material-icon
+        class="ng-trigger ng-trigger-rotate material-icons"
+        style="transform:rotate(0);0:transform;"
+      >
+         expand_more 
+      </rc-material-icon>
+    </rc-accordion-bloc-header>
+    <rc-accordion-bloc-content
+      class="ng-trigger ng-trigger-collapsable ng-animating"
+      style=""
+    >
+      <span
+        class="rc-accordion-bloc-content-wrapper"
+      >
+        Content
+      </span>
+    </rc-accordion-bloc-content>
+  </rc-accordion-bloc>
+</rc-accordion>
+`;
+
+exports[`AccordionComponent should create default closed accordion bloc 1`] = `
+<rc-accordion>
+  <rc-accordion-bloc
+    class="rc-accordion-bloc"
+  >
+    <rc-accordion-bloc-header
+      class="rc-accordion-bloc-header"
+    >
+      Title
+      <rc-material-icon
+        class="ng-trigger ng-trigger-rotate material-icons"
+        style="transform:rotate(0);0:transform;"
+      >
+         expand_more 
+      </rc-material-icon>
+    </rc-accordion-bloc-header>
+    <rc-accordion-bloc-content
+      class="ng-trigger ng-trigger-collapsable"
+      style="opacity:1;0:opacity;"
+    >
+      <span
+        class="rc-accordion-bloc-content-wrapper"
+      >
+        Content
+      </span>
+    </rc-accordion-bloc-content>
+  </rc-accordion-bloc>
+</rc-accordion>
+`;
+
+exports[`AccordionComponent should expand on header click 1`] = `
+<rc-accordion>
+  <rc-accordion-bloc
+    class="rc-accordion-bloc"
+  >
+    <rc-accordion-bloc-header
+      class="rc-accordion-bloc-header"
+    >
+      Title
+      <rc-material-icon
+        class="ng-trigger ng-trigger-rotate material-icons ng-animating"
+        style=""
+      >
+         expand_more 
+      </rc-material-icon>
+    </rc-accordion-bloc-header>
+    <rc-accordion-bloc-content
+      class="ng-trigger ng-trigger-collapsable rc-collapsed ng-animating"
+      style=""
+    >
+      <span
+        class="rc-accordion-bloc-content-wrapper"
+      >
+        Content
+      </span>
+    </rc-accordion-bloc-content>
+  </rc-accordion-bloc>
+</rc-accordion>
+`;
