@@ -1,13 +1,7 @@
 import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { MaterialIconDirective } from '../material-icon/material-icon.directive';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
 import { AutoUnsubscribe } from '@recowd/utility-types';
+import { rotation180Animation } from '@recowd/ui-animations';
 
 @Component({
   selector: 'rc-accordion-bloc-header',
@@ -17,28 +11,10 @@ import { AutoUnsubscribe } from '@recowd/utility-types';
   standalone: true,
   imports: [MaterialIconDirective],
   template: ` <ng-content></ng-content>
-    <rc-material-icon [@rotate]="selected ? 'up' : 'down'">
+    <rc-material-icon [@rotate]="selected ? 'rotated' : 'default'">
       expand_more
     </rc-material-icon>`,
-  animations: [
-    trigger('rotate', [
-      state(
-        'up',
-        style({
-          transform: 'rotate(-180deg)',
-        })
-      ),
-      state(
-        'down',
-        style({
-          transform: 'rotate(0)',
-        })
-      ),
-      transition('up <=> down', [
-        animate('0.4s cubic-bezier(0.35, 0, 0.25, 1)'),
-      ]),
-    ]),
-  ],
+  animations: [rotation180Animation],
 })
 @AutoUnsubscribe()
 export class AccordionBlocHeaderComponent {

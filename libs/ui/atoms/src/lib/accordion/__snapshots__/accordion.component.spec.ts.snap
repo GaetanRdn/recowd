@@ -11,7 +11,7 @@ exports[`AccordionComponent should be opened 1`] = `
       Title
       <rc-material-icon
         class="ng-trigger ng-trigger-rotate material-icons"
-        style="transform:rotate(0);0:transform;"
+        style=""
       >
          expand_more 
       </rc-material-icon>
@@ -41,7 +41,7 @@ exports[`AccordionComponent should be opened on collapsed change 1`] = `
       Title
       <rc-material-icon
         class="ng-trigger ng-trigger-rotate material-icons"
-        style="transform:rotate(0);0:transform;"
+        style=""
       >
          expand_more 
       </rc-material-icon>
@@ -71,7 +71,7 @@ exports[`AccordionComponent should create default closed accordion bloc 1`] = `
       Title
       <rc-material-icon
         class="ng-trigger ng-trigger-rotate material-icons"
-        style="transform:rotate(0);0:transform;"
+        style=""
       >
          expand_more 
       </rc-material-icon>
