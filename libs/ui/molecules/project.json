@@ -1,29 +1,29 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/ui/atoms/src",
+  "sourceRoot": "libs/ui/molecules/src",
   "prefix": "rc",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/ui/atoms"],
+      "outputs": ["dist/libs/ui/molecules"],
       "options": {
-        "project": "libs/ui/atoms/ng-package.json"
+        "project": "libs/ui/molecules/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/ui/atoms/tsconfig.lib.prod.json"
+          "tsConfig": "libs/ui/molecules/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/ui/atoms/tsconfig.lib.json"
+          "tsConfig": "libs/ui/molecules/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ui/atoms"],
+      "outputs": ["coverage/libs/ui/molecules"],
       "options": {
-        "jestConfig": "libs/ui/atoms/jest.config.ts",
+        "jestConfig": "libs/ui/molecules/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -31,12 +31,11 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/ui/atoms/src/**/*.ts",
-          "libs/ui/atoms/src/**/*.html"
+          "libs/ui/molecules/**/*.ts",
+          "libs/ui/molecules/**/*.html"
         ]
       }
     }
   },
-  "tags": ["ui", "atoms"],
-  "implicitDependencies": ["test-utils"]
+  "tags": ["ui", "molecules"]
 }

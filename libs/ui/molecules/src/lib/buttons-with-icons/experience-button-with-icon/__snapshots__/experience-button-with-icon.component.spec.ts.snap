@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceButtonWithIconComponent should create 1`] = `
+<rc-experience-button-with-icon>
+  <a
+    class="rc-button"
+    rcbutton=""
+  >
+    <rc-material-icon
+      class="material-icons-outlined"
+      type="outlined"
+    >
+      history_edu
+    </rc-material-icon>
+     Expériences
+
+  </a>
+</rc-experience-button-with-icon>
+`;

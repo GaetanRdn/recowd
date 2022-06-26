@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactButtonIconComponent should create 1`] = `
+<rc-contact-button-icon>
+  <a
+    class="rc-button"
+    rcbutton=""
+  >
+    <rc-material-icon
+      class="material-icons-outlined"
+      type="outlined"
+    >
+      mail
+    </rc-material-icon>
+  </a>
+</rc-contact-button-icon>
+`;
