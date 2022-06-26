@@ -6,7 +6,12 @@ import { TemplateLookup } from '@recowd/test/utils';
 describe('ButtonDirective', () => {
   beforeEach(waitForAsync(() =>
     TestBed.configureTestingModule({
-      declarations: [ButtonIconHostComponent, LinkIconHostComponent],
+      declarations: [
+        ButtonIconHostComponent,
+        LinkIconHostComponent,
+        ButtonWithIconHostComponent,
+        LinkWithIconHostComponent,
+      ],
       imports: [ButtonDirective],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents()));
@@ -54,6 +59,50 @@ describe('ButtonDirective', () => {
       expect(templateLookup.firstChildElement).toMatchSnapshot();
     });
   });
+
+  describe('Button with Icon', () => {
+    let templateLookup: TemplateLookup<ButtonWithIconHostComponent>;
+
+    beforeEach(
+      () => (templateLookup = new TemplateLookup(ButtonWithIconHostComponent))
+    );
+
+    it('should create', () => {
+      templateLookup.detectChanges();
+      expect(templateLookup.firstChildElement).toMatchSnapshot();
+    });
+
+    it('should be disabled', () => {
+      // WHEN
+      templateLookup.hostComponent.disabled = true;
+      templateLookup.detectChanges();
+
+      // THEN
+      expect(templateLookup.firstChildElement).toMatchSnapshot();
+    });
+  });
+
+  describe('Link with Icon', () => {
+    let templateLookup: TemplateLookup<LinkWithIconHostComponent>;
+
+    beforeEach(
+      () => (templateLookup = new TemplateLookup(LinkWithIconHostComponent))
+    );
+
+    it('should create', () => {
+      templateLookup.detectChanges();
+      expect(templateLookup.firstChildElement).toMatchSnapshot();
+    });
+
+    it('should be disabled', () => {
+      // WHEN
+      templateLookup.hostComponent.disabled = true;
+      templateLookup.detectChanges();
+
+      // THEN
+      expect(templateLookup.firstChildElement).toMatchSnapshot();
+    });
+  });
 });
 
 @Component({
@@ -64,6 +113,22 @@ describe('ButtonDirective', () => {
 class ButtonIconHostComponent {
   public disabled = false;
 }
+
+@Component({
+  template: ` <button rcButton [disabled]="disabled">
+    <rc-material-icon>home</rc-material-icon>
+    Click me
+  </button>`,
+})
+class ButtonWithIconHostComponent extends ButtonIconHostComponent {}
+
+@Component({
+  template: `<a rcButton [disabled]="disabled">
+    <rc-material-icon>home</rc-material-icon>
+    Click me
+  </a>`,
+})
+class LinkWithIconHostComponent extends ButtonWithIconHostComponent {}
 
 @Component({
   template: `<a rcButtonIcon [disabled]="disabled">

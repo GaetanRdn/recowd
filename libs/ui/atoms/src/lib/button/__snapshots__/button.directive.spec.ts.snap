@@ -1,8 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ButtonDirective Button with Icon should be disabled 1`] = `
+<button
+  class="rc-disabled rc-button"
+  rcbutton=""
+>
+  <rc-material-icon>
+    home
+  </rc-material-icon>
+   Click me 
+</button>
+`;
+
+exports[`ButtonDirective Button with Icon should create 1`] = `
+<button
+  class="rc-button"
+  rcbutton=""
+>
+  <rc-material-icon>
+    home
+  </rc-material-icon>
+   Click me 
+</button>
+`;
+
 exports[`ButtonDirective ButtonIcon should be disabled 1`] = `
 <button
-  class="rc-button-icon rc-disabled"
+  class="rc-disabled rc-button-icon"
   rcbuttonicon=""
 >
   <rc-material-icon>
@@ -22,9 +46,33 @@ exports[`ButtonDirective ButtonIcon should create 1`] = `
 </button>
 `;
 
+exports[`ButtonDirective Link with Icon should be disabled 1`] = `
+<a
+  class="rc-disabled rc-button"
+  rcbutton=""
+>
+  <rc-material-icon>
+    home
+  </rc-material-icon>
+   Click me 
+</a>
+`;
+
+exports[`ButtonDirective Link with Icon should create 1`] = `
+<a
+  class="rc-button"
+  rcbutton=""
+>
+  <rc-material-icon>
+    home
+  </rc-material-icon>
+   Click me 
+</a>
+`;
+
 exports[`ButtonDirective LinkIcon should be disabled 1`] = `
 <a
-  class="rc-button-icon rc-disabled"
+  class="rc-disabled rc-button-icon"
   rcbuttonicon=""
 >
   <rc-material-icon>
