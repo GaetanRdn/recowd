@@ -8,6 +8,7 @@
     "ui-animations": "libs/ui/animations",
     "ui-atoms": "libs/ui/atoms",
     "ui-molecules": "libs/ui/molecules",
+    "ui-organisms": "libs/ui/organisms",
     "utility-types": "libs/utility-types"
   }
 }

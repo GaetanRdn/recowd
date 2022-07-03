@@ -1,14 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
-  AvatarDirective,
-  ButtonDirective,
-  MaterialIconDirective,
-  ToolbarComponent,
-} from '@recowd/ui-atoms';
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output,
+} from '@angular/core';
+import { ToolbarComponent } from '@recowd/ui-atoms';
 import {
   ContactButtonIconComponent,
   EducationButtonWithIconComponent,
   ExperienceButtonWithIconComponent,
+  RwAvatarComponent,
 } from '@recowd/ui/molecules';
 
 @Component({
@@ -16,9 +17,7 @@ import {
   standalone: true,
   imports: [
     ToolbarComponent,
-    AvatarDirective,
-    ButtonDirective,
-    MaterialIconDirective,
+    RwAvatarComponent,
     ContactButtonIconComponent,
     EducationButtonWithIconComponent,
     ExperienceButtonWithIconComponent,
@@ -27,4 +26,11 @@ import {
   styleUrls: ['./rw-toolbar-component.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RwToolbarComponent {}
+export class RwToolbarComponent {
+  @Output() public readonly educationClick: EventEmitter<void> =
+    new EventEmitter<void>();
+  @Output() public readonly experienceClick: EventEmitter<void> =
+    new EventEmitter<void>();
+  @Output() public readonly contactClick: EventEmitter<void> =
+    new EventEmitter<void>();
+}

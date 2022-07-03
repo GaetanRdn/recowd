@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { RwToolbarComponent } from './rw-toolbar/rw-toolbar.component';
+import { RwToolbarComponent } from '@recowd/ui/organisms';
 
 @Component({
   selector: 'rc-recowd-root',
