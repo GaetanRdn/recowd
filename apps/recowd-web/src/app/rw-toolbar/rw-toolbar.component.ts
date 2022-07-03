@@ -24,7 +24,7 @@ import {
     ExperienceButtonWithIconComponent,
   ],
   templateUrl: './rw-toolbar.component.html',
-  // styleUrls: ['./rw-toolbar-component.component.scss'],
+  styleUrls: ['./rw-toolbar-component.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RwToolbarComponent {}
