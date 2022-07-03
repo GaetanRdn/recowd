@@ -23,6 +23,7 @@
 
   .rc-button {
     @include utils.use-typography($button-medium);
+    color: map-get($primary, color);
     gap: 0.8rem;
   }
 

@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ['../../../libs/ui/atoms/**/*.stories.ts'],
+  stories: [],
   addons: [
     '@storybook/addon-essentials',
     '@geometricpanda/storybook-addon-badges',

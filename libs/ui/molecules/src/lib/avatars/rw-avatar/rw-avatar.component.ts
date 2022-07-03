@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AvatarDirective } from '@recowd/ui-atoms';
 
 @Component({
-  selector: 'rc-rw-avatars',
+  selector: 'rc-rw-avatar',
   standalone: true,
   imports: [AvatarDirective],
   template: `<img alt="avatar" rcAvatar src="assets/venom.png" />`,

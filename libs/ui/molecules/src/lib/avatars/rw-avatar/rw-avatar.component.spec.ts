@@ -22,6 +22,6 @@ describe('RwAvatarComponent', () => {
 });
 
 @Component({
-  template: ` <rc-rw-avatars></rc-rw-avatars>`,
+  template: ` <rc-rw-avatar></rc-rw-avatar>`,
 })
 class HostComponent {}
