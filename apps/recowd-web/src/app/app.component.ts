@@ -7,5 +7,6 @@ import { RwToolbarComponent } from '@recowd/ui/organisms';
   standalone: true,
   imports: [RouterModule, RwToolbarComponent],
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {}
