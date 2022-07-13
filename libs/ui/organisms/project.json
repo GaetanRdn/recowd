@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ui/organisms/src",
+  "prefix": "rc",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/ui/organisms"],
+      "options": {
+        "project": "libs/ui/organisms/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/organisms/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui/organisms/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui/organisms"],
+      "options": {
+        "jestConfig": "libs/ui/organisms/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/organisms/**/*.ts",
+          "libs/ui/organisms/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui", "organisms"]
+}

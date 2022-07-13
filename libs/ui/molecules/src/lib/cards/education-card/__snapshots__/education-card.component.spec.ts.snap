@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EducationCardComponent should create with {"from":"2021","to":"2022","degree":"Master","description":"long comment"} 1`] = `
+HTMLCollection [
+  <rc-education-card>
+    <rc-card>
+      <div
+        class="rc-card-header"
+      >
+        
+        <rc-card-title
+          class="rc-card-title"
+        >
+          Master
+        </rc-card-title>
+        <rc-card-subtitle
+          class="rc-card-subtitle"
+        >
+          2021 - 2022
+        </rc-card-subtitle>
+      </div>
+      <rc-card-content
+        class="rc-card-content"
+      >
+        long comment
+      </rc-card-content>
+    </rc-card>
+  </rc-education-card>,
+]
+`;
+
+exports[`EducationCardComponent should create with {"from":2018,"to":2019,"degree":"Bac","logo":"logo.png","description":"another comment"} 1`] = `
+HTMLCollection [
+  <rc-education-card>
+    <rc-card>
+      <div
+        class="rc-card-header"
+      >
+        <img
+          alt="logo"
+          class="rc-avatar"
+          rcavatar=""
+          src="assets/logo.png"
+        />
+        
+        <rc-card-title
+          class="rc-card-title"
+        >
+          Bac
+        </rc-card-title>
+        <rc-card-subtitle
+          class="rc-card-subtitle"
+        >
+          2018 - 2019
+        </rc-card-subtitle>
+      </div>
+      <rc-card-content
+        class="rc-card-content"
+      >
+        another comment
+      </rc-card-content>
+    </rc-card>
+  </rc-education-card>,
+]
+`;

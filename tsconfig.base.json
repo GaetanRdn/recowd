@@ -17,10 +17,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@recowd/models": ["libs/models/src/index.ts"],
       "@recowd/test/utils": ["libs/test/utils/src/index.ts"],
       "@recowd/ui-animations": ["libs/ui/animations/src/index.ts"],
       "@recowd/ui-atoms": ["libs/ui/atoms/src/index.ts"],
       "@recowd/ui/animations": ["libs/ui/animations/src/index.ts"],
+      "@recowd/ui/molecules": ["libs/ui/molecules/src/index.ts"],
+      "@recowd/ui/organisms": ["libs/ui/organisms/src/index.ts"],
       "@recowd/utility-types": ["libs/utility-types/src/index.ts"]
     }
   },

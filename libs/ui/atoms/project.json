@@ -37,6 +37,5 @@
       }
     }
   },
-  "tags": ["ui"],
-  "implicitDependencies": ["test-utils"]
+  "tags": ["ui", "atoms"]
 }

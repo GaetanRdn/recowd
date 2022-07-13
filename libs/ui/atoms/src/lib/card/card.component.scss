@@ -4,7 +4,7 @@
   $primary: map-get($colors, primary);
 
   rc-card {
-    display: inline-flex;
+    display: flex;
     flex-flow: column;
     height: fit-content;
     min-width: fit-content;

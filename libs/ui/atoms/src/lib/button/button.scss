@@ -1,6 +1,9 @@
+@use '../assets/utils';
+
 @mixin rc-button($config) {
-  $colors: map-get($config, colors);
-  $primary: map-get($colors, primary);
+  $primary: utils.map-get-deep($config, colors, primary);
+  $disabled: utils.map-get-deep($config, colors, disabled);
+  $button-medium: utils.map-get-deep($config, typography, button-medium);
 
   button {
     appearance: none;
@@ -11,18 +14,27 @@
     text-decoration: none;
   }
 
+  .rc-button,
   .rc-button-icon {
-    color: map-get($primary, color);
     cursor: pointer;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
+  }
+
+  .rc-button {
+    @include utils.use-typography($button-medium);
+    color: map-get($primary, color);
+    gap: 0.8rem;
+  }
+
+  .rc-button-icon {
+    color: map-get($primary, color);
     border-radius: 50%;
     padding: 0.4rem;
     background-color: transparent;
   }
 
   .rc-button-icon:is(.rc-disabled) > * {
-    color: map-get(map-get($colors, disabled), color);
+    color: map-get($disabled, color);
   }
 }

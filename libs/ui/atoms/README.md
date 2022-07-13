@@ -2,6 +2,6 @@
 
 This library was generated with [Nx](https://nx.dev).
 
-## Running unit tests
+## Description
 
-Run `nx test ui-atoms` to execute the unit tests.
+Contains all atomic components

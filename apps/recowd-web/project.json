@@ -1,0 +1,101 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/recowd-web/src",
+  "prefix": "recowd",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/recowd-web",
+        "index": "apps/recowd-web/src/index.html",
+        "main": "apps/recowd-web/src/main.ts",
+        "polyfills": "apps/recowd-web/src/polyfills.ts",
+        "tsConfig": "apps/recowd-web/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/recowd-web/src/favicon.ico",
+          "apps/recowd-web/src/assets",
+          {
+            "input": "libs/ui/atoms/src/lib",
+            "glob": "**/*.scss",
+            "output": "assets/atoms"
+          }
+        ],
+        "styles": ["apps/recowd-web/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/atoms/src/lib/assets"]
+        },
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/recowd-web/src/environments/environment.ts",
+              "with": "apps/recowd-web/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "recowd-web:build:production"
+        },
+        "development": {
+          "browserTarget": "recowd-web:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "recowd-web:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/recowd-web/**/*.ts",
+          "apps/recowd-web/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/recowd-web"],
+      "options": {
+        "jestConfig": "apps/recowd-web/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["app"]
+}

@@ -2,9 +2,14 @@
   "version": 2,
   "projects": {
     "design-system": "apps/design-system",
+    "models": "libs/models",
+    "recowd-web": "apps/recowd-web",
+    "recowd-web-e2e": "apps/recowd-web-e2e",
     "test-utils": "libs/test/utils",
     "ui-animations": "libs/ui/animations",
     "ui-atoms": "libs/ui/atoms",
+    "ui-molecules": "libs/ui/molecules",
+    "ui-organisms": "libs/ui/organisms",
     "utility-types": "libs/utility-types"
   }
 }
