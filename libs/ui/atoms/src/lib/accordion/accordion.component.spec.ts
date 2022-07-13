@@ -64,21 +64,3 @@ describe('AccordionComponent', () => {
 class SingleBlocHostComponent {
   public collapsed = false;
 }
-
-@Component({
-  template: ` <rc-accordion>
-    <rc-accordion-bloc>
-      <rc-accordion-bloc-header>Title</rc-accordion-bloc-header>
-      <rc-accordion-bloc-content>Content</rc-accordion-bloc-content>
-    </rc-accordion-bloc>
-    <rc-accordion-bloc>
-      <rc-accordion-bloc-header>Title2</rc-accordion-bloc-header>
-      <rc-accordion-bloc-content>Content2</rc-accordion-bloc-content>
-    </rc-accordion-bloc>
-    <rc-accordion-bloc>
-      <rc-accordion-bloc-header>Title3</rc-accordion-bloc-header>
-      <rc-accordion-bloc-content>Content3</rc-accordion-bloc-content>
-    </rc-accordion-bloc>
-  </rc-accordion>`,
-})
-class MultiBlocsHostComponent {}

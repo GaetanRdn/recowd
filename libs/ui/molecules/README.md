@@ -2,6 +2,6 @@
 
 This library was generated with [Nx](https://nx.dev).
 
-## Running unit tests
+## description
 
-Run `nx test ui-molecules` to execute the unit tests.
+Contains all components which are molecules. E.g. atom + functional meaning.

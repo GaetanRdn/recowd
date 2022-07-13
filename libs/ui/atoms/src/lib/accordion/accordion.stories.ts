@@ -32,7 +32,7 @@ SingleBloc.args = {
   collapsed: true,
 };
 
-const templateMultiBlocs: Story<AccordionComponent> = (args: Args) => ({
+const templateMultiBlocs: Story<AccordionComponent> = () => ({
   template: `<rc-accordion>
     <rc-accordion-bloc>
       <rc-accordion-bloc-header>Example</rc-accordion-bloc-header>

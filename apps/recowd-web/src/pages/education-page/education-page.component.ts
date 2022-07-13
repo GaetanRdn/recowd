@@ -1,15 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Education } from '@recowd/models';
-import { EducationCardComponent } from '@recowd/ui/molecules';
-import { AvatarDirective } from '@recowd/ui-atoms';
+import { EducationCardsListComponent } from '@recowd/ui/organisms';
 
 @Component({
   selector: 'rc-education-page',
   standalone: true,
-  imports: [CommonModule, EducationCardComponent, AvatarDirective],
+  imports: [EducationCardsListComponent],
   templateUrl: './education-page.component.html',
-  styleUrls: ['./education-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EducationPageComponent {

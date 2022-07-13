@@ -9,7 +9,6 @@ import { Education } from '@recowd/models';
   standalone: true,
   imports: [CommonModule, CardModule, AvatarDirective],
   templateUrl: './education-card.component.html',
-  styleUrls: ['./education-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EducationCardComponent {

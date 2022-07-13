@@ -1,7 +1,5 @@
 # models
 
-This library was generated with [Nx](https://nx.dev).
+## description
 
-## Running unit tests
-
-Run `nx test models` to execute the unit tests.
+Contains all models defined in the workspace.

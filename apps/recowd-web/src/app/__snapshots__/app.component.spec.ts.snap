@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should create the app 1`] = `
+HTMLCollection [
+  <rc-rw-toolbar>
+    <rc-toolbar>
+      <rc-rw-avatar>
+        <img
+          alt="avatar"
+          class="rc-avatar"
+          rcavatar=""
+          src="assets/venom.png"
+        />
+      </rc-rw-avatar>
+      <rc-education-button-with-icon>
+        <a
+          class="rc-button"
+          rcbutton=""
+        >
+          <rc-material-icon
+            class="material-icons-outlined"
+            type="outlined"
+          >
+            school
+          </rc-material-icon>
+           Formations
+
+        </a>
+      </rc-education-button-with-icon>
+      <rc-experience-button-with-icon>
+        <a
+          class="rc-button"
+          rcbutton=""
+        >
+          <rc-material-icon
+            class="material-icons-outlined"
+            type="outlined"
+          >
+            history_edu
+          </rc-material-icon>
+           Expériences
+
+        </a>
+      </rc-experience-button-with-icon>
+      <rc-contact-button-icon>
+        <a
+          class="rc-button"
+          rcbutton=""
+        >
+          <rc-material-icon
+            class="material-icons-outlined"
+            type="outlined"
+          >
+            mail
+          </rc-material-icon>
+        </a>
+      </rc-contact-button-icon>
+    </rc-toolbar>
+  </rc-rw-toolbar>,
+  <router-outlet />,
+]
+`;

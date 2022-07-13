@@ -1,22 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { EducationPageComponent } from './education-page.component';
+import { TemplateLookup } from '@recowd/test/utils';
 
 describe('EducationPageComponent', () => {
-  let component: EducationPageComponent;
-  let fixture: ComponentFixture<EducationPageComponent>;
+  let templateLookup: TemplateLookup<EducationPageComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
       imports: [EducationPageComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EducationPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    templateLookup = new TemplateLookup(EducationPageComponent);
+    templateLookup.detectChanges();
+  }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('should create', () =>
+    expect(templateLookup.fixture.nativeElement.children).toMatchSnapshot());
 });
