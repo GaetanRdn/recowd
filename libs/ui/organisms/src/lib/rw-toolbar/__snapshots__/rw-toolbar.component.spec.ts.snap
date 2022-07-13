@@ -3,14 +3,14 @@
 exports[`RwToolbarComponent should create 1`] = `
 <rc-rw-toolbar>
   <rc-toolbar>
-    <rc-rw-avatars>
+    <rc-rw-avatar>
       <img
         alt="avatar"
         class="rc-avatar"
         rcavatar=""
         src="assets/venom.png"
       />
-    </rc-rw-avatars>
+    </rc-rw-avatar>
     <rc-education-button-with-icon>
       <a
         class="rc-button"

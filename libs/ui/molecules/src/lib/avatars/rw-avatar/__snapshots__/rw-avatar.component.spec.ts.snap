@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RwAvatarComponent should create 1`] = `
-<rc-rw-avatars>
+<rc-rw-avatar>
   <img
     alt="avatar"
     class="rc-avatar"
     rcavatar=""
     src="assets/venom.png"
   />
-</rc-rw-avatars>
+</rc-rw-avatar>
 `;
