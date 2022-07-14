@@ -15,6 +15,7 @@ exports[`RwToolbarComponent should create 1`] = `
       <a
         class="rc-button"
         rcbutton=""
+        role="button"
       >
         <rc-material-icon
           class="material-icons-outlined"
@@ -22,7 +23,7 @@ exports[`RwToolbarComponent should create 1`] = `
         >
           school
         </rc-material-icon>
-         Formations
+         degrees
 
       </a>
     </rc-education-button-with-icon>
@@ -30,6 +31,7 @@ exports[`RwToolbarComponent should create 1`] = `
       <a
         class="rc-button"
         rcbutton=""
+        role="button"
       >
         <rc-material-icon
           class="material-icons-outlined"
@@ -37,7 +39,7 @@ exports[`RwToolbarComponent should create 1`] = `
         >
           history_edu
         </rc-material-icon>
-         Expériences
+         experiences
 
       </a>
     </rc-experience-button-with-icon>
@@ -45,6 +47,7 @@ exports[`RwToolbarComponent should create 1`] = `
       <a
         class="rc-button"
         rcbutton=""
+        role="button"
       >
         <rc-material-icon
           class="material-icons-outlined"
