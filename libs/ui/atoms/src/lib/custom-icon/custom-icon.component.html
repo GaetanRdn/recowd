@@ -1,0 +1,8 @@
+<object
+  [data]="name + '.svg' | safe: 'resourceUrl'"
+  height="{{ height }}"
+  type="image/svg+xml"
+  width="{{ width }}"
+>
+  <img [src]="name + '.png' | safe: 'url'" alt="{{ name }}" />
+</object>

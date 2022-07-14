@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomIconComponent should create with name test, width 32 and height undefined 1`] = `
+<rc-custom-icon>
+  <object
+    data="test.svg"
+    height="32"
+    type="image/svg+xml"
+    width="32"
+  >
+    <img
+      alt="test"
+      src="test.png"
+    />
+  </object>
+</rc-custom-icon>
+`;
+
+exports[`CustomIconComponent should create with name test2, width 16 and height 24 1`] = `
+<rc-custom-icon>
+  <object
+    data="test2.svg"
+    height="24"
+    type="image/svg+xml"
+    width="16"
+  >
+    <img
+      alt="test2"
+      src="test2.png"
+    />
+  </object>
+</rc-custom-icon>
+`;
