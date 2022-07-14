@@ -24,6 +24,7 @@
       "@recowd/ui/animations": ["libs/ui/animations/src/index.ts"],
       "@recowd/ui/molecules": ["libs/ui/molecules/src/index.ts"],
       "@recowd/ui/organisms": ["libs/ui/organisms/src/index.ts"],
+      "@recowd/ui/pipes": ["libs/ui/pipes/src/index.ts"],
       "@recowd/utility-types": ["libs/utility-types/src/index.ts"]
     }
   },
