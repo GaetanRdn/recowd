@@ -5,6 +5,7 @@ exports[`ExperienceButtonWithIconComponent should create 1`] = `
   <a
     class="rc-button"
     rcbutton=""
+    role="button"
   >
     <rc-material-icon
       class="material-icons-outlined"
@@ -12,7 +13,7 @@ exports[`ExperienceButtonWithIconComponent should create 1`] = `
     >
       history_edu
     </rc-material-icon>
-     Expériences
+     experiences
 
   </a>
 </rc-experience-button-with-icon>

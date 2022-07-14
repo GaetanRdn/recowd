@@ -14,19 +14,24 @@
 
 This mono repo contains all my new projects.
 
-Actually I work on a design-system.
+Actually I work on a design-system and on my future website.
 
 <h2>Architecture</h2>
 
 <ul>
   <li>apps</li>
   <ul>
-    <li>design-system (launches a storybook for all the design system)</li>
+    <li><a href="https://gaetanrdn.github.io/recowd">design-system</a>(launches a storybook for all the design system)</li>
+    <li>recowd-web (my future website)</li>
   </ul>
   <li>libs</li>
   <ul>
+    <li>models (contains all the models)</li>
     <li>test/utils (contains utility classes for testing)</li>
+    <li>ui/animations (contains all the animations of the design system)</li>
     <li>ui/atoms (contains all the atoms of the design system)</li>
+    <li>ui/molecules (contains all the molecules of the design system)</li>
+    <li>ui/organisms (contains all the organisms of the design system)</li>
     <li>utility-types (contains types, decorators...)</li>
   </ul>
 </ul>
@@ -84,3 +89,9 @@ Second level: map for each element/color
 <h3>Specificities</h3>
 
 The default font-size is set to 10px. That allows to simplify the conversion from px to rem.
+
+<h2>Translations</h2>
+
+I use <a href="https://github.com/ngx-translate/core">ngx-translate</a>
+
+For recowd-web, the language is based on the navigator first language in the parameters.

@@ -3,6 +3,7 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { EducationButtonWithIconComponent } from './education-button-with-icon.component';
 import { Component } from '@angular/core';
 import { TemplateLookup } from '@recowd/test/utils';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('EducationButtonWithIconComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -10,7 +11,7 @@ describe('EducationButtonWithIconComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [EducationButtonWithIconComponent],
+      imports: [EducationButtonWithIconComponent, TranslateModule.forRoot()],
     }).compileComponents();
 
     templateLookup = new TemplateLookup(HostComponent);

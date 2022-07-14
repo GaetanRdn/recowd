@@ -35,6 +35,8 @@
     "@angular/compiler-cli": "14.0.1",
     "@angular/language-service": "14.0.1",
     "@geometricpanda/storybook-addon-badges": "0.2.1",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "@nrwl/cli": "14.4.2",
     "@nrwl/cypress": "14.4.2",
     "@nrwl/eslint-plugin-nx": "14.4.2",
