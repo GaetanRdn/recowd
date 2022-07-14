@@ -14,5 +14,5 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
-  staticDirs: ['../src/assets'],
+  staticDirs: ['../src/assets', '../../../libs/ui/molecules/src/lib/assets'],
 };

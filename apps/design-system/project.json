@@ -21,6 +21,11 @@
             "input": "libs/ui/atoms/src/lib",
             "glob": "**/*.scss",
             "output": "assets/atoms"
+          },
+          {
+            "input": "libs/ui/molecules/src/lib/assets",
+            "glob": "**/*.svg",
+            "output": "assets"
           }
         ],
         "styles": ["apps/design-system/src/styles.scss"],

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NxCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
+<rc-nx-custom-icon>
+  <rc-custom-icon>
+    <object
+      data="assets/images/nx.svg"
+      height="24"
+      type="image/svg+xml"
+      width="24"
+    >
+      <img
+        alt="assets/images/nx"
+        src="assets/images/nx.png"
+      />
+    </object>
+  </rc-custom-icon>
+</rc-nx-custom-icon>
+`;
+
+exports[`NxCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
+<rc-nx-custom-icon>
+  <rc-custom-icon>
+    <object
+      data="assets/images/nx.svg"
+      height="24"
+      type="image/svg+xml"
+      width="24"
+    >
+      <img
+        alt="assets/images/nx"
+        src="assets/images/nx.png"
+      />
+    </object>
+  </rc-custom-icon>
+</rc-nx-custom-icon>
+`;

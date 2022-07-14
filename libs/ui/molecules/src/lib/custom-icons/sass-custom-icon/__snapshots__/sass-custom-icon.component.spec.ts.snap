@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SassCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
+<rc-sass-custom-icon>
+  <rc-custom-icon>
+    <object
+      data="assets/images/sass.svg"
+      height="24"
+      type="image/svg+xml"
+      width="24"
+    >
+      <img
+        alt="assets/images/sass"
+        src="assets/images/sass.png"
+      />
+    </object>
+  </rc-custom-icon>
+</rc-sass-custom-icon>
+`;
+
+exports[`SassCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
+<rc-sass-custom-icon>
+  <rc-custom-icon>
+    <object
+      data="assets/images/sass.svg"
+      height="24"
+      type="image/svg+xml"
+      width="24"
+    >
+      <img
+        alt="assets/images/sass"
+        src="assets/images/sass.png"
+      />
+    </object>
+  </rc-custom-icon>
+</rc-sass-custom-icon>
+`;
