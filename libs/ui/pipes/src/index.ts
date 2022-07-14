@@ -1,1 +1,1 @@
-export * from './lib/safe.pipe';
+export * from './safe.pipe';
