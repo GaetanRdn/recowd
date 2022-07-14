@@ -21,6 +21,11 @@
             "input": "libs/ui/atoms/src/lib",
             "glob": "**/*.scss",
             "output": "assets/atoms"
+          },
+          {
+            "input": "apps/recowd-web/assets/i18n",
+            "glob": "**/*.json",
+            "output": "assets/i18n"
           }
         ],
         "styles": ["apps/design-system/src/styles.scss"],

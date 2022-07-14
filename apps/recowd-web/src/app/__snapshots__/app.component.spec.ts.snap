@@ -16,6 +16,7 @@ HTMLCollection [
         <a
           class="rc-button"
           rcbutton=""
+          role="button"
         >
           <rc-material-icon
             class="material-icons-outlined"
@@ -23,7 +24,7 @@ HTMLCollection [
           >
             school
           </rc-material-icon>
-           Formations
+           degrees
 
         </a>
       </rc-education-button-with-icon>
@@ -31,6 +32,7 @@ HTMLCollection [
         <a
           class="rc-button"
           rcbutton=""
+          role="button"
         >
           <rc-material-icon
             class="material-icons-outlined"
@@ -38,7 +40,7 @@ HTMLCollection [
           >
             history_edu
           </rc-material-icon>
-           Expériences
+           experiences
 
         </a>
       </rc-experience-button-with-icon>
@@ -46,6 +48,7 @@ HTMLCollection [
         <a
           class="rc-button"
           rcbutton=""
+          role="button"
         >
           <rc-material-icon
             class="material-icons-outlined"

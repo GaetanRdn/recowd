@@ -5,6 +5,7 @@ exports[`ContactButtonIconComponent should create 1`] = `
   <a
     class="rc-button"
     rcbutton=""
+    role="button"
   >
     <rc-material-icon
       class="material-icons-outlined"
