@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TemplateLookup } from '@recowd/test/utils';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RwToolbarComponent } from './rw-toolbar.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('RwToolbarComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -9,7 +10,7 @@ describe('RwToolbarComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [RwToolbarComponent],
+      imports: [RwToolbarComponent, TranslateModule.forRoot()],
     }).compileComponents();
 
     templateLookup = new TemplateLookup(HostComponent);

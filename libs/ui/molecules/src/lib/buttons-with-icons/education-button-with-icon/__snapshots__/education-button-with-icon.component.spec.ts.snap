@@ -5,6 +5,7 @@ exports[`EducationButtonWithIconComponent should create 1`] = `
   <a
     class="rc-button"
     rcbutton=""
+    role="button"
   >
     <rc-material-icon
       class="material-icons-outlined"
@@ -12,7 +13,7 @@ exports[`EducationButtonWithIconComponent should create 1`] = `
     >
       school
     </rc-material-icon>
-     Formations
+     degrees
 
   </a>
 </rc-education-button-with-icon>

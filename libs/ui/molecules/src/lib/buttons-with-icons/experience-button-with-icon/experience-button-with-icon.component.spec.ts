@@ -2,6 +2,7 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { TemplateLookup } from '@recowd/test/utils';
 import { ExperienceButtonWithIconComponent } from './experience-button-with-icon.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ExperienceButtonWithIconComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -9,7 +10,7 @@ describe('ExperienceButtonWithIconComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [ExperienceButtonWithIconComponent],
+      imports: [ExperienceButtonWithIconComponent, TranslateModule.forRoot()],
     }).compileComponents();
 
     templateLookup = new TemplateLookup(HostComponent);

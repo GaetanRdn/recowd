@@ -1,12 +1,9 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { RwToolbarComponent } from '@recowd/ui/organisms';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'rc-recowd-root',
-  standalone: true,
-  imports: [RouterModule, RwToolbarComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {}
