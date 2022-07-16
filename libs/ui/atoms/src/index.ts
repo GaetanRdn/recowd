@@ -14,6 +14,8 @@ export * from './lib/card/card-content.directive';
 export * from './lib/card/card-subtitle.directive';
 export * from './lib/card/card-title.directive';
 
+export * from './lib/custom-icon/custom-icon.component';
+
 export * from './lib/forms/checkbox/checkbox.component';
 export * from './lib/forms/form-field/form-field.component';
 export * from './lib/forms/input/input.directive';

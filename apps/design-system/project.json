@@ -23,6 +23,11 @@
             "output": "assets/atoms"
           },
           {
+            "input": "libs/ui/molecules/src/lib/assets",
+            "glob": "**/*.svg",
+            "output": "assets"
+          },
+          {
             "input": "apps/recowd-web/assets/i18n",
             "glob": "**/*.json",
             "output": "assets/i18n"

@@ -6,3 +6,10 @@ export * from './lib/buttons-with-icons/education-button-with-icon/education-but
 export * from './lib/buttons-with-icons/experience-button-with-icon/experience-button-with-icon.component';
 
 export * from './lib/cards/education-card/education-card.component';
+
+export * from './lib/custom-icons/angular-custom-icon/angular-custom-icon.component';
+export * from './lib/custom-icons/cypress-custom-icon/cypress-custom-icon.component';
+export * from './lib/custom-icons/jest-custom-icon/jest-custom-icon.component';
+export * from './lib/custom-icons/nx-custom-icon/nx-custom-icon.component';
+export * from './lib/custom-icons/sass-custom-icon/sass-custom-icon.component';
+export * from './lib/custom-icons/storybook-custom-icon/storybook-custom-icon.component';

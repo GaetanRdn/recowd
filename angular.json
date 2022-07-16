@@ -3,6 +3,7 @@
   "projects": {
     "design-system": "apps/design-system",
     "models": "libs/models",
+    "pipes": "libs/pipes",
     "recowd-web": "apps/recowd-web",
     "recowd-web-e2e": "apps/recowd-web-e2e",
     "test-utils": "libs/test/utils",

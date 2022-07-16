@@ -18,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@recowd/models": ["libs/models/src/index.ts"],
+      "@recowd/pipes": ["libs/pipes/src/index.ts"],
       "@recowd/test/utils": ["libs/test/utils/src/index.ts"],
       "@recowd/ui-animations": ["libs/ui/animations/src/index.ts"],
       "@recowd/ui-atoms": ["libs/ui/atoms/src/index.ts"],
