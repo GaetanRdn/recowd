@@ -2,7 +2,7 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { TemplateLookup } from '@recowd/test/utils';
-import { RwToolbarComponent } from '@recowd/ui/organisms';
+import { RwFooterComponent, RwToolbarComponent } from '@recowd/ui/organisms';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
@@ -14,6 +14,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         RwToolbarComponent,
+        RwFooterComponent,
         TranslateModule.forRoot(),
       ],
     }).compileComponents();
