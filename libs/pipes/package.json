@@ -1,5 +1,5 @@
 {
-  "name": "@recowd/ui-pipes",
+  "name": "@recowd/pipes",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.0.0",

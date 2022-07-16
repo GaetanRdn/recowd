@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'ui-pipes',
-  preset: '../../../jest.preset.js',
+  displayName: 'pipes',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/ui/pipes',
+  coverageDirectory: '../../coverage/libs/pipes',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

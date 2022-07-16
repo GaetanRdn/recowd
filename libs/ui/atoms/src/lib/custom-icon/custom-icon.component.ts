@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Required } from '@recowd/utility-types';
-import { SafePipe } from '@recowd/ui/pipes';
+import { SafePipe } from '@recowd/pipes';
 
 @Component({
   selector: 'rc-custom-icon',

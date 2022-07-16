@@ -1,36 +1,36 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/ui/pipes/src",
+  "sourceRoot": "libs/pipes/src",
   "prefix": "rc",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/ui/pipes"],
+      "outputs": ["dist/libs/pipes"],
       "options": {
-        "project": "libs/ui/pipes/ng-package.json"
+        "project": "libs/pipes/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/ui/pipes/tsconfig.lib.prod.json"
+          "tsConfig": "libs/pipes/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/ui/pipes/tsconfig.lib.json"
+          "tsConfig": "libs/pipes/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ui/pipes"],
+      "outputs": ["coverage/libs/pipes"],
       "options": {
-        "jestConfig": "libs/ui/pipes/jest.config.ts",
+        "jestConfig": "libs/pipes/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["libs/ui/pipes/**/*.ts", "libs/ui/pipes/**/*.html"]
+        "lintFilePatterns": ["libs/pipes/**/*.ts", "libs/pipes/**/*.html"]
       }
     }
   },

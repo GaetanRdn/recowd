@@ -3,6 +3,7 @@
   "projects": {
     "design-system": "apps/design-system",
     "models": "libs/models",
+    "pipes": "libs/pipes",
     "recowd-web": "apps/recowd-web",
     "recowd-web-e2e": "apps/recowd-web-e2e",
     "test-utils": "libs/test/utils",
@@ -10,7 +11,6 @@
     "ui-atoms": "libs/ui/atoms",
     "ui-molecules": "libs/ui/molecules",
     "ui-organisms": "libs/ui/organisms",
-    "ui-pipes": "libs/ui/pipes",
     "utility-types": "libs/utility-types"
   }
 }
