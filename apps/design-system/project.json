@@ -23,9 +23,9 @@
             "output": "assets/atoms"
           },
           {
-            "input": "libs/ui/molecules/src/lib/assets",
+            "input": "libs/ui/molecules/src/lib/assets/images",
             "glob": "**/*.svg",
-            "output": "assets"
+            "output": "assets/images"
           },
           {
             "input": "apps/recowd-web/assets/i18n",
