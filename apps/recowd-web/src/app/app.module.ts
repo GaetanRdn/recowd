@@ -2,7 +2,7 @@ import { inject, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { RwToolbarComponent } from '@recowd/ui/organisms';
+import { RwFooterComponent, RwToolbarComponent } from '@recowd/ui/organisms';
 import { BrowserModule } from '@angular/platform-browser';
 import { routes } from './app.routes';
 import {
@@ -31,6 +31,7 @@ export function createTranslateLoader(http: HttpClient) {
       },
     }),
     RwToolbarComponent,
+    RwFooterComponent,
   ],
   bootstrap: [AppComponent],
 })

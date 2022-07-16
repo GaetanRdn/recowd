@@ -5,6 +5,10 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   margin: 0;
+
+  * {
+    position: relative;
+  }
 }
 
 $config: (

@@ -7,6 +7,7 @@ import { EducationCardsListComponent } from '@recowd/ui/organisms';
   standalone: true,
   imports: [EducationCardsListComponent],
   templateUrl: './education-page.component.html',
+  styleUrls: ['./education-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EducationPageComponent {
