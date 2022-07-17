@@ -2,16 +2,27 @@
 
 @mixin rc-list($config) {
   $list-item-typo: utils.map-get-deep($config, typography, body-regular);
+  $primary: utils.map-get-deep($config, colors, primary);
 
   rc-list {
-    .rc-list-item {
+    display: flex;
+    gap: 0.5rem;
+
+    .rc-list-item,
+    .rc-list-title {
       @include utils.use-typography($list-item-typo);
     }
 
+    .rc-list-item {
+      color: map-get($primary, color);
+    }
+
+    .rc-list-title {
+      color: darken(map-get($primary, color), 30%);
+    }
+
     &.rc-horizontal {
-      display: flex;
       flex-flow: row wrap;
-      gap: 0.5rem;
 
       .rc-list-item:not(:last-child)::after {
         content: ', ';
@@ -19,9 +30,7 @@
     }
 
     &:not(.rc-horizontal) {
-      display: flex;
       flex-flow: column nowrap;
-      gap: 0.5rem;
 
       .rc-list-item {
         padding: 0.5rem 0;

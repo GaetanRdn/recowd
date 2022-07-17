@@ -19,6 +19,7 @@ const Template: Story<ListComponent> = (args: ListComponent) => ({
     horizontal: args.horizontal,
   },
   template: `<rc-list [horizontal]="horizontal">
+<rc-list-title>Title</rc-list-title>
 <rc-list-item>Item 1</rc-list-item>
 <rc-list-item>Item 2</rc-list-item>
 <rc-list-item>Item 3</rc-list-item>

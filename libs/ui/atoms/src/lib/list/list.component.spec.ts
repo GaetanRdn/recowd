@@ -4,22 +4,23 @@ import { ListModule } from './list.module';
 import { TemplateLookup } from '@recowd/test/utils';
 
 describe('ListComponent', () => {
-  let templateLookup: TemplateLookup<HostComponent>;
+  let templateLookup: TemplateLookup<HostComponent | HostWithTitleComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [HostComponent],
+      declarations: [HostComponent, HostWithTitleComponent],
       imports: [ListModule],
     }).compileComponents();
-
-    templateLookup = new TemplateLookup(HostComponent);
-    templateLookup.detectChanges();
   }));
 
-  it('should create empty', () =>
-    expect(templateLookup.firstChildElement).toMatchSnapshot());
+  it('should create empty', () => {
+    templateLookup = new TemplateLookup(HostComponent);
+    templateLookup.detectChanges();
+    expect(templateLookup.firstChildElement).toMatchSnapshot();
+  });
 
   it('should create with items', () => {
+    templateLookup = new TemplateLookup(HostComponent);
     templateLookup.hostComponent.list = ['Item 1', 'Item 2'];
 
     templateLookup.detectChanges();
@@ -28,7 +29,16 @@ describe('ListComponent', () => {
   });
 
   it('should create horizontal', () => {
-    templateLookup.hostComponent.horizontal = true;
+    templateLookup = new TemplateLookup(HostComponent);
+    (templateLookup.hostComponent as HostComponent).horizontal = true;
+
+    templateLookup.detectChanges();
+
+    expect(templateLookup.firstChildElement).toMatchSnapshot();
+  });
+
+  it('should create with title', () => {
+    templateLookup = new TemplateLookup(HostWithTitleComponent);
 
     templateLookup.detectChanges();
 
@@ -44,4 +54,14 @@ describe('ListComponent', () => {
 class HostComponent {
   public list: string[] = [];
   public horizontal = false;
+}
+
+@Component({
+  template: ` <rc-list>
+    <rc-list-title>Title</rc-list-title>
+    <rc-list-item *ngFor="let item of list">{{ item }}</rc-list-item>
+  </rc-list>`,
+})
+class HostWithTitleComponent {
+  public list: string[] = ['Item'];
 }

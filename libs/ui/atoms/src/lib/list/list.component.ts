@@ -6,7 +6,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     role: 'list',
     '[class.rc-horizontal]': 'horizontal',
   },
-  template: ` <ng-content select="[rcListItem], rc-list-item"></ng-content>`,
+  template: ` <ng-content select="[rcListTitle], rc-list-title"></ng-content>
+    <ng-content select="[rcListItem], rc-list-item"></ng-content>`,
   styleUrls: ['./list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
