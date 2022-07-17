@@ -1,0 +1,31 @@
+@use '../assets/utils';
+
+@mixin rc-list($config) {
+  $list-item-typo: utils.map-get-deep($config, typography, body-regular);
+
+  rc-list {
+    .rc-list-item {
+      @include utils.use-typography($list-item-typo);
+    }
+
+    &.rc-horizontal {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 0.5rem;
+
+      .rc-list-item:not(:last-child)::after {
+        content: ', ';
+      }
+    }
+
+    &:not(.rc-horizontal) {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.5rem;
+
+      .rc-list-item {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}

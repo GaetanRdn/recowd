@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListComponent should create empty 1`] = `
+<rc-list
+  role="list"
+>
+  
+</rc-list>
+`;
+
+exports[`ListComponent should create horizontal 1`] = `
+<rc-list
+  class="rc-horizontal"
+  role="list"
+>
+  
+</rc-list>
+`;
+
+exports[`ListComponent should create with items 1`] = `
+<rc-list
+  role="list"
+>
+  <rc-list-item
+    class="rc-list-item"
+    role="list-item"
+  >
+    Item 1
+  </rc-list-item>
+  <rc-list-item
+    class="rc-list-item"
+    role="list-item"
+  >
+    Item 2
+  </rc-list-item>
+  
+</rc-list>
+`;
