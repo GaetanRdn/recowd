@@ -77,7 +77,13 @@ HTMLCollection [
       </rc-contact-button-icon>
     </rc-toolbar>
   </rc-rw-toolbar>,
-  <router-outlet />,
+  <div
+    class="ng-trigger ng-trigger-routeAnimations"
+    style=""
+  >
+    <router-outlet />
+    
+  </div>,
   <rc-rw-footer>
     <footer>
       <rc-toolbar>

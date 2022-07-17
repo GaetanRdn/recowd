@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/recowd-web/src",
-  "prefix": "recowd",
+  "prefix": "rc",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
