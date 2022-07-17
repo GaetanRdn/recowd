@@ -114,6 +114,6 @@ exports[`ListComponent should create with title 1`] = `
   >
     Item
   </rc-list-item>
-  
+
 </rc-list>
 `;
