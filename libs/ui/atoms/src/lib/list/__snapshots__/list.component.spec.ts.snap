@@ -65,7 +65,9 @@ exports[`ListComponent should create with line 1`] = `
       class="rc-list-item"
       role="list-item"
     >
-      <rc-line>
+      <rc-line
+        class="rc-line"
+      >
         Item
       </rc-line>
     </rc-list-item>
