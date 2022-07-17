@@ -5,6 +5,8 @@
   (contactClick)="redirectTo('/contact')"
 ></rc-rw-toolbar>
 
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
 
 <rc-rw-footer></rc-rw-footer>

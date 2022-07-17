@@ -11,9 +11,15 @@ export const routes: Routes = [
   {
     path: 'degrees',
     component: EducationPageComponent,
+    data: { animation: 'degrees' },
   },
   {
     path: 'partners',
     component: PartnersPageComponent,
+    data: { animation: 'partners' },
+  },
+  {
+    path: '**',
+    redirectTo: '/',
   },
 ];
