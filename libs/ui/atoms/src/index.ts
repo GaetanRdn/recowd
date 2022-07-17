@@ -25,6 +25,8 @@ export * from './lib/forms/rate/rate.component';
 export * from './lib/list/list.module';
 export * from './lib/list/list.component';
 export * from './lib/list/list-item.directive';
+export * from './lib/list/list-title.directive';
+export * from './lib/list/line.directive';
 
 export * from './lib/material-icon/material-icon.directive';
 
