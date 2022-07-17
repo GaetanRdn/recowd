@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnerIconComponent should create 1`] = `
+<rc-material-icon
+  class="material-icons-outlined"
+  type="outlined"
+>
+  handshake
+</rc-material-icon>
+`;

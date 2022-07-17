@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CbpCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
+<rc-cbp-custom-icon>
+  <rc-custom-icon>
+    <img
+      alt="cbp"
+      height="16"
+      src="assets/images/cbp.svg"
+      width="16"
+    />
+  </rc-custom-icon>
+</rc-cbp-custom-icon>
+`;
+
+exports[`CbpCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
+<rc-cbp-custom-icon>
+  <rc-custom-icon>
+    <img
+      alt="cbp"
+      height="32"
+      src="assets/images/cbp.svg"
+      width="32"
+    />
+  </rc-custom-icon>
+</rc-cbp-custom-icon>
+`;

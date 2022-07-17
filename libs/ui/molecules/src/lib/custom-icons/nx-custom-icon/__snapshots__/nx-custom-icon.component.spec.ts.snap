@@ -3,17 +3,12 @@
 exports[`NxCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-nx-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/nx.svg"
+    <img
+      alt="nx"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/nx.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/nx"
-        src="assets/images/nx.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-nx-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`NxCustomIconComponent should create with name $name, width 16 and heigh
 exports[`NxCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-nx-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/nx.svg"
+    <img
+      alt="nx"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/nx.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/nx"
-        src="assets/images/nx.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-nx-custom-icon>
 `;

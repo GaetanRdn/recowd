@@ -3,17 +3,12 @@
 exports[`CypressCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-cypress-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/cypress.svg"
+    <img
+      alt="cypress"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/cypress.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/cypress"
-        src="assets/images/cypress.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-cypress-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`CypressCustomIconComponent should create with name $name, width 16 and 
 exports[`CypressCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-cypress-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/cypress.svg"
+    <img
+      alt="cypress"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/cypress.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/cypress"
-        src="assets/images/cypress.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-cypress-custom-icon>
 `;

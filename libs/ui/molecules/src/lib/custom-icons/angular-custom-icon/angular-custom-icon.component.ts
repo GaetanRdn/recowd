@@ -9,5 +9,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AngularCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/angular';
+  public override readonly name = 'angular';
 }

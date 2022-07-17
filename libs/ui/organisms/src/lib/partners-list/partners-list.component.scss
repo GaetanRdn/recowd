@@ -1,0 +1,17 @@
+:host {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 4rem;
+  justify-content: center;
+
+  rc-card {
+    background-color: white;
+    max-height: clamp(15rem, 15rem, 25rem);
+    overflow: hidden;
+
+    .rc-card-content {
+      transform: translateY(-28%);
+    }
+  }
+}

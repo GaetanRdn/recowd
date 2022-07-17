@@ -23,7 +23,7 @@
           },
           {
             "input": "libs/ui/molecules/src/lib/assets",
-            "glob": "**/*.svg",
+            "glob": "**/*.(svg|png)",
             "output": "assets"
           }
         ],

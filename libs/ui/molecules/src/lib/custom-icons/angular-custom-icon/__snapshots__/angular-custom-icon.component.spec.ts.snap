@@ -3,17 +3,12 @@
 exports[`AngularCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-angular-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/angular.svg"
+    <img
+      alt="angular"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/angular.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/angular"
-        src="assets/images/angular.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-angular-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`AngularCustomIconComponent should create with name $name, width 16 and 
 exports[`AngularCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-angular-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/angular.svg"
+    <img
+      alt="angular"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/angular.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/angular"
-        src="assets/images/angular.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-angular-custom-icon>
 `;

@@ -3,17 +3,12 @@
 exports[`SassCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-sass-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/sass.svg"
+    <img
+      alt="sass"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/sass.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/sass"
-        src="assets/images/sass.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-sass-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`SassCustomIconComponent should create with name $name, width 16 and hei
 exports[`SassCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-sass-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/sass.svg"
+    <img
+      alt="sass"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/sass.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/sass"
-        src="assets/images/sass.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-sass-custom-icon>
 `;

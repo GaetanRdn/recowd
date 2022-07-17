@@ -9,5 +9,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class JestCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/jest';
+  public override readonly name = 'jest';
 }

@@ -12,6 +12,9 @@ import { SafePipe } from '@recowd/pipes';
 })
 export class CustomIconComponent {
   @Input() @Required() public name!: string;
+
+  @Input() public type = 'svg';
+
   @Input() public width = 24;
 
   private _height?: number;

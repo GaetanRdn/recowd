@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnerLinkComponent should create with {"link":"www.paulo.com"} 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.paulo.com"
+    rcbuttonicon=""
+    target="_blank"
+  >
+    <rc-norsys-custom-icon>
+      <rc-custom-icon>
+        <img
+          alt="norsys"
+          height="300"
+          src="assets/images/norsys.png"
+          width="300"
+        />
+      </rc-custom-icon>
+    </rc-norsys-custom-icon>
+    
+  </a>
+</rc-partner-link>
+`;
+
+exports[`PartnerLinkComponent should create with {"link":"www.test.fr"} 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.test.fr"
+    rcbuttonicon=""
+    target="_blank"
+  >
+    <rc-cbp-custom-icon>
+      <rc-custom-icon>
+        <img
+          alt="cbp"
+          height="300"
+          src="assets/images/cbp.svg"
+          width="300"
+        />
+      </rc-custom-icon>
+    </rc-cbp-custom-icon>
+    
+  </a>
+</rc-partner-link>
+`;

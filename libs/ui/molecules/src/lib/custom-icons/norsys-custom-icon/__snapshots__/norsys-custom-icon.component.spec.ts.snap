@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NorsysCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
+<rc-norsys-custom-icon>
+  <rc-custom-icon>
+    <img
+      alt="norsys"
+      height="16"
+      src="assets/images/norsys.png"
+      width="16"
+    />
+  </rc-custom-icon>
+</rc-norsys-custom-icon>
+`;
+
+exports[`NorsysCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
+<rc-norsys-custom-icon>
+  <rc-custom-icon>
+    <img
+      alt="norsys"
+      height="32"
+      src="assets/images/norsys.png"
+      width="32"
+    />
+  </rc-custom-icon>
+</rc-norsys-custom-icon>
+`;
