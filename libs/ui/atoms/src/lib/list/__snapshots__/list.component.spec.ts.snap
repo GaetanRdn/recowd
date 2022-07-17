@@ -4,7 +4,11 @@ exports[`ListComponent should create empty 1`] = `
 <rc-list
   role="list"
 >
-  
+  <span
+    class="rc-list-items-wrapper"
+  >
+    
+  </span>
 </rc-list>
 `;
 
@@ -13,7 +17,11 @@ exports[`ListComponent should create horizontal 1`] = `
   class="rc-horizontal"
   role="list"
 >
-  
+  <span
+    class="rc-list-items-wrapper"
+  >
+    
+  </span>
 </rc-list>
 `;
 
@@ -21,19 +29,23 @@ exports[`ListComponent should create with items 1`] = `
 <rc-list
   role="list"
 >
-  <rc-list-item
-    class="rc-list-item"
-    role="list-item"
+  <span
+    class="rc-list-items-wrapper"
   >
-    Item 1
-  </rc-list-item>
-  <rc-list-item
-    class="rc-list-item"
-    role="list-item"
-  >
-    Item 2
-  </rc-list-item>
-  
+    <rc-list-item
+      class="rc-list-item"
+      role="list-item"
+    >
+      Item 1
+    </rc-list-item>
+    <rc-list-item
+      class="rc-list-item"
+      role="list-item"
+    >
+      Item 2
+    </rc-list-item>
+    
+  </span>
 </rc-list>
 `;
 
@@ -46,12 +58,16 @@ exports[`ListComponent should create with title 1`] = `
   >
     Title
   </rc-list-title>
-  <rc-list-item
-    class="rc-list-item"
-    role="list-item"
+  <span
+    class="rc-list-items-wrapper"
   >
-    Item
-  </rc-list-item>
-  
+    <rc-list-item
+      class="rc-list-item"
+      role="list-item"
+    >
+      Item
+    </rc-list-item>
+    
+  </span>
 </rc-list>
 `;

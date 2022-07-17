@@ -6,7 +6,12 @@
 
   rc-list {
     display: flex;
+    flex-flow: column;
     gap: 0.5rem;
+
+    .rc-list-items-wrapper {
+      display: flex;
+    }
 
     .rc-list-item,
     .rc-list-title {
@@ -22,15 +27,15 @@
     }
 
     &.rc-horizontal {
-      flex-flow: row wrap;
-
       .rc-list-item:not(:last-child)::after {
         content: ', ';
       }
     }
 
     &:not(.rc-horizontal) {
-      flex-flow: column nowrap;
+      .rc-list-items-wrapper {
+        flex-flow: column;
+      }
 
       .rc-list-item {
         padding: 0.5rem 0;
