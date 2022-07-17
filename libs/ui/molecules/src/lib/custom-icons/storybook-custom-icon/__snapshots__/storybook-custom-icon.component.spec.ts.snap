@@ -3,17 +3,12 @@
 exports[`StorybookCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-storybook-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/storybook.svg"
+    <img
+      alt="storybook"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/storybook.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/storybook"
-        src="assets/images/storybook.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-storybook-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`StorybookCustomIconComponent should create with name $name, width 16 an
 exports[`StorybookCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-storybook-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/storybook.svg"
+    <img
+      alt="storybook"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/storybook.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/storybook"
-        src="assets/images/storybook.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-storybook-custom-icon>
 `;

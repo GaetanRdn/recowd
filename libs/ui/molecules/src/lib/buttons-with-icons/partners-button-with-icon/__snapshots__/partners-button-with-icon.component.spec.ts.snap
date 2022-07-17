@@ -7,13 +7,15 @@ exports[`PartnersButtonWithIconComponent should create 1`] = `
     rcbutton=""
     role="button"
   >
-    <rc-material-icon
-      type="outlined"
-    >
-      school
-    </rc-material-icon>
-     partners
-
+    <rc-partner-icon>
+      <rc-material-icon
+        class="material-icons-outlined"
+        type="outlined"
+      >
+        handshake
+      </rc-material-icon>
+    </rc-partner-icon>
+     partners 
   </a>
 </rc-partners-button-with-icon>
 `;

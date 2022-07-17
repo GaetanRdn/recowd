@@ -6,92 +6,62 @@ HTMLCollection [
     <rc-toolbar>
       <rc-nx-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/nx.svg"
+          <img
+            alt="nx"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/nx.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/nx"
-              src="assets/images/nx.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-nx-custom-icon>
       <rc-angular-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/angular.svg"
+          <img
+            alt="angular"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/angular.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/angular"
-              src="assets/images/angular.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-angular-custom-icon>
       <rc-jest-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/jest.svg"
+          <img
+            alt="jest"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/jest.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/jest"
-              src="assets/images/jest.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-jest-custom-icon>
       <rc-storybook-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/storybook.svg"
+          <img
+            alt="storybook"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/storybook.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/storybook"
-              src="assets/images/storybook.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-storybook-custom-icon>
       <rc-sass-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/sass.svg"
+          <img
+            alt="sass"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/sass.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/sass"
-              src="assets/images/sass.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-sass-custom-icon>
       <rc-cypress-custom-icon>
         <rc-custom-icon>
-          <object
-            data="assets/images/cypress.svg"
+          <img
+            alt="cypress"
             height="24"
-            type="image/svg+xml"
+            src="assets/images/cypress.svg"
             width="24"
-          >
-            <img
-              alt="assets/images/cypress"
-              src="assets/images/cypress.png"
-            />
-          </object>
+          />
         </rc-custom-icon>
       </rc-cypress-custom-icon>
     </rc-toolbar>

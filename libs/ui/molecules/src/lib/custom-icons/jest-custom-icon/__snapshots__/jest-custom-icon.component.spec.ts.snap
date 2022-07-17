@@ -3,17 +3,12 @@
 exports[`JestCustomIconComponent should create with name $name, width 16 and height 24 1`] = `
 <rc-jest-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/jest.svg"
+    <img
+      alt="jest"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/jest.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/jest"
-        src="assets/images/jest.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-jest-custom-icon>
 `;
@@ -21,17 +16,12 @@ exports[`JestCustomIconComponent should create with name $name, width 16 and hei
 exports[`JestCustomIconComponent should create with name $name, width 32 and height undefined 1`] = `
 <rc-jest-custom-icon>
   <rc-custom-icon>
-    <object
-      data="assets/images/jest.svg"
+    <img
+      alt="jest"
       height="24"
-      type="image/svg+xml"
+      src="assets/images/jest.svg"
       width="24"
-    >
-      <img
-        alt="assets/images/jest"
-        src="assets/images/jest.png"
-      />
-    </object>
+    />
   </rc-custom-icon>
 </rc-jest-custom-icon>
 `;
