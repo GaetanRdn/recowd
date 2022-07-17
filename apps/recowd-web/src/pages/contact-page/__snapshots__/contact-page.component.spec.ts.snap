@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactPageComponent should create 1`] = `
+HTMLCollection [
+  <rc-work-in-progress-card>
+    <rc-card>
+      <div
+        class="rc-card-header"
+      >
+        <rc-card-title
+          class="rc-card-title"
+        >
+          work-in-progress
+        </rc-card-title>
+      </div>
+      <rc-card-content
+        class="rc-card-content"
+      >
+        <rc-work-in-progress-icon>
+          <rc-material-icon
+            class="material-icons-outlined"
+            type="outlined"
+          >
+            engineering
+          </rc-material-icon>
+        </rc-work-in-progress-icon>
+      </rc-card-content>
+    </rc-card>
+  </rc-work-in-progress-card>,
+]
+`;

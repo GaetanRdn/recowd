@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkInProgressIconComponent should create 1`] = `
+HTMLCollection [
+  <rc-material-icon
+    class="material-icons-outlined"
+    type="outlined"
+  >
+    engineering
+  </rc-material-icon>,
+]
+`;

@@ -7,6 +7,7 @@ export * from './lib/buttons-with-icons/experience-button-with-icon/experience-b
 export * from './lib/buttons-with-icons/partners-button-with-icon/partners-button-with-icon.component';
 
 export * from './lib/cards/education-card/education-card.component';
+export * from './lib/cards/work-in-progress-card/work-in-progress-card.component';
 
 export * from './lib/custom-icons/angular-custom-icon/angular-custom-icon.component';
 export * from './lib/custom-icons/cbp-custom-icon/cbp-custom-icon.component';

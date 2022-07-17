@@ -15,7 +15,12 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
       imports: [
-        RouterTestingModule,
+        RouterTestingModule.withRoutes([
+          { path: 'partners', component: AppComponent },
+          { path: 'experiences', component: AppComponent },
+          { path: 'degrees', component: AppComponent },
+          { path: 'contact', component: AppComponent },
+        ]),
         RwToolbarComponent,
         RwFooterComponent,
         TranslateModule.forRoot(),
@@ -35,7 +40,7 @@ describe('AppComponent', () => {
   it.each`
     event                | route
     ${'partnersClick'}   | ${'/partners'}
-    ${'experienceClick'} | ${'/experience'}
+    ${'experienceClick'} | ${'/experiences'}
     ${'educationClick'}  | ${'/degrees'}
     ${'contactClick'}    | ${'/contact'}
   `('should redirect to $route when $event is emitted', ({ event, route }) => {
