@@ -9,7 +9,7 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CbpCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/cbp';
-
+  public override readonly name = 'cbp';
+  public override readonly type = 'svg';
   public override readonly width = 300;
 }

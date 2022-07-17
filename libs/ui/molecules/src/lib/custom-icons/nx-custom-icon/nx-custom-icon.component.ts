@@ -9,5 +9,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NxCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/nx';
+  public override readonly name = 'nx';
 }

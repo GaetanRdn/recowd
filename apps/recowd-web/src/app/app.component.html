@@ -1,4 +1,9 @@
-<rc-rw-toolbar></rc-rw-toolbar>
+<rc-rw-toolbar
+  (partnersClick)="redirectTo('/partners')"
+  (experienceClick)="redirectTo('/experience')"
+  (educationClick)="redirectTo('/degrees')"
+  (contactClick)="redirectTo('/contact')"
+></rc-rw-toolbar>
 
 <router-outlet></router-outlet>
 

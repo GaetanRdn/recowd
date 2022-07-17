@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnerLinkComponent should create with {"link":"www.paulo.com"} 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.paulo.com"
+    rcbuttonicon=""
+    target="_blank"
+  />
+  <rc-norsys-custom-icon>
+    <rc-custom-icon>
+      <object
+        type="image/svg+xml"
+      >
+        <img />
+      </object>
+    </rc-custom-icon>
+  </rc-norsys-custom-icon>
+  
+</rc-partner-link>
+`;
+
+exports[`PartnerLinkComponent should create with {"link":"www.test.fr"} 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.test.fr"
+    rcbuttonicon=""
+    target="_blank"
+  />
+  <rc-cbp-custom-icon>
+    <rc-custom-icon>
+      <object
+        type="image/svg+xml"
+      >
+        <img />
+      </object>
+    </rc-custom-icon>
+  </rc-cbp-custom-icon>
+  
+</rc-partner-link>
+`;
+
+exports[`PartnerLinkComponent should create with link www.paulo.com and icon [Function NorsysCustomIconComponent] 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.paulo.com"
+    rcbuttonicon=""
+    target="_blank"
+  />
+  <rc-norsys-custom-icon>
+    <rc-custom-icon>
+      <object
+        type="image/svg+xml"
+      >
+        <img />
+      </object>
+    </rc-custom-icon>
+  </rc-norsys-custom-icon>
+  
+</rc-partner-link>
+`;
+
+exports[`PartnerLinkComponent should create with link www.test.fr and icon [Function CbpCustomIconComponent] 1`] = `
+<rc-partner-link>
+  <a
+    class="rc-button-icon"
+    href="www.test.fr"
+    rcbuttonicon=""
+    target="_blank"
+  />
+  <rc-cbp-custom-icon>
+    <rc-custom-icon>
+      <object
+        type="image/svg+xml"
+      >
+        <img />
+      </object>
+    </rc-custom-icon>
+  </rc-cbp-custom-icon>
+  
+</rc-partner-link>
+`;

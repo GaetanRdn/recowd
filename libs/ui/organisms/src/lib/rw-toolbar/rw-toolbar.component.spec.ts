@@ -25,6 +25,7 @@ describe('RwToolbarComponent', () => {
     ${'onContactClick'}    | ${'rc-contact-button-icon'}
     ${'onExperienceClick'} | ${'rc-experience-button-with-icon'}
     ${'onEducationClick'}  | ${'rc-education-button-with-icon'}
+    ${'onPartnersClick'}   | ${'rc-partners-button-with-icon'}
   `(
     'when click on $selector button then check HostComponent.$method is called',
     ({ method, selector }) => {
@@ -47,6 +48,7 @@ describe('RwToolbarComponent', () => {
     (contactClick)="onContactClick()"
     (educationClick)="onEducationClick()"
     (experienceClick)="onExperienceClick()"
+    (partnersClick)="onPartnersClick()"
   ></rc-rw-toolbar>`,
 })
 class HostComponent {
@@ -59,6 +61,10 @@ class HostComponent {
   }
 
   public onContactClick(): void {
+    // just spying
+  }
+
+  public onPartnersClick(): void {
     // just spying
   }
 }

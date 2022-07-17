@@ -9,5 +9,7 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NorsysCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/norsys';
+  public override readonly name = 'norsys';
+  public override readonly type = 'png';
+  public override readonly width = 300;
 }

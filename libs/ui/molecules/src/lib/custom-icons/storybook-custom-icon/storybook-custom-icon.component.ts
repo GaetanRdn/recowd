@@ -9,5 +9,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StorybookCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/storybook';
+  public override readonly name = 'storybook';
 }

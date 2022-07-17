@@ -8,7 +8,7 @@ import {
 import { NgModule } from '@angular/core';
 
 export function HttpLoaderFactory(httpClient: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(httpClient, './i18n/', '.json');
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
 
 @NgModule({

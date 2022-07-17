@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnersPageComponent should create 1`] = `
+<rc-partners-list>
+  <rc-card>
+    <div
+      class="rc-card-header"
+    />
+    <rc-card-content
+      class="rc-card-content"
+    >
+      <rc-partner-link>
+        <a
+          class="rc-button-icon"
+          href="https://www.norsys.fr/"
+          rcbuttonicon=""
+          target="_blank"
+        >
+          <rc-norsys-custom-icon>
+            <rc-custom-icon>
+              <img
+                alt="norsys"
+                height="300"
+                src="assets/images/norsys.png"
+                width="300"
+              />
+            </rc-custom-icon>
+          </rc-norsys-custom-icon>
+          
+        </a>
+      </rc-partner-link>
+    </rc-card-content>
+  </rc-card>
+  <rc-card>
+    <div
+      class="rc-card-header"
+    />
+    <rc-card-content
+      class="rc-card-content"
+    >
+      <rc-partner-link>
+        <a
+          class="rc-button-icon"
+          href="https://www.cbp.fr/"
+          rcbuttonicon=""
+          target="_blank"
+        >
+          <rc-cbp-custom-icon>
+            <rc-custom-icon>
+              <img
+                alt="cbp"
+                height="300"
+                src="assets/images/cbp.svg"
+                width="300"
+              />
+            </rc-custom-icon>
+          </rc-cbp-custom-icon>
+          
+        </a>
+      </rc-partner-link>
+    </rc-card-content>
+  </rc-card>
+  
+</rc-partners-list>
+`;

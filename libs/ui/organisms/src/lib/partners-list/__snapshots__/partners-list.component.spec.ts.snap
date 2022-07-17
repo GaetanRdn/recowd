@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnersListComponent should create 1`] = `
+<rc-partners-list>
+  <rc-partner-link>
+    <a
+      class="rc-button-icon"
+      href="www.paulo.com"
+      rcbuttonicon=""
+      target="_blank"
+    />
+    <rc-norsys-custom-icon>
+      <rc-custom-icon>
+        <object
+          type="image/svg+xml"
+        >
+          <img />
+        </object>
+      </rc-custom-icon>
+    </rc-norsys-custom-icon>
+    
+  </rc-partner-link>
+  
+</rc-partners-list>
+`;
+
+exports[`PartnersListComponent should create empty 1`] = `
+<rc-partners-list>
+  
+</rc-partners-list>
+`;

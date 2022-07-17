@@ -16,8 +16,10 @@ const Template: Story<RwToolbarComponent> = () => ({
     experienceClick: action('experienceClick'),
     educationClick: action('educationClick'),
     contactClick: action('contactClick'),
+    partnersClick: action('partnersClick'),
   },
-  template: `<rc-rw-toolbar (contactClick)="contactClick()" (educationClick)="educationClick()" (experienceClick)="experienceClick()"></rc-rw-toolbar>`,
+  template: `<rc-rw-toolbar (contactClick)="contactClick()" (educationClick)="educationClick()"
+                            (experienceClick)="experienceClick()" (partnersClick)="partnersClick()"></rc-rw-toolbar>`,
 });
 
 export const Default = Template.bind({});

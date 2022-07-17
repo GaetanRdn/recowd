@@ -10,5 +10,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CypressCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/cypress';
+  public override readonly name = 'cypress';
 }

@@ -28,7 +28,7 @@
             "output": "assets/images"
           },
           {
-            "input": "apps/recowd-web/assets/i18n",
+            "input": "apps/recowd-web/src/assets/i18n",
             "glob": "**/*.json",
             "output": "assets/i18n"
           }

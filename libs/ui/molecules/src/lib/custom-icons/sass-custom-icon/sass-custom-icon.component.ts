@@ -9,5 +9,5 @@ import { CustomIconComponent } from '@recowd/ui-atoms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SassCustomIconComponent extends CustomIconComponent {
-  public override readonly name = 'assets/images/sass';
+  public override readonly name = 'sass';
 }

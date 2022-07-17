@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnersButtonWithIconComponent should create 1`] = `
+<rc-partners-button-with-icon>
+  <a
+    class="rc-button"
+    rcbutton=""
+    role="button"
+  >
+    <rc-material-icon
+      type="outlined"
+    >
+      school
+    </rc-material-icon>
+     partners
+
+  </a>
+</rc-partners-button-with-icon>
+`;

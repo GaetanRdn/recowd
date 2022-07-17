@@ -9,6 +9,7 @@ import {
   ContactButtonIconComponent,
   EducationButtonWithIconComponent,
   ExperienceButtonWithIconComponent,
+  PartnersButtonWithIconComponent,
   RwAvatarComponent,
 } from '@recowd/ui/molecules';
 
@@ -21,6 +22,7 @@ import {
     ContactButtonIconComponent,
     EducationButtonWithIconComponent,
     ExperienceButtonWithIconComponent,
+    PartnersButtonWithIconComponent,
   ],
   templateUrl: './rw-toolbar.component.html',
   styleUrls: ['./rw-toolbar-component.component.scss'],
@@ -30,6 +32,8 @@ export class RwToolbarComponent {
   @Output() public readonly educationClick: EventEmitter<void> =
     new EventEmitter<void>();
   @Output() public readonly experienceClick: EventEmitter<void> =
+    new EventEmitter<void>();
+  @Output() public readonly partnersClick: EventEmitter<void> =
     new EventEmitter<void>();
   @Output() public readonly contactClick: EventEmitter<void> =
     new EventEmitter<void>();
