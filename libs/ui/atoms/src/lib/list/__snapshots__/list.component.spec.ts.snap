@@ -7,7 +7,7 @@ exports[`ListComponent should create empty 1`] = `
   <span
     class="rc-list-items-wrapper"
   >
-    
+
   </span>
 </rc-list>
 `;
@@ -20,7 +20,7 @@ exports[`ListComponent should create horizontal 1`] = `
   <span
     class="rc-list-items-wrapper"
   >
-    
+
   </span>
 </rc-list>
 `;
@@ -44,7 +44,7 @@ exports[`ListComponent should create with items 1`] = `
     >
       Item 2
     </rc-list-item>
-    
+
   </span>
 </rc-list>
 `;
@@ -71,7 +71,7 @@ exports[`ListComponent should create with line 1`] = `
         Item
       </rc-line>
     </rc-list-item>
-    
+
   </span>
 </rc-list>
 `;
@@ -94,7 +94,7 @@ exports[`ListComponent should create with title 1`] = `
     >
       Item
     </rc-list-item>
-    
+
   </span>
 </rc-list>
 `;
