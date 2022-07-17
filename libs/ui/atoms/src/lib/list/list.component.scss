@@ -26,6 +26,10 @@
       color: darken(map-get($primary, color), 30%);
     }
 
+    .rc-line {
+      display: flex;
+    }
+
     &.rc-horizontal {
       .rc-list-item:not(:last-child)::after {
         content: ', ';

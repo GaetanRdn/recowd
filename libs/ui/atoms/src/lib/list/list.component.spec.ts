@@ -8,7 +8,11 @@ describe('ListComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [HostComponent, HostWithTitleComponent],
+      declarations: [
+        HostComponent,
+        HostWithTitleComponent,
+        HostWithLineComponent,
+      ],
       imports: [ListModule],
     }).compileComponents();
   }));
@@ -44,6 +48,14 @@ describe('ListComponent', () => {
 
     expect(templateLookup.firstChildElement).toMatchSnapshot();
   });
+
+  it('should create with line', () => {
+    templateLookup = new TemplateLookup(HostWithLineComponent);
+
+    templateLookup.detectChanges();
+
+    expect(templateLookup.firstChildElement).toMatchSnapshot();
+  });
 });
 
 @Component({
@@ -63,5 +75,17 @@ class HostComponent {
   </rc-list>`,
 })
 class HostWithTitleComponent {
+  public list: string[] = ['Item'];
+}
+
+@Component({
+  template: ` <rc-list>
+    <rc-list-title>Title</rc-list-title>
+    <rc-list-item *ngFor="let item of list">
+      <rc-line>{{ item }}</rc-line>
+    </rc-list-item>
+  </rc-list>`,
+})
+class HostWithLineComponent {
   public list: string[] = ['Item'];
 }
