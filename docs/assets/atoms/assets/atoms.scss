@@ -11,6 +11,7 @@
 @use '../material-icon/material-icon';
 @use '../nav-menu/nav-menu.component';
 @use '../toolbar/toolbar.component';
+@use '../typography/quote';
 
 @mixin rc-atoms-theme($config) {
   @include accordion.rc-accordion($config);
@@ -24,6 +25,7 @@
   @include list.rc-list($config);
   @include material-icon.rc-material-icon($config);
   @include nav-menu.rc-nav-menu($config);
+  @include quote.rc-quote;
   @include rate.rc-rate($config);
   @include toolbar.rc-toolbar($config);
 }

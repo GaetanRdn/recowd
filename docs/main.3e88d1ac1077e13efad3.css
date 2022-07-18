@@ -366,6 +366,14 @@ rc-nav-menu {
   border-left: 2px solid white;
 }
 
+.rc-quote {
+  font-style: italic;
+}
+
+.rc-quote::before, .rc-quote::after {
+  content: '"';
+}
+
 rc-rate:not(.rc-disabled) {
   cursor: pointer;
 }
