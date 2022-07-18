@@ -1,0 +1,10 @@
+@mixin rc-quote {
+  .rc-quote {
+    font-style: italic;
+
+    &::before,
+    &::after {
+      content: '"';
+    }
+  }
+}

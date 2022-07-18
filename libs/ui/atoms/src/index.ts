@@ -35,3 +35,5 @@ export * from './lib/nav-menu/nav-menu.component';
 export * from './lib/nav-menu/nav-menu.module';
 
 export * from './lib/toolbar/toolbar.component';
+
+export * from './lib/typography/quote.directive';
