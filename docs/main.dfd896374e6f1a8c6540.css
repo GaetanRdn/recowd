@@ -287,6 +287,49 @@ rc-label {
   content: " *";
 }
 
+rc-list {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+rc-list .rc-list-items-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+rc-list .rc-list-item,
+rc-list .rc-list-title {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+rc-list .rc-list-item {
+  color: #ffffff;
+}
+
+rc-list .rc-list-title {
+  color: #b3b3b3;
+}
+
+rc-list .rc-line {
+  display: flex;
+}
+
+rc-list.rc-horizontal .rc-list-item:not(:last-child)::after {
+  content: ", ";
+}
+
+rc-list:not(.rc-horizontal) .rc-list-items-wrapper {
+  flex-flow: column;
+}
+
+rc-list:not(.rc-horizontal) .rc-list-item {
+  padding: 0.5rem 0;
+}
+
 .material-icons,
 .material-icons-outlined,
 .material-icons-round,
