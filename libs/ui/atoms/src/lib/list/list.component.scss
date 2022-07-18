@@ -1,0 +1,50 @@
+@use '../assets/utils';
+
+@mixin rc-list($config) {
+  $list-item-typo: utils.map-get-deep($config, typography, body-regular);
+  $primary: utils.map-get-deep($config, colors, primary);
+
+  rc-list {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+
+    .rc-list-items-wrapper {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .rc-list-item,
+    .rc-list-title {
+      @include utils.use-typography($list-item-typo);
+    }
+
+    .rc-list-item {
+      color: map-get($primary, color);
+    }
+
+    .rc-list-title {
+      color: darken(map-get($primary, color), 30%);
+    }
+
+    .rc-line {
+      display: flex;
+    }
+
+    &.rc-horizontal {
+      .rc-list-item:not(:last-child)::after {
+        content: ', ';
+      }
+    }
+
+    &:not(.rc-horizontal) {
+      .rc-list-items-wrapper {
+        flex-flow: column;
+      }
+
+      .rc-list-item {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
