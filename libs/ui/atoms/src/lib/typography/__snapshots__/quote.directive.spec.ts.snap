@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuoteDirective should create 1`] = `
+<rc-quote
+  class="rc-quote"
+>
+  Quote
+</rc-quote>
+`;
