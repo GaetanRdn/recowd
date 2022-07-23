@@ -45,7 +45,7 @@ Default.args = {
       'POC pour la mise en place de Nx',
       'POC pour la mise en place de tests Cypress avec Storybook',
     ],
-    technos: [
+    technologies: [
       'Nx',
       'Angular',
       'Jest',

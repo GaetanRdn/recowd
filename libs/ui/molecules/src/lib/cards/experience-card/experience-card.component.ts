@@ -1,16 +1,12 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import {
-  AccordionModule,
-  CardModule,
-  ListModule,
-  QuoteDirective,
-} from '@recowd/ui-atoms';
+import { AccordionModule, CardModule, QuoteDirective } from '@recowd/ui-atoms';
 import { Experience, Role } from '@recowd/models';
 import { Nullable, Required } from '@recowd/utility-types';
-import { ExperienceDurationPipe, FromToDatePipeModule } from '@recowd/pipes';
+import { ExperienceDurationPipe } from '@recowd/pipes';
 import { CommonModule } from '@angular/common';
 import { RolesListComponent } from '../../lists/roles-list/roles-list.component';
 import { TechnologiesListComponent } from '../../lists/technologies-list/technologies-list.component';
+import { TasksListComponent } from '../../lists/tasks-list/tasks-list.component';
 
 @Component({
   selector: 'rc-experience-card',
@@ -19,12 +15,11 @@ import { TechnologiesListComponent } from '../../lists/technologies-list/technol
     CommonModule,
     CardModule,
     AccordionModule,
-    ListModule,
     ExperienceDurationPipe,
-    FromToDatePipeModule,
     QuoteDirective,
     RolesListComponent,
     TechnologiesListComponent,
+    TasksListComponent,
   ],
   templateUrl: './experience-card.component.html',
   styleUrls: ['./experience-card.component.scss'],

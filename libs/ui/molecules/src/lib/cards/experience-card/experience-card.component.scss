@@ -1,10 +1,4 @@
-@use '../../assets/utils';
-
 @mixin rc-experience-card($config) {
-  $main-content: utils.map-get-deep($config, typography, body-bold);
-  $secondary-content: utils.map-get-deep($config, typography, body-regular);
-  $primary: utils.map-get-deep($config, colors, primary);
-
   rc-experience-card {
     .rc-card-subtitle {
       display: flex;
@@ -23,22 +17,6 @@
         display: flex;
         flex-flow: column;
         gap: 3rem;
-      }
-    }
-
-    .label {
-      color: darken(map-get($primary, color), 30%);
-    }
-
-    .tasks {
-      .rc-list-item {
-        &::before {
-          content: '✔️ ';
-        }
-
-        &:first-letter {
-          text-transform: capitalize;
-        }
       }
     }
   }

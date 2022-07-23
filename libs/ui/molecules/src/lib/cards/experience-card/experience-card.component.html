@@ -1,15 +1,18 @@
 <rc-card>
   <rc-card-title>{{ experience.client }}</rc-card-title>
+
   <rc-card-subtitle>
     <span>{{ intervalDates | experienceDuration }}</span>
     <span>{{ experience.localization }}</span>
   </rc-card-subtitle>
+
   <rc-card-content>
     <rc-accordion>
       <rc-accordion-bloc>
         <rc-accordion-bloc-header>
           <rc-roles-list [roles]="experience.roles"></rc-roles-list>
         </rc-accordion-bloc-header>
+
         <rc-accordion-bloc-content>
           <p rcQuote>{{ experience.description }}</p>
 
