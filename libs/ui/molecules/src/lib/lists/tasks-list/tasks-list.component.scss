@@ -1,0 +1,11 @@
+:host {
+  .rc-list-item {
+    &::before {
+      content: '✔️ ';
+    }
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

@@ -5,7 +5,7 @@ export const CBP_EXPERIENCE: Experience = {
   client: 'CBP',
   roles: [LEAD_DEV_FREELANCE_ROLE, LEAD_DEV_CDI_ESN_ROLE],
   tasks: ['many things'],
-  technos: ['Angular'],
+  technologies: ['Angular'],
   description: 'Great things',
   localization: 'Saint-Herblain',
 };

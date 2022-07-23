@@ -13,19 +13,11 @@
         <rc-accordion-bloc-content>
           <p rcQuote>{{ experience.description }}</p>
 
-          <rc-list horizontal>
-            <rc-list-title class="label">Technos</rc-list-title>
-            <rc-list-item *ngFor="let techno of experience.technos">{{
-              techno
-            }}</rc-list-item>
-          </rc-list>
+          <rc-technologies-list
+            [technologies]="experience.technologies"
+          ></rc-technologies-list>
 
-          <rc-list class="tasks">
-            <rc-list-title>Tâches effectuées</rc-list-title>
-            <rc-list-item *ngFor="let task of experience.tasks">{{
-              task
-            }}</rc-list-item>
-          </rc-list>
+          <rc-tasks-list [tasks]="experience.tasks"></rc-tasks-list>
         </rc-accordion-bloc-content>
       </rc-accordion-bloc>
     </rc-accordion>

@@ -10,6 +10,7 @@ import { Nullable, Required } from '@recowd/utility-types';
 import { ExperienceDurationPipe, FromToDatePipeModule } from '@recowd/pipes';
 import { CommonModule } from '@angular/common';
 import { RolesListComponent } from '../../lists/roles-list/roles-list.component';
+import { TechnologiesListComponent } from '../../lists/technologies-list/technologies-list.component';
 
 @Component({
   selector: 'rc-experience-card',
@@ -23,6 +24,7 @@ import { RolesListComponent } from '../../lists/roles-list/roles-list.component'
     FromToDatePipeModule,
     QuoteDirective,
     RolesListComponent,
+    TechnologiesListComponent,
   ],
   templateUrl: './experience-card.component.html',
   styleUrls: ['./experience-card.component.scss'],

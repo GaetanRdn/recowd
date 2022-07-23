@@ -6,5 +6,5 @@ export interface Experience {
   roles: Role[];
   description: string;
   tasks: string[];
-  technos: string[];
+  technologies: string[];
 }
