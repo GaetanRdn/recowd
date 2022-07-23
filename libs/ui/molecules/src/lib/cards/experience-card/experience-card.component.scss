@@ -12,6 +12,10 @@
       padding-right: 0;
     }
 
+    .rc-accordion-bloc-header {
+      align-items: end;
+    }
+
     .rc-card-content {
       .rc-accordion-bloc-content-wrapper {
         display: flex;

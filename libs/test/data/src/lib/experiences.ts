@@ -9,3 +9,12 @@ export const CBP_EXPERIENCE: Experience = {
   description: 'Great things',
   localization: 'Saint-Herblain',
 };
+
+export const NORSYS_EXPERIENCE: Experience = {
+  client: 'norsys',
+  roles: [LEAD_DEV_CDI_ESN_ROLE],
+  tasks: ['lots of stuffs'],
+  technologies: ['PHP'],
+  description: 'Amazing mission',
+  localization: 'Nantes',
+};

@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceCardsListComponent should create empty 1`] = `
+<rc-experience-cards-list>
+  
+</rc-experience-cards-list>
+`;
+
+exports[`ExperienceCardsListComponent should create with experiences 1`] = `
+<rc-experience-cards-list>
+  <rc-experience-card>
+    <rc-card>
+      <div
+        class="rc-card-header"
+      >
+        <rc-card-title
+          class="rc-card-title"
+        >
+          CBP
+        </rc-card-title>
+        <rc-card-subtitle
+          class="rc-card-subtitle"
+        >
+          <span>
+            2 an(s) et 7 mois
+          </span>
+          <span>
+            Saint-Herblain
+          </span>
+        </rc-card-subtitle>
+      </div>
+      <rc-card-content
+        class="rc-card-content"
+      >
+        <rc-accordion>
+          <rc-accordion-bloc
+            class="rc-accordion-bloc"
+          >
+            <rc-accordion-bloc-header
+              class="rc-accordion-bloc-header"
+            >
+              <rc-roles-list>
+                <rc-list
+                  role="list"
+                >
+                  <span
+                    class="rc-list-items-wrapper"
+                  >
+                    <rc-list-item
+                      class="rc-list-item"
+                      role="list-item"
+                    >
+                      <rc-line
+                        class="rc-line"
+                      >
+                        Lead developer
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        FREELANCE
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        January 2020 - July 2022
+                      </rc-line>
+                    </rc-list-item>
+                    <rc-list-item
+                      class="rc-list-item"
+                      role="list-item"
+                    >
+                      <rc-line
+                        class="rc-line"
+                      >
+                        Lead developer
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        CDI ESN
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        January 2020 - December 2020
+                      </rc-line>
+                    </rc-list-item>
+                    
+                  </span>
+                </rc-list>
+              </rc-roles-list>
+              <rc-material-icon
+                class="ng-trigger ng-trigger-rotate material-icons"
+                style=""
+              >
+                 expand_more 
+              </rc-material-icon>
+            </rc-accordion-bloc-header>
+            <rc-accordion-bloc-content
+              class="ng-trigger ng-trigger-collapsable rc-collapsed"
+              style="height:0px;opacity:0.5;0:height;1:opacity;"
+            >
+              <span
+                class="rc-accordion-bloc-content-wrapper"
+              >
+                <p
+                  class="rc-quote"
+                  rcquote=""
+                >
+                  Great things
+                </p>
+                <rc-technologies-list>
+                  <rc-list
+                    class="rc-horizontal"
+                    horizontal=""
+                    role="list"
+                  >
+                    <rc-list-title
+                      class="rc-list-title"
+                    >
+                      technologies
+                    </rc-list-title>
+                    <span
+                      class="rc-list-items-wrapper"
+                    >
+                      <rc-list-item
+                        class="rc-list-item"
+                        role="list-item"
+                        style=""
+                      >
+                        Angular
+                      </rc-list-item>
+                      
+                    </span>
+                  </rc-list>
+                </rc-technologies-list>
+                <rc-tasks-list>
+                  <rc-list
+                    role="list"
+                  >
+                    <rc-list-title
+                      class="rc-list-title"
+                    >
+                      completed-tasks
+                    </rc-list-title>
+                    <span
+                      class="rc-list-items-wrapper"
+                    >
+                      <rc-list-item
+                        class="rc-list-item"
+                        role="list-item"
+                        style=""
+                      >
+                        many things
+                      </rc-list-item>
+                      
+                    </span>
+                  </rc-list>
+                </rc-tasks-list>
+              </span>
+            </rc-accordion-bloc-content>
+          </rc-accordion-bloc>
+        </rc-accordion>
+      </rc-card-content>
+    </rc-card>
+  </rc-experience-card>
+  <rc-experience-card>
+    <rc-card>
+      <div
+        class="rc-card-header"
+      >
+        <rc-card-title
+          class="rc-card-title"
+        >
+          norsys
+        </rc-card-title>
+        <rc-card-subtitle
+          class="rc-card-subtitle"
+        >
+          <span>
+            1 an(s)
+          </span>
+          <span>
+            Nantes
+          </span>
+        </rc-card-subtitle>
+      </div>
+      <rc-card-content
+        class="rc-card-content"
+      >
+        <rc-accordion>
+          <rc-accordion-bloc
+            class="rc-accordion-bloc"
+          >
+            <rc-accordion-bloc-header
+              class="rc-accordion-bloc-header"
+            >
+              <rc-roles-list>
+                <rc-list
+                  role="list"
+                >
+                  <span
+                    class="rc-list-items-wrapper"
+                  >
+                    <rc-list-item
+                      class="rc-list-item"
+                      role="list-item"
+                    >
+                      <rc-line
+                        class="rc-line"
+                      >
+                        Lead developer
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        CDI ESN
+                      </rc-line>
+                      <rc-line
+                        class="rc-line"
+                      >
+                        January 2020 - December 2020
+                      </rc-line>
+                    </rc-list-item>
+                    
+                  </span>
+                </rc-list>
+              </rc-roles-list>
+              <rc-material-icon
+                class="ng-trigger ng-trigger-rotate material-icons"
+                style=""
+              >
+                 expand_more 
+              </rc-material-icon>
+            </rc-accordion-bloc-header>
+            <rc-accordion-bloc-content
+              class="ng-trigger ng-trigger-collapsable rc-collapsed"
+              style="height:0px;opacity:0.5;0:height;1:opacity;"
+            >
+              <span
+                class="rc-accordion-bloc-content-wrapper"
+              >
+                <p
+                  class="rc-quote"
+                  rcquote=""
+                >
+                  Amazing mission
+                </p>
+                <rc-technologies-list>
+                  <rc-list
+                    class="rc-horizontal"
+                    horizontal=""
+                    role="list"
+                  >
+                    <rc-list-title
+                      class="rc-list-title"
+                    >
+                      technologies
+                    </rc-list-title>
+                    <span
+                      class="rc-list-items-wrapper"
+                    >
+                      <rc-list-item
+                        class="rc-list-item"
+                        role="list-item"
+                        style=""
+                      >
+                        PHP
+                      </rc-list-item>
+                      
+                    </span>
+                  </rc-list>
+                </rc-technologies-list>
+                <rc-tasks-list>
+                  <rc-list
+                    role="list"
+                  >
+                    <rc-list-title
+                      class="rc-list-title"
+                    >
+                      completed-tasks
+                    </rc-list-title>
+                    <span
+                      class="rc-list-items-wrapper"
+                    >
+                      <rc-list-item
+                        class="rc-list-item"
+                        role="list-item"
+                        style=""
+                      >
+                        lots of stuffs
+                      </rc-list-item>
+                      
+                    </span>
+                  </rc-list>
+                </rc-tasks-list>
+              </span>
+            </rc-accordion-bloc-content>
+          </rc-accordion-bloc>
+        </rc-accordion>
+      </rc-card-content>
+    </rc-card>
+  </rc-experience-card>
+  
+</rc-experience-cards-list>
+`;
