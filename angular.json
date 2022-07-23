@@ -6,6 +6,7 @@
     "pipes": "libs/pipes",
     "recowd-web": "apps/recowd-web",
     "recowd-web-e2e": "apps/recowd-web-e2e",
+    "test-data": "libs/test/data",
     "test-utils": "libs/test/utils",
     "ui-animations": "libs/ui/animations",
     "ui-atoms": "libs/ui/atoms",
