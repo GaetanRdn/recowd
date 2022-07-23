@@ -1,0 +1,33 @@
+<rc-card>
+  <rc-card-title>{{ experience.client }}</rc-card-title>
+  <rc-card-subtitle>
+    <span>{{ intervalDates | experienceDuration }}</span>
+    <span>{{ experience.localization }}</span>
+  </rc-card-subtitle>
+  <rc-card-content>
+    <rc-accordion>
+      <rc-accordion-bloc>
+        <rc-accordion-bloc-header>
+          <rc-roles-list [roles]="experience.roles"></rc-roles-list>
+        </rc-accordion-bloc-header>
+        <rc-accordion-bloc-content>
+          <p rcQuote>{{ experience.description }}</p>
+
+          <rc-list horizontal>
+            <rc-list-title class="label">Technos</rc-list-title>
+            <rc-list-item *ngFor="let techno of experience.technos">{{
+              techno
+            }}</rc-list-item>
+          </rc-list>
+
+          <rc-list class="tasks">
+            <rc-list-title>Tâches effectuées</rc-list-title>
+            <rc-list-item *ngFor="let task of experience.tasks">{{
+              task
+            }}</rc-list-item>
+          </rc-list>
+        </rc-accordion-bloc-content>
+      </rc-accordion-bloc>
+    </rc-accordion>
+  </rc-card-content>
+</rc-card>

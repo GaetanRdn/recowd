@@ -18,4 +18,6 @@ export * from './lib/custom-icons/nx-custom-icon/nx-custom-icon.component';
 export * from './lib/custom-icons/sass-custom-icon/sass-custom-icon.component';
 export * from './lib/custom-icons/storybook-custom-icon/storybook-custom-icon.component';
 
+export * from './lib/lists/roles-list/roles-list.component';
+
 export * from './lib/partner-link/partner-link.component';

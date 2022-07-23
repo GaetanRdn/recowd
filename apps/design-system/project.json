@@ -23,6 +23,11 @@
             "output": "assets/atoms"
           },
           {
+            "input": "libs/ui/molecules/src/lib",
+            "glob": "**/*.scss",
+            "output": "assets/molecules"
+          },
+          {
             "input": "libs/ui/molecules/src/lib/assets/images",
             "glob": "**/*.svg",
             "output": "assets/images"
@@ -35,7 +40,10 @@
         ],
         "styles": ["apps/design-system/src/styles.scss"],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/ui/atoms/src/lib/assets"]
+          "includePaths": [
+            "libs/ui/atoms/src/lib/assets",
+            "libs/ui/molecules/src/lib/assets"
+          ]
         },
         "scripts": []
       },

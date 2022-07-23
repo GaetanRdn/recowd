@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RolesListComponent should create empty 1`] = `
+<rc-roles-list>
+  <rc-list
+    role="list"
+  >
+    <span
+      class="rc-list-items-wrapper"
+    >
+      
+    </span>
+  </rc-list>
+</rc-roles-list>
+`;
+
+exports[`RolesListComponent should create with roles 1`] = `
+<rc-roles-list>
+  <rc-list
+    role="list"
+  >
+    <span
+      class="rc-list-items-wrapper"
+    >
+      <rc-list-item
+        class="rc-list-item"
+        role="list-item"
+      >
+        <rc-line
+          class="rc-line"
+        >
+          Lead developer
+        </rc-line>
+        <rc-line
+          class="rc-line"
+        >
+          FREELANCE
+        </rc-line>
+        <rc-line
+          class="rc-line"
+        >
+          January 2020 - July 2022
+        </rc-line>
+      </rc-list-item>
+      <rc-list-item
+        class="rc-list-item"
+        role="list-item"
+      >
+        <rc-line
+          class="rc-line"
+        >
+          Lead developer
+        </rc-line>
+        <rc-line
+          class="rc-line"
+        >
+          CDI ESN
+        </rc-line>
+        <rc-line
+          class="rc-line"
+        >
+          January 2020 - December 2020
+        </rc-line>
+      </rc-list-item>
+      
+    </span>
+  </rc-list>
+</rc-roles-list>
+`;

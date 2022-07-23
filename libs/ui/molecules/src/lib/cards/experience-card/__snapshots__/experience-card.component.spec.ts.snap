@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceCardComponent should create 1`] = `
+<rc-experience-card>
+  <rc-card>
+    <div
+      class="rc-card-header"
+    >
+      <rc-card-title
+        class="rc-card-title"
+      >
+        CBP
+      </rc-card-title>
+      <rc-card-subtitle
+        class="rc-card-subtitle"
+      >
+        <span>
+          2 an(s) et 7 mois
+        </span>
+        <span>
+          Saint-Herblain
+        </span>
+      </rc-card-subtitle>
+    </div>
+    <rc-card-content
+      class="rc-card-content"
+    >
+      <rc-accordion>
+        <rc-accordion-bloc
+          class="rc-accordion-bloc"
+        >
+          <rc-accordion-bloc-header
+            class="rc-accordion-bloc-header"
+          >
+            <rc-roles-list>
+              <rc-list
+                role="list"
+              >
+                <span
+                  class="rc-list-items-wrapper"
+                >
+                  <rc-list-item
+                    class="rc-list-item"
+                    role="list-item"
+                  >
+                    <rc-line
+                      class="rc-line"
+                    >
+                      Lead developer
+                    </rc-line>
+                    <rc-line
+                      class="rc-line"
+                    >
+                      FREELANCE
+                    </rc-line>
+                    <rc-line
+                      class="rc-line"
+                    >
+                      January 2020 - July 2022
+                    </rc-line>
+                  </rc-list-item>
+                  <rc-list-item
+                    class="rc-list-item"
+                    role="list-item"
+                  >
+                    <rc-line
+                      class="rc-line"
+                    >
+                      Lead developer
+                    </rc-line>
+                    <rc-line
+                      class="rc-line"
+                    >
+                      CDI ESN
+                    </rc-line>
+                    <rc-line
+                      class="rc-line"
+                    >
+                      January 2020 - December 2020
+                    </rc-line>
+                  </rc-list-item>
+                  
+                </span>
+              </rc-list>
+            </rc-roles-list>
+            <rc-material-icon
+              class="ng-trigger ng-trigger-rotate material-icons"
+              style=""
+            >
+               expand_more 
+            </rc-material-icon>
+          </rc-accordion-bloc-header>
+          <rc-accordion-bloc-content
+            class="ng-trigger ng-trigger-collapsable rc-collapsed"
+            style="height:0px;opacity:0.5;0:height;1:opacity;"
+          >
+            <span
+              class="rc-accordion-bloc-content-wrapper"
+            >
+              <p
+                class="rc-quote"
+                rcquote=""
+              >
+                Great things
+              </p>
+              <rc-list
+                class="rc-horizontal"
+                horizontal=""
+                role="list"
+              >
+                <rc-list-title
+                  class="rc-list-title label"
+                >
+                  Technos
+                </rc-list-title>
+                <span
+                  class="rc-list-items-wrapper"
+                >
+                  <rc-list-item
+                    class="rc-list-item"
+                    role="list-item"
+                    style=""
+                  >
+                    Angular
+                  </rc-list-item>
+                  
+                </span>
+              </rc-list>
+              <rc-list
+                class="tasks"
+                role="list"
+              >
+                <rc-list-title
+                  class="rc-list-title"
+                >
+                  Tâches effectuées
+                </rc-list-title>
+                <span
+                  class="rc-list-items-wrapper"
+                >
+                  <rc-list-item
+                    class="rc-list-item"
+                    role="list-item"
+                    style=""
+                  >
+                    many things
+                  </rc-list-item>
+                  
+                </span>
+              </rc-list>
+            </span>
+          </rc-accordion-bloc-content>
+        </rc-accordion-bloc>
+      </rc-accordion>
+    </rc-card-content>
+  </rc-card>
+</rc-experience-card>
+`;
