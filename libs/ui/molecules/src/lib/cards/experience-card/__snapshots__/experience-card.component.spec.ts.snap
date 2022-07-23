@@ -103,51 +103,54 @@ exports[`ExperienceCardComponent should create 1`] = `
               >
                 Great things
               </p>
-              <rc-list
-                class="rc-horizontal"
-                horizontal=""
-                role="list"
-              >
-                <rc-list-title
-                  class="rc-list-title label"
+              <rc-technologies-list>
+                <rc-list
+                  class="rc-horizontal"
+                  horizontal=""
+                  role="list"
                 >
-                  Technos
-                </rc-list-title>
-                <span
-                  class="rc-list-items-wrapper"
-                >
-                  <rc-list-item
-                    class="rc-list-item"
-                    role="list-item"
-                    style=""
+                  <rc-list-title
+                    class="rc-list-title"
                   >
-                    Angular
-                  </rc-list-item>
-                  
-                </span>
-              </rc-list>
-              <rc-list
-                class="tasks"
-                role="list"
-              >
-                <rc-list-title
-                  class="rc-list-title"
-                >
-                  Tâches effectuées
-                </rc-list-title>
-                <span
-                  class="rc-list-items-wrapper"
-                >
-                  <rc-list-item
-                    class="rc-list-item"
-                    role="list-item"
-                    style=""
+                    technologies
+                  </rc-list-title>
+                  <span
+                    class="rc-list-items-wrapper"
                   >
-                    many things
-                  </rc-list-item>
-                  
-                </span>
-              </rc-list>
+                    <rc-list-item
+                      class="rc-list-item"
+                      role="list-item"
+                      style=""
+                    >
+                      Angular
+                    </rc-list-item>
+                    
+                  </span>
+                </rc-list>
+              </rc-technologies-list>
+              <rc-tasks-list>
+                <rc-list
+                  role="list"
+                >
+                  <rc-list-title
+                    class="rc-list-title"
+                  >
+                    completed-tasks
+                  </rc-list-title>
+                  <span
+                    class="rc-list-items-wrapper"
+                  >
+                    <rc-list-item
+                      class="rc-list-item"
+                      role="list-item"
+                      style=""
+                    >
+                      many things
+                    </rc-list-item>
+                    
+                  </span>
+                </rc-list>
+              </rc-tasks-list>
             </span>
           </rc-accordion-bloc-content>
         </rc-accordion-bloc>
