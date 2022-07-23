@@ -1,6 +1,4 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
-
-import { AccordionComponent } from './accordion.component';
 import { TemplateLookup } from '@recowd/test/utils';
 import { Component } from '@angular/core';
 import { AccordionModule } from './accordion.module';

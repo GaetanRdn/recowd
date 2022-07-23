@@ -4,6 +4,7 @@ import { TemplateLookup } from '@recowd/test/utils';
 import { Component } from '@angular/core';
 import { CBP_EXPERIENCE } from '@recowd/test/data';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ExperienceCardComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -11,7 +12,11 @@ describe('ExperienceCardComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [HostComponent],
-      imports: [ExperienceCardComponent, NoopAnimationsModule],
+      imports: [
+        ExperienceCardComponent,
+        NoopAnimationsModule,
+        TranslateModule.forRoot(),
+      ],
     }).compileComponents();
 
     templateLookup = new TemplateLookup(HostComponent);
