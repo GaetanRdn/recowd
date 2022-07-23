@@ -7,7 +7,7 @@
   rc-list {
     display: flex;
     flex-flow: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
     .rc-list-items-wrapper {
       display: flex;
@@ -29,6 +29,11 @@
 
     .rc-line {
       display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        padding-bottom: 0.5rem;
+      }
     }
 
     &.rc-horizontal {
@@ -40,10 +45,7 @@
     &:not(.rc-horizontal) {
       .rc-list-items-wrapper {
         flex-flow: column;
-      }
-
-      .rc-list-item {
-        padding: 0.5rem 0;
+        gap: 0.8rem;
       }
     }
   }
