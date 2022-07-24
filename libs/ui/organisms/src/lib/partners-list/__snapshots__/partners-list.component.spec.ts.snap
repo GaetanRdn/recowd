@@ -16,16 +16,16 @@ exports[`PartnersListComponent should create 1`] = `
           rcbuttonicon=""
           target="_blank"
         >
-          <rc-norsys-custom-icon>
+          <rc-cbp-custom-icon>
             <rc-custom-icon>
               <img
-                alt="norsys"
+                alt="cbp"
                 height="300"
-                src="assets/images/norsys.png"
+                src="assets/images/cbp.svg"
                 width="300"
               />
             </rc-custom-icon>
-          </rc-norsys-custom-icon>
+          </rc-cbp-custom-icon>
           
         </a>
       </rc-partner-link>
