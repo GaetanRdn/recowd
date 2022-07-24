@@ -1,0 +1,13 @@
+:host {
+  rc-card {
+    width: fit-content;
+
+    .rc-card-content {
+      text-align: center;
+    }
+  }
+
+  ::ng-deep rc-material-icon {
+    font-size: 20rem;
+  }
+}

@@ -1,6 +1,8 @@
 {
+  "completed-tasks": "Completed tasks",
   "degrees": "Degrees",
   "experiences": "Experiences",
   "partners": "Partners",
+  "technologies": "Technologies",
   "work-in-progress": "Work in progress"
 }

@@ -290,7 +290,7 @@ rc-label {
 rc-list {
   display: flex;
   flex-flow: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 rc-list .rc-list-items-wrapper {
@@ -304,6 +304,7 @@ rc-list .rc-list-title {
   font-family: "Lato";
   font-weight: 400;
   line-height: 1.6rem;
+  white-space: nowrap;
 }
 
 rc-list .rc-list-item {
@@ -316,6 +317,11 @@ rc-list .rc-list-title {
 
 rc-list .rc-line {
   display: flex;
+  align-items: center;
+}
+
+rc-list .rc-line:not(:last-child) {
+  padding-bottom: 0.5rem;
 }
 
 rc-list.rc-horizontal .rc-list-item:not(:last-child)::after {
@@ -324,10 +330,7 @@ rc-list.rc-horizontal .rc-list-item:not(:last-child)::after {
 
 rc-list:not(.rc-horizontal) .rc-list-items-wrapper {
   flex-flow: column;
-}
-
-rc-list:not(.rc-horizontal) .rc-list-item {
-  padding: 0.5rem 0;
+  gap: 0.8rem;
 }
 
 .material-icons,
@@ -389,4 +392,45 @@ rc-toolbar {
   line-height: 2.2rem;
   color: #ffffff;
   background-color: #000000;
+}
+
+rc-experience-card {
+  flex: 1 1 100%;
+}
+
+rc-experience-card .rc-card-subtitle {
+  display: flex;
+  flex-flow: column;
+  gap: 0.8rem;
+}
+
+rc-experience-card .rc-accordion-bloc-header,
+rc-experience-card .rc-accordion-bloc-content-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+rc-experience-card .rc-accordion-bloc-header {
+  align-items: end;
+}
+
+rc-experience-card .rc-card-content .rc-accordion-bloc-content-wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+
+rc-roles-list .rc-line:nth-child(1) {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+rc-roles-list .rc-line:not(:nth-child(1)) {
+  color: #b3b3b3;
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.6rem;
 }
