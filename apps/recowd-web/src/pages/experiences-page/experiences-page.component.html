@@ -1,3 +1,3 @@
 <rc-experience-cards-list
-  [experiences]="$any(_experiences$ | async)"
+  [experiences]="(_experiences$ | async) ?? []"
 ></rc-experience-cards-list>

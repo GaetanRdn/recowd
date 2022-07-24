@@ -1,1 +1,3 @@
-<rc-education-cards-list [educations]="educations"></rc-education-cards-list>
+<rc-education-cards-list
+  [educations]="(_degrees$ | async) ?? []"
+></rc-education-cards-list>
