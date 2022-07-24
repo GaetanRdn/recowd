@@ -1,8 +1,6 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
-
 import { PartnersListComponent } from './partners-list.component';
 import { TemplateLookup } from '@recowd/test/utils';
-import { NorsysCustomIconComponent } from '@recowd/ui/molecules';
 import { Component } from '@angular/core';
 
 describe('PartnersListComponent', () => {
@@ -27,7 +25,7 @@ describe('PartnersListComponent', () => {
     templateLookup.hostComponent.partners = [
       {
         link: 'www.paulo.com',
-        icon: NorsysCustomIconComponent,
+        icon: 'NorsysCustomIconComponent',
       },
     ];
 

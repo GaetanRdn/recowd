@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PartnerLinkComponent should create with {"link":"www.paulo.com"} 1`] = `
+exports[`PartnerLinkComponent should create with {"link":"www.paulo.com","icon":"NorsysCustomIconComponent"} 1`] = `
 <rc-partner-link>
   <a
     class="rc-button-icon"
@@ -23,7 +23,7 @@ exports[`PartnerLinkComponent should create with {"link":"www.paulo.com"} 1`] = 
 </rc-partner-link>
 `;
 
-exports[`PartnerLinkComponent should create with {"link":"www.test.fr"} 1`] = `
+exports[`PartnerLinkComponent should create with {"link":"www.test.fr","icon":"CbpCustomIconComponent"} 1`] = `
 <rc-partner-link>
   <a
     class="rc-button-icon"
