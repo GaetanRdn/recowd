@@ -1,0 +1,21 @@
+@use '../../assets/utils';
+
+@mixin rc-roles-list($config) {
+  $main-content: utils.map-get-deep($config, typography, body-bold);
+  $secondary-content: utils.map-get-deep($config, typography, body-regular);
+  $primary: utils.map-get-deep($config, colors, primary);
+
+  rc-roles-list {
+    .rc-line:nth-child(1) {
+      @include utils.use-typography($main-content);
+    }
+
+    .rc-line:not(:nth-child(1)) {
+      color: darken(map-get($primary, color), 30%);
+
+      @each $key in font-size, font-family, font-weight, line-height {
+        #{$key}: map-get($secondary-content, $key);
+      }
+    }
+  }
+}

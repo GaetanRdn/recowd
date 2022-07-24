@@ -5,4 +5,16 @@
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
   width: 100vw;
+
+  rc-rw-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  rc-rw-footer {
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
+  }
 }

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TasksListComponent should create empty 1`] = `
+<rc-tasks-list>
+  <rc-list
+    role="list"
+  >
+    <rc-list-title
+      class="rc-list-title"
+    >
+      completed-tasks
+    </rc-list-title>
+    <span
+      class="rc-list-items-wrapper"
+    >
+      
+    </span>
+  </rc-list>
+</rc-tasks-list>
+`;
+
+exports[`TasksListComponent should create with technos 1`] = `
+<rc-tasks-list>
+  <rc-list
+    role="list"
+  >
+    <rc-list-title
+      class="rc-list-title"
+    >
+      completed-tasks
+    </rc-list-title>
+    <span
+      class="rc-list-items-wrapper"
+    >
+      <rc-list-item
+        class="rc-list-item"
+        role="list-item"
+      >
+        few things
+      </rc-list-item>
+      <rc-list-item
+        class="rc-list-item"
+        role="list-item"
+      >
+        many things
+      </rc-list-item>
+      <rc-list-item
+        class="rc-list-item"
+        role="list-item"
+      >
+        too many things
+      </rc-list-item>
+      
+    </span>
+  </rc-list>
+</rc-tasks-list>
+`;

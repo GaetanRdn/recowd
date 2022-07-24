@@ -1,7 +1,6 @@
 import { Type } from '@angular/core';
-import { CustomIconComponent } from '@recowd/ui-atoms';
 
-export interface Partner<IconType extends CustomIconComponent> {
+export interface Partner<IconType> {
   link: string;
   icon: Type<IconType>;
 }

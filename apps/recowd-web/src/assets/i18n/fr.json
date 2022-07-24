@@ -1,6 +1,8 @@
 {
+  "completed-tasks": "Tâches effectuées",
   "degrees": "Formations",
   "experiences": "Expériences",
   "partners": "Partenaires",
+  "technologies": "Technologies",
   "work-in-progress": "En cours de construction"
 }

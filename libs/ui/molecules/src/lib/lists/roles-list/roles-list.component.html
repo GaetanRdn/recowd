@@ -1,0 +1,7 @@
+<rc-list>
+  <rc-list-item *ngFor="let role of roles; trackBy: trackByFn">
+    <rc-line>{{ role.titre }}</rc-line>
+    <rc-line>{{ role.contractType }}</rc-line>
+    <rc-line>{{ role | fromToDate }}</rc-line>
+  </rc-list-item>
+</rc-list>
