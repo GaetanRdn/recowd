@@ -8,6 +8,8 @@ on:
 env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
   NX_BASE: origin/main
+  NX_BRANCH: ${{ github.event.number || github.ref }}
+  NX_RUN_GROUP: ${{ github.run_id }}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
