@@ -8,12 +8,6 @@ HTMLCollection [
         <div
           class="rc-card-header"
         >
-          <img
-            alt="logo"
-            class="rc-avatar"
-            rcavatar=""
-            src="assets/universite-paris-sud.jpeg"
-          />
           
           <rc-card-title
             class="rc-card-title"
@@ -38,12 +32,6 @@ HTMLCollection [
         <div
           class="rc-card-header"
         >
-          <img
-            alt="logo"
-            class="rc-avatar"
-            rcavatar=""
-            src="assets/universite-paris-sud.jpeg"
-          />
           
           <rc-card-title
             class="rc-card-title"
@@ -60,36 +48,6 @@ HTMLCollection [
           class="rc-card-content"
         >
           Université Paris-Sud, Méthodes Informatique Appliquées à la Gestion d'entreprise
-        </rc-card-content>
-      </rc-card>
-    </rc-education-card>
-    <rc-education-card>
-      <rc-card>
-        <div
-          class="rc-card-header"
-        >
-          <img
-            alt="logo"
-            class="rc-avatar"
-            rcavatar=""
-            src="assets/iut-aix-marseille.jpeg"
-          />
-          
-          <rc-card-title
-            class="rc-card-title"
-          >
-            DUT informatique et gestion
-          </rc-card-title>
-          <rc-card-subtitle
-            class="rc-card-subtitle"
-          >
-            2008 - 2010
-          </rc-card-subtitle>
-        </div>
-        <rc-card-content
-          class="rc-card-content"
-        >
-          IUT Aix-Marseille II, informatique et gestion d'entreprise
         </rc-card-content>
       </rc-card>
     </rc-education-card>
