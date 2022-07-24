@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/services/backend/src",
+  "prefix": "rc",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/services/backend"],
+      "options": {
+        "project": "libs/services/backend/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/services/backend/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/services/backend/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/services/backend"],
+      "options": {
+        "jestConfig": "libs/services/backend/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/services/backend/**/*.ts",
+          "libs/services/backend/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["services"]
+}

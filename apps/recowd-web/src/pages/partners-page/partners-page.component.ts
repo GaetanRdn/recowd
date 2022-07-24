@@ -7,7 +7,6 @@ import {
 import { PartnersListComponent } from '@recowd/ui/organisms';
 import { Observable, take } from 'rxjs';
 import { Partner } from '@recowd/models';
-import { CustomIconComponent } from '@recowd/ui-atoms';
 import { PartnerService } from '../../services/partner.service';
 import { CommonModule } from '@angular/common';
 
@@ -25,8 +24,6 @@ export class PartnersPageComponent implements OnInit {
   private readonly _partnerService: PartnerService = inject(PartnerService);
 
   public ngOnInit(): void {
-    this._partners$ = this._partnerService
-      .getAll<CustomIconComponent>()
-      .pipe(take(1));
+    this._partners$ = this._partnerService.getAll().pipe(take(1));
   }
 }

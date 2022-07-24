@@ -1,17 +1,10 @@
-import { inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
 import { Partner } from '@recowd/models';
+import { CrudService } from '@recowd/services/backend';
 
 @Injectable({
   providedIn: 'root',
 })
-export class PartnerService {
-  private readonly _httpClient: HttpClient = inject(HttpClient);
-
-  private readonly _url: string = './assets/data/partners.json';
-
-  public getAll<Type>(): Observable<Partner[]> {
-    return this._httpClient.get<Partner[]>(this._url);
-  }
+export class PartnerService extends CrudService<Partner> {
+  protected override readonly _url = './assets/data/partners.json';
 }
