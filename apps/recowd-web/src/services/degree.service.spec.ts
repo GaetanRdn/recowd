@@ -1,8 +1,9 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpContext } from '@angular/common/http';
 import { Education } from '@recowd/models';
 import { lastValueFrom, of } from 'rxjs';
 import { DegreeService } from './degree.service';
+import { CACHE_HTTP_CONTEXT_TOKEN } from '@recowd/services/backend';
 
 describe('DegreeService', () => {
   let service: DegreeService;
@@ -28,12 +29,16 @@ describe('DegreeService', () => {
       },
     ];
     jest.spyOn(httpClient, 'get').mockReturnValueOnce(of(expected));
+    const expectedContext: HttpContext = new HttpContext();
+    expectedContext.set(CACHE_HTTP_CONTEXT_TOKEN, true);
 
     const experiences: Education[] | undefined = await lastValueFrom(
       service.getAll()
     );
 
     expect(experiences).toEqual(expected);
-    expect(httpClient.get).toBeCalledWith('./assets/data/degrees.json');
+    expect(httpClient.get).toBeCalledWith('./assets/data/degrees.json', {
+      context: expectedContext,
+    });
   });
 });

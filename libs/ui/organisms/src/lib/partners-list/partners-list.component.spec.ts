@@ -2,6 +2,7 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { PartnersListComponent } from './partners-list.component';
 import { TemplateLookup } from '@recowd/test/utils';
 import { Component } from '@angular/core';
+import { PAULO_PARTNER } from '@recowd/test/data';
 
 describe('PartnersListComponent', () => {
   let templateLookup: TemplateLookup<HostComponent>;
@@ -22,12 +23,7 @@ describe('PartnersListComponent', () => {
   });
 
   it('should create', () => {
-    templateLookup.hostComponent.partners = [
-      {
-        link: 'www.paulo.com',
-        icon: 'NorsysCustomIconComponent',
-      },
-    ];
+    templateLookup.hostComponent.partners = [PAULO_PARTNER];
 
     templateLookup.detectChanges();
 
