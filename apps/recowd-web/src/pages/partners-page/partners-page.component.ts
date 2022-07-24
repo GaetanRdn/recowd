@@ -1,27 +1,29 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PartnersListComponent } from '@recowd/ui/organisms';
 import {
-  CbpCustomIconComponent,
-  NorsysCustomIconComponent,
-} from '@recowd/ui/molecules';
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit,
+} from '@angular/core';
+import { PartnersListComponent } from '@recowd/ui/organisms';
+import { Observable, take } from 'rxjs';
+import { Partner } from '@recowd/models';
+import { PartnerService } from '../../services/partner.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'rc-partners-page',
   standalone: true,
-  imports: [PartnersListComponent],
+  imports: [CommonModule, PartnersListComponent],
   templateUrl: './partners-page.component.html',
   styleUrls: ['./partners-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PartnersPageComponent {
-  protected readonly _partners: PartnersListComponent['partners'] = [
-    {
-      icon: NorsysCustomIconComponent,
-      link: 'https://www.norsys.fr/',
-    },
-    {
-      icon: CbpCustomIconComponent,
-      link: 'https://www.cbp.fr/',
-    },
-  ];
+export class PartnersPageComponent implements OnInit {
+  protected _partners$!: Observable<Partner[]>;
+
+  private readonly _partnerService: PartnerService = inject(PartnerService);
+
+  public ngOnInit(): void {
+    this._partners$ = this._partnerService.getAll().pipe(take(1));
+  }
 }

@@ -1,6 +1,10 @@
 import { inject, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {
+  HTTP_INTERCEPTORS,
+  HttpClient,
+  HttpClientModule,
+} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { RwFooterComponent, RwToolbarComponent } from '@recowd/ui/organisms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +16,7 @@ import {
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpCacheInterceptor } from '@recowd/services/backend';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,6 +39,13 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     RwToolbarComponent,
     RwFooterComponent,
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpCacheInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
 })
