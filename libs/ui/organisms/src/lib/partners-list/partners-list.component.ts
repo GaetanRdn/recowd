@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { PartnerLinkComponent } from '@recowd/ui/molecules';
 import { Partner } from '@recowd/models';
-import { CardModule, CustomIconComponent } from '@recowd/ui-atoms';
+import { CardModule } from '@recowd/ui-atoms';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,5 +13,5 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PartnersListComponent {
-  @Input() public partners: Partner<CustomIconComponent>[] = [];
+  @Input() public partners: Partner[] = [];
 }

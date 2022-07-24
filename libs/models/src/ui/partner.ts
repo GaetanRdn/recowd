@@ -1,6 +1,4 @@
-import { Type } from '@angular/core';
-
-export interface Partner<IconType> {
+export interface Partner {
   link: string;
-  icon: Type<IconType>;
+  icon: string;
 }
