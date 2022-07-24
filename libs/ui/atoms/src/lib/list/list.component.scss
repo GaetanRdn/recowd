@@ -49,5 +49,11 @@
         gap: 0.8rem;
       }
     }
+
+    &.rc-horizontal {
+      .rc-list-items-wrapper {
+        flex-flow: row wrap;
+      }
+    }
   }
 }
