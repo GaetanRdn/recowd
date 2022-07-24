@@ -17,6 +17,7 @@
     .rc-list-item,
     .rc-list-title {
       @include utils.use-typography($list-item-typo);
+      white-space: nowrap;
     }
 
     .rc-list-item {

@@ -1,5 +1,7 @@
 @mixin rc-experience-card($config) {
   rc-experience-card {
+    flex: 1 1 100%;
+
     .rc-card-subtitle {
       display: flex;
       flex-flow: column;

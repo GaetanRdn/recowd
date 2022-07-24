@@ -2,8 +2,4 @@
   display: flex;
   flex-flow: column wrap;
   gap: 2em;
-
-  rc-experience-card {
-    width: clamp(30rem, 50rem, 100%);
-  }
 }

@@ -3,13 +3,18 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { ExperiencesPageComponent } from './experiences-page.component';
 import { TemplateLookup } from '@recowd/test/utils';
 import { TranslateModule } from '@ngx-translate/core';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ExperiencesPageComponent', () => {
   let templateLookup: TemplateLookup<ExperiencesPageComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ExperiencesPageComponent, TranslateModule.forRoot()],
+      imports: [
+        ExperiencesPageComponent,
+        TranslateModule.forRoot(),
+        NoopAnimationsModule,
+      ],
     }).compileComponents();
 
     templateLookup = new TemplateLookup(ExperiencesPageComponent);
